@@ -1,0 +1,35 @@
+## Copyright © 2014 by Adaptive Computing Enterprises, Inc. All Rights Reserved.
+
+<%! from django.utils.translation import ugettext as _ %>
+
+<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>${_("Role Name")}</th>
+            <th colspan="2">${_("Description")}</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+        %if status_code == 2000:
+            %for count , roles in enumerate(rolelist):
+                  <tr>
+
+                    %for id in roles:
+                      <td id="roleName${ count  }">${ roles[id]['name']  }</td>
+                      <td  class="ellipsis-text" id="roleDescription${ count  }">${ roles[id]['description']  }</td>
+                      <td><a class="link" onclick="editRole('${ id  }')" title="Edit"><span id="editRole${ count  }" class="glyphicon glyphicon-check"></span></a>
+                      <a id="editrole${ count  }" class="link"  onclick="deleteRole('${ id  }','${ roles[id]['name']  }')" title="Delete"><span id="deleteRole${ count  }" class="glyphicon glyphicon-remove"></span></a></td>
+
+                  </tr>
+                  %endfor
+             %endfor
+        %else:
+            <div class="alert alert-success">${ rolelist  }</div>
+        %endif
+
+          <tr>
+          
+          </tr>
+          </tbody>
+      </table>

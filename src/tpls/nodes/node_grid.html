@@ -1,0 +1,167 @@
+## Copyright © 2014 by Adaptive Computing Enterprises, Inc. All Rights Reserved.
+
+<%! from django.utils.translation import ugettext as _ %>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th id="name" width="70" onclick="onSortRes(this)" class="sort">${_("Node ID")} </th>
+			<th id="state" width="60" onclick="onSortRes(this)" class="text-center sort">${_("Status")}</th>
+			<th id="classes" width="60" class="text-center">${_("Class")}</th>
+			<th id="features" width="80" class="text-center">${_("Feature")}</th>
+			<th id="processors" width="100" onclick="onSortRes(this)" class="text-center sort">${_("Procs")}<div>${_("Available/Configured")}</div></th>
+			<th id="jobs" width="50" onclick="onSortRes(this)" class="text-center sort">${_("Jobs")}</th>
+			<th id="processor_utilization_percentage" width="50" onclick="onSortRes(this)" class="text-center sort">${_("CPU Utilization")}</th>
+			<th id="memory_utilization_percentage" width="50" onclick="onSortRes(this)" class="text-center sort">${_("Memory Utilization")}</th>
+		</tr>
+	</thead>
+	<tbody>
+	% if status_code == 200 :
+		% if entries :
+			% for count,entry in enumerate(entries):
+			<tr>
+
+				%if entry['name'] !=None and len(entry['name']) > 7:	
+					<td  width="120"><a id= "nodename${count  }" href="/nodedetails/?node_name=${entry['name']  }&tab=${ active  }" title="${entry['name']  }">${entry['name'][0:7]  }.....</a></td>
+
+				%else:
+					<td width="120"><a id= "nodename${count }" href="/nodedetails/?node_name=${entry['name']  }&tab=${ active  }">${entry['name']  }</a></td>
+				%endif
+				<td id="nodestatus${count  }" width="60" class="text-center">${entry['state']  }</td>
+				<td  id="class${count  }" width="90" class="text-center">
+				%if entry['classes']:
+					% if "," in entry['classes']:
+						<a id="class${count  }" href="#" title="${entry['classes']  }" style="text-decoration:none">${entry['classes'].split(",")[0]  }.....</a>                                                                                          
+					% else:
+						${entry['classes']  }
+					% endif
+				%else:
+					<span id="class${count  }" > - </span>
+				%endif
+				
+				
+				
+				</td>
+				<td  id="feature${count  }" width="70" class="text-center">	
+				%if entry['features']:
+					% if "," in entry['features']:
+						<a id="feature${count  }" href="#" title="${entry['features']  }" style="text-decoration:none">${entry['features'].split(",")[0]  }.....</a>                                                                                          
+					% else:
+						${entry['features']  }
+					% endif
+				%else:
+					<span id="feature${count  }" > - </span>
+				%endif
+	
+				</td>
+				<td id="availableProcessors${count  }" width="90" class="text-center">${entry['available_processors']  }/${entry['configured_processors']  }</td>
+				<td id="jobs${count  }" width="90" class="text-center">${entry['jobs']  }</td>
+				<td id="CPUUtilization${count  }" width="90" class="text-center">${entry['processor_utilization_percentage']  }</td>
+				<td id="memoryUtilization${count  }" width="90" class="text-center">${entry['memory_utilization_percentage']  }</td>
+			</tr>
+			% endfor
+		% else :
+		<tr id="NoRecordsFound">
+			<td colspan="7"><h5>${_("No Records Found")}</h5></td>
+		</tr>
+		% endif
+	% else:
+		<tr id="NoRecordsFound">
+			<td colspan="7"><h5>${ entries  } </h5></td>
+		</tr>
+	% endif
+  </tbody>
+</table>
+<div class="grid-pagination">
+	<div class="page-views">
+		${_("View")}
+		<select id="viewPerPage" class="form-control page-views-select" onchange="onPageChangeRes()">
+			<option value="20">20</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+			<option value="500">500</option>
+			<option value="1000">1000</option>
+		</select>
+		${_("Per Page")}
+	</div>
+	<div class="page-count pull-right">
+		<button type="button" class="btn btn-primary page-count-btn" id="goToFirst" onclick="onControlClickRes(this)">
+			<span class="glyphicon glyphicon-backward prev"></span>
+		</button>
+		<button type="button" class="btn btn-primary page-count-btn" id="prev" onclick="onControlClickRes(this)">
+			<span class="glyphicon glyphicon-play prev"></span>
+		</button>
+		${_("Page")}
+		<select class="form-control page-views-select" id="pageNumber" onchange="onPageChangePerPageRes()">
+		% for no in page_nums:
+			
+			<option value=${no  }>${ no }</option>
+		% endfor
+		</select>&nbsp;
+		${_("of")} <label id="totalPages"> ${ total_pages }</label>
+		<input type="text" id="hiddenTotalCnt" style='display:none' value=${ total_count }></input>
+				<button type="button" class="btn btn-primary page-count-btn" id="next" onclick="onControlClickRes(this)">
+			<span class="glyphicon glyphicon-play"></span>
+		</button>
+		<button type="button" class="btn btn-primary page-count-btn" id="goToLast" onclick="onControlClickRes(this)">
+			<span class="glyphicon glyphicon-forward"></span>
+		</button>
+	</div>
+</div>
+
+<script type="text/JavaScript">
+					$(document).ready(function() {
+						$(function(){
+							
+							$('[rel = popover]').popover({
+								html:true,
+								content: function(){
+									return $('#popoverContent').html();
+								}
+							});
+							$('#infoPopUp').popover();
+							
+							$('.masterTooltip').hover(function(){
+									// Hover over code
+									var title = $(this).attr('title');
+									$(this).data('tipText', title).removeAttr('title');
+									$('<p class="tooltip">sdfsdf</p>')
+									.text(title)
+									.appendTo('body')
+									.fadeIn('slow');
+							}, function() {
+									// Hover out code
+									$(this).attr('title', $(this).data('tipText'));
+									$('.tooltip').remove();
+							}).mousemove(function(e) {
+									var mousex = e.pageX + 20; //Get X coordinates
+									var mousey = e.pageY + 10; //Get Y coordinates
+									$('.tooltip')
+									.css({ top: mousey, left: mousex })
+							});
+						});
+					});
+</script>
+
+
+<script type="text/javascript">
+	//$(document).ready(function(){
+	function onStatusClick(status){
+
+		var jobId = $('#popoverContent a').attr('title');
+		//var changeStatus = $('#popoverContent a').attr('id');
+		var changeStatus = status;
+		
+
+		$.ajax({
+			url:'/modifyjob/',
+			type:'GET',
+			data:{jobId: jobId, changeStatus: changeStatus },
+			success:function(result){
+				$('#statusMsg').show();
+				$('#statusMsg').text(result);
+		}
+	});
+	}
+//});
+</script>

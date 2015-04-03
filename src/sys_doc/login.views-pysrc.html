@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>login.views</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="login-module.html">Package&nbsp;login</a> ::
+        Module&nbsp;views
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="login.views-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="login.views-module.html">Module login.views</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment"># coding=utf-8</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">Copyright &#169; 2014 by Adaptive Computing Enterprises, Inc. All Rights Reserved.</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">logging</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">conf</tt> <tt class="py-keyword">import</tt> <tt class="py-name">settings</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">middleware</tt><tt class="py-op">.</tt><tt class="py-name">csrf</tt> <tt class="py-keyword">import</tt> <tt class="py-name">rotate_token</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Module login.utils=login.utils-module.html"><a title="login.utils" class="py-name" href="#" onclick="return doclink('link-0', 'utils', 'link-0');">utils</a></tt><tt class="py-op">.</tt><tt class="py-name">translation</tt> <tt class="py-keyword">import</tt> <tt class="py-name">ugettext</tt> <tt class="py-keyword">as</tt> <tt class="py-name">_</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">mako</tt><tt class="py-op">.</tt><tt class="py-name">lookup</tt> <tt class="py-keyword">import</tt> <tt class="py-name">TemplateLookup</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name" targets="Package api=api-module.html"><a title="api" class="py-name" href="#" onclick="return doclink('link-1', 'api', 'link-1');">api</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Package api.login_api=api.login_api-module.html"><a title="api.login_api" class="py-name" href="#" onclick="return doclink('link-2', 'login_api', 'link-2');">login_api</a></tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Module api.configuration.views=api.configuration.views-module.html,Module api.jobs.views=api.jobs.views-module.html,Module api.login_api.views=api.login_api.views-module.html,Module api.nodes.views=api.nodes.views-module.html,Module configuration.views=configuration.views-module.html,Module jobs.views=jobs.views-module.html,Module login.views=login.views-module.html,Module nodes.views=nodes.views-module.html"><a title="api.configuration.views
+api.jobs.views
+api.login_api.views
+api.nodes.views
+configuration.views
+jobs.views
+login.views
+nodes.views" class="py-name" href="#" onclick="return doclink('link-3', 'views', 'link-3');">views</a></tt> <tt class="py-keyword">import</tt> <tt id="link-4" class="py-name" targets="Class api.login_api.views.LoginDataView=api.login_api.views.LoginDataView-class.html"><a title="api.login_api.views.LoginDataView" class="py-name" href="#" onclick="return doclink('link-4', 'LoginDataView', 'link-4');">LoginDataView</a></tt><tt class="py-op">,</tt> <tt id="link-5" class="py-name" targets="Class api.login_api.views.GetPermissionsForUser=api.login_api.views.GetPermissionsForUser-class.html"><a title="api.login_api.views.GetPermissionsForUser" class="py-name" href="#" onclick="return doclink('link-5', 'GetPermissionsForUser', 'link-5');">GetPermissionsForUser</a></tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">frontend_utils</tt><tt class="py-op">.</tt><tt class="py-name">view_base</tt> <tt class="py-keyword">import</tt> <tt class="py-name">ViewBase</tt><tt class="py-op">,</tt> <tt class="py-name">get_timezone_offset</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-6" class="py-name" targets="Package login=login-module.html"><a title="login" class="py-name" href="#" onclick="return doclink('link-6', 'login', 'link-6');">login</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name"><a title="login.utils" class="py-name" href="#" onclick="return doclink('link-7', 'utils', 'link-0');">utils</a></tt> <tt class="py-keyword">import</tt> <tt id="link-8" class="py-name" targets="Class login.utils.InitAPI=login.utils.InitAPI-class.html"><a title="login.utils.InitAPI" class="py-name" href="#" onclick="return doclink('link-8', 'InitAPI', 'link-8');">InitAPI</a></tt><tt class="py-op">,</tt> <tt id="link-9" class="py-name" targets="Class login.utils.APIError=login.utils.APIError-class.html"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-9', 'APIError', 'link-9');">APIError</a></tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt id="link-10" class="py-name" targets="Variable login.views.LANGUAGES=login.views-module.html#LANGUAGES"><a title="login.views.LANGUAGES" class="py-name" href="#" onclick="return doclink('link-10', 'LANGUAGES', 'link-10');">LANGUAGES</a></tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-string">'fr'</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'French'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">             <tt class="py-op">(</tt><tt class="py-string">'de'</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'German'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">             <tt class="py-op">(</tt><tt class="py-string">'en'</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'English'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">             <tt class="py-op">(</tt><tt class="py-string">'ja'</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'Japanese'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">             <tt class="py-op">(</tt><tt class="py-string">'hi'</tt><tt class="py-op">,</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'Hindi'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt id="link-11" class="py-name" targets="Variable login.views.tpl_lookup=login.views-module.html#tpl_lookup"><a title="login.views.tpl_lookup" class="py-name" href="#" onclick="return doclink('link-11', 'tpl_lookup', 'link-11');">tpl_lookup</a></tt> <tt class="py-op">=</tt> <tt class="py-name">TemplateLookup</tt><tt class="py-op">(</tt><tt class="py-name">directories</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">".."</tt><tt class="py-op">,</tt> <tt class="py-string">"tpls"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">                                         <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">".."</tt><tt class="py-op">,</tt> <tt class="py-string">"tpls"</tt><tt class="py-op">,</tt> <tt class="py-string">"configuration"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">                                         <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">".."</tt><tt class="py-op">,</tt> <tt class="py-string">"tpls"</tt><tt class="py-op">,</tt> <tt class="py-string">"nodes"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">                                         <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">".."</tt><tt class="py-op">,</tt> <tt class="py-string">"tpls"</tt><tt class="py-op">,</tt> <tt class="py-string">"jobs"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">                                         <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">dirname</tt><tt class="py-op">(</tt><tt class="py-name">__file__</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-string">".."</tt><tt class="py-op">,</tt> <tt class="py-string">"tpls"</tt><tt class="py-op">,</tt> <tt class="py-string">"error"</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">                                         <tt class="py-name">default_filters</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'decode.utf8'</tt><tt class="py-op">,</tt><tt class="py-string">'h'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">                                         <tt class="py-name">input_encoding</tt><tt class="py-op">=</tt><tt class="py-string">'utf-8'</tt><tt class="py-op">,</tt> <tt class="py-name">output_encoding</tt><tt class="py-op">=</tt><tt class="py-string">'utf-8'</tt><tt class="py-op">)</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"><tt id="link-12" class="py-name" targets="Variable login.views.log=login.views-module.html#log"><a title="login.views.log" class="py-name" href="#" onclick="return doclink('link-12', 'log', 'link-12');">log</a></tt> <tt class="py-op">=</tt> <tt class="py-name">logging</tt><tt class="py-op">.</tt><tt class="py-name">getLogger</tt><tt class="py-op">(</tt><tt class="py-string">'iris'</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"> </tt>
+<a name="Login"></a><div id="Login-def"><a name="L35"></a><tt class="py-lineno"> 35</tt> <a class="py-toggle" href="#" id="Login-toggle" onclick="return toggle('Login');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="login.views.Login-class.html">Login</a><tt class="py-op">(</tt><tt class="py-base-class">ViewBase</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Login-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Login-expanded"><a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-docstring">    Handles login page related functionality. In get method it renders</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"><tt class="py-docstring">    a login page and in post method it authenticate username and password.</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">    Attributes:</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">        template_name : string</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">                        Holds login.html as string and used in get and</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"><tt class="py-docstring">                        post methods</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"><tt class="py-docstring">        config_template_name: string</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"><tt class="py-docstring">                        Holds configuration.mako as string and used in get and</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-docstring">                        post methods</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">    <tt id="link-13" class="py-name" targets="Variable configuration.views.GetConfigurationView.template_name=configuration.views.GetConfigurationView-class.html#template_name,Variable configuration.views.GetPrincipalCreateEditView.template_name=configuration.views.GetPrincipalCreateEditView-class.html#template_name,Variable configuration.views.PrincipalGridView.template_name=configuration.views.PrincipalGridView-class.html#template_name,Variable configuration.views.PrincipalListView.template_name=configuration.views.PrincipalListView-class.html#template_name,Variable configuration.views.RoleListGridView.template_name=configuration.views.RoleListGridView-class.html#template_name,Variable configuration.views.RoleListView.template_name=configuration.views.RoleListView-class.html#template_name,Variable configuration.views.RoleManagementCreate.template_name=configuration.views.RoleManagementCreate-class.html#template_name,Variable configuration.views.RoleManagementDelete.template_name=configuration.views.RoleManagementDelete-class.html#template_name,Variable jobs.views.GetDashboardView.template_name=jobs.views.GetDashboardView-class.html#template_name,Variable jobs.views.GetGridView.template_name=jobs.views.GetGridView-class.html#template_name,Variable jobs.views.GetWorkloadView.template_name=jobs.views.GetWorkloadView-class.html#template_name,Variable login.views.Login.template_name=login.views.Login-class.html#template_name,Variable nodes.views.GetResourceListView.template_name=nodes.views.GetResourceListView-class.html#template_name,Variable nodes.views.NodeDetailsView.template_name=nodes.views.NodeDetailsView-class.html#template_name"><a title="configuration.views.GetConfigurationView.template_name
+configuration.views.GetPrincipalCreateEditView.template_name
+configuration.views.PrincipalGridView.template_name
+configuration.views.PrincipalListView.template_name
+configuration.views.RoleListGridView.template_name
+configuration.views.RoleListView.template_name
+configuration.views.RoleManagementCreate.template_name
+configuration.views.RoleManagementDelete.template_name
+jobs.views.GetDashboardView.template_name
+jobs.views.GetGridView.template_name
+jobs.views.GetWorkloadView.template_name
+login.views.Login.template_name
+nodes.views.GetResourceListView.template_name
+nodes.views.NodeDetailsView.template_name" class="py-name" href="#" onclick="return doclink('link-13', 'template_name', 'link-13');">template_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'login.html'</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">    <tt id="link-14" class="py-name" targets="Variable login.views.Login.config_template_name=login.views.Login-class.html#config_template_name"><a title="login.views.Login.config_template_name" class="py-name" href="#" onclick="return doclink('link-14', 'config_template_name', 'link-14');">config_template_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'configuration.mako'</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"> </tt>
+<a name="Login.get"></a><div id="Login.get-def"><a name="L51"></a><tt class="py-lineno"> 51</tt> <a class="py-toggle" href="#" id="Login.get-toggle" onclick="return toggle('Login.get');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="login.views.Login-class.html#get">get</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">args</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Login.get-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Login.get-expanded"><a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">            <tt class="py-comment">#rotate csrf token on login page</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">            <tt class="py-name">rotate_token</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">)</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'access_token'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'path_previous'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'path_previous'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/dashboard/'</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">            <tt class="py-comment"># This localization feature has been done . The implementation of the same will be provided by Adaptive Team.</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">            <tt class="py-comment"># Currently we are hardcoding the session language to english</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">            <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'django_language'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'en'</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">render_template</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="configuration.views.GetConfigurationView.template_name
+configuration.views.GetPrincipalCreateEditView.template_name
+configuration.views.PrincipalGridView.template_name
+configuration.views.PrincipalListView.template_name
+configuration.views.RoleListGridView.template_name
+configuration.views.RoleListView.template_name
+configuration.views.RoleManagementCreate.template_name
+configuration.views.RoleManagementDelete.template_name
+jobs.views.GetDashboardView.template_name
+jobs.views.GetGridView.template_name
+jobs.views.GetWorkloadView.template_name
+login.views.Login.template_name
+nodes.views.GetResourceListView.template_name
+nodes.views.NodeDetailsView.template_name" class="py-name" href="#" onclick="return doclink('link-15', 'template_name', 'link-13');">template_name</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line"> </tt>
+<a name="Login.post"></a><div id="Login.post-def"><a name="L67"></a><tt class="py-lineno"> 67</tt> <a class="py-toggle" href="#" id="Login.post-toggle" onclick="return toggle('Login.post');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="login.views.Login-class.html#post">post</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">args</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Login.post-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Login.post-expanded"><a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt id="link-16" class="py-name" targets="Variable api.serializers.LoginSerializer.username=api.serializers.LoginSerializer-class.html#username"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-16', 'username', 'link-16');">username</a></tt> <tt class="py-op">=</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">POST</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name" targets="Method api.configuration.views.ConfigurationDataView.get()=api.configuration.views.ConfigurationDataView-class.html#get,Method api.configuration.views.RoleDataManagementView.get()=api.configuration.views.RoleDataManagementView-class.html#get,Method api.jobs.views.GenerateReportsDataView.get()=api.jobs.views.GenerateReportsDataView-class.html#get,Method api.jobs.views.JobDetailsGetDataView.get()=api.jobs.views.JobDetailsGetDataView-class.html#get,Method api.jobs.views.JobDetailsMultiReqDataView.get()=api.jobs.views.JobDetailsMultiReqDataView-class.html#get,Method api.jobs.views.JobDetailsPostDataView.get()=api.jobs.views.JobDetailsPostDataView-class.html#get,Method api.jobs.views.JobSummaryDataView.get()=api.jobs.views.JobSummaryDataView-class.html#get,Method api.jobs.views.ModifyJobsStatusView.get()=api.jobs.views.ModifyJobsStatusView-class.html#get,Method api.jobs.views.RequiredFeaturesDataView.get()=api.jobs.views.RequiredFeaturesDataView-class.html#get,Method api.jobs.views.SystemUtilizationDataView.get()=api.jobs.views.SystemUtilizationDataView-class.html#get,Method api.jobs.views.WorkLoadDataView.get()=api.jobs.views.WorkLoadDataView-class.html#get,Method api.login_api.views.GetPermissionsForUser.get()=api.login_api.views.GetPermissionsForUser-class.html#get,Method api.login_api.views.LoginDataView.get()=api.login_api.views.LoginDataView-class.html#get,Method api.nodes.views.ConfigurableFeaturesDataView.get()=api.nodes.views.ConfigurableFeaturesDataView-class.html#get,Method api.nodes.views.GenericResourceDataView.get()=api.nodes.views.GenericResourceDataView-class.html#get,Method api.nodes.views.GenericResourcePerNodeDataView.get()=api.nodes.views.GenericResourcePerNodeDataView-class.html#get,Method api.nodes.views.NodeDetailsDataView.get()=api.nodes.views.NodeDetailsDataView-class.html#get,Method api.nodes.views.ResourceListDataView.get()=api.nodes.views.ResourceListDataView-class.html#get,Method api.nodes.views.ResourceSummaryDataView.get()=api.nodes.views.ResourceSummaryDataView-class.html#get,Method configuration.views.GetConfigurationView.get()=configuration.views.GetConfigurationView-class.html#get,Method configuration.views.GetPrincipalCreateEditView.get()=configuration.views.GetPrincipalCreateEditView-class.html#get,Method configuration.views.GetPrincipalDeleteView.get()=configuration.views.GetPrincipalDeleteView-class.html#get,Method configuration.views.PrincipalGridView.get()=configuration.views.PrincipalGridView-class.html#get,Method configuration.views.PrincipalListView.get()=configuration.views.PrincipalListView-class.html#get,Method configuration.views.RoleListGridView.get()=configuration.views.RoleListGridView-class.html#get,Method configuration.views.RoleListView.get()=configuration.views.RoleListView-class.html#get,Method configuration.views.RoleManagementCreate.get()=configuration.views.RoleManagementCreate-class.html#get,Method configuration.views.RoleManagementDelete.get()=configuration.views.RoleManagementDelete-class.html#get,Method jobs.views.GenerateReportsView.get()=jobs.views.GenerateReportsView-class.html#get,Method jobs.views.GetDashboardView.get()=jobs.views.GetDashboardView-class.html#get,Method jobs.views.GetGridView.get()=jobs.views.GetGridView-class.html#get,Method jobs.views.GetWorkloadView.get()=jobs.views.GetWorkloadView-class.html#get,Method jobs.views.JobDetailsView.get()=jobs.views.JobDetailsView-class.html#get,Method jobs.views.ModifyJobsView.get()=jobs.views.ModifyJobsView-class.html#get,Method login.views.Login.get()=login.views.Login-class.html#get,Method login.views.Logout.get()=login.views.Logout-class.html#get,Method nodes.views.GetResouceGridView.get()=nodes.views.GetResouceGridView-class.html#get,Method nodes.views.GetResourceListView.get()=nodes.views.GetResourceListView-class.html#get,Method nodes.views.NodeDetailsView.get()=nodes.views.NodeDetailsView-class.html#get"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-17', 'get', 'link-17');">get</a></tt><tt class="py-op">(</tt><tt class="py-string">'uName'</tt><tt class="py-op">,</tt> <tt class="py-string">''</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt id="link-18" class="py-name" targets="Variable api.serializers.LoginSerializer.password=api.serializers.LoginSerializer-class.html#password"><a title="api.serializers.LoginSerializer.password" class="py-name" href="#" onclick="return doclink('link-18', 'password', 'link-18');">password</a></tt> <tt class="py-op">=</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">POST</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-19', 'get', 'link-17');">get</a></tt><tt class="py-op">(</tt><tt class="py-string">'pwd'</tt><tt class="py-op">,</tt> <tt class="py-string">''</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">        <tt id="link-20" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-20', 'username', 'link-16');">username</a></tt> <tt class="py-op">=</tt> <tt id="link-21" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-21', 'username', 'link-16');">username</a></tt><tt class="py-op">.</tt><tt class="py-name">strip</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">        <tt class="py-name">login_obj</tt> <tt class="py-op">=</tt> <tt id="link-22" class="py-name"><a title="api.login_api.views.LoginDataView" class="py-name" href="#" onclick="return doclink('link-22', 'LoginDataView', 'link-4');">LoginDataView</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-name">InitAPI_obj</tt> <tt class="py-op">=</tt> <tt id="link-23" class="py-name"><a title="login.utils.InitAPI" class="py-name" href="#" onclick="return doclink('link-23', 'InitAPI', 'link-8');">InitAPI</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">         </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">        <tt class="py-name">timezone_local</tt> <tt class="py-op">=</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">POST</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-24', 'get', 'link-17');">get</a></tt><tt class="py-op">(</tt><tt class="py-string">'lDate'</tt><tt class="py-op">)</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">         </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-name">server_timezone</tt> <tt class="py-op">=</tt> <tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name" targets="Method login.utils.InitAPI.get_server_timezone()=login.utils.InitAPI-class.html#get_server_timezone"><a title="login.utils.InitAPI.get_server_timezone" class="py-name" href="#" onclick="return doclink('link-25', 'get_server_timezone', 'link-25');">get_server_timezone</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">        <tt class="py-name">timezone_offset</tt> <tt class="py-op">=</tt> <tt class="py-name">get_timezone_offset</tt><tt class="py-op">(</tt><tt class="py-name">timezone_local</tt><tt class="py-op">,</tt><tt class="py-name">server_timezone</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">        <tt class="py-name">login_response</tt> <tt class="py-op">=</tt> <tt class="py-name">login_obj</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-26', 'get', 'link-17');">get</a></tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">,</tt> <tt id="link-27" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-27', 'username', 'link-16');">username</a></tt><tt class="py-op">,</tt> <tt id="link-28" class="py-name"><a title="api.serializers.LoginSerializer.password" class="py-name" href="#" onclick="return doclink('link-28', 'password', 'link-18');">password</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">        <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'google_analytics'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name" targets="Method login.utils.InitAPI.getgoogleanalytics()=login.utils.InitAPI-class.html#getgoogleanalytics"><a title="login.utils.InitAPI.getgoogleanalytics" class="py-name" href="#" onclick="return doclink('link-29', 'getgoogleanalytics', 'link-29');">getgoogleanalytics</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">login_response</tt><tt class="py-op">.</tt><tt class="py-name">status_code</tt> <tt class="py-op">==</tt> <tt class="py-number">200</tt><tt class="py-op">:</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'username'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt id="link-30" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-30', 'username', 'link-16');">username</a></tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'access_token'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">login_response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'access_token'</tt><tt class="py-op">]</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'token_type'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">login_response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'token_type'</tt><tt class="py-op">]</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'timezone_offset'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">timezone_offset</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'expiry'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">login_response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'expires_in'</tt><tt class="py-op">]</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                <tt class="py-comment"># Setting session for BackDoorUser as NotBackDoorUser on successfully login</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'BackDoorUser'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'NotBackDoorUser'</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">                <tt class="py-comment"># if user name is settings user name then permission api is not hit all permission is given to the user</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-31" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-31', 'username', 'link-16');">username</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">settings</tt><tt class="py-op">.</tt><tt class="py-name">USERNAME</tt><tt class="py-op">)</tt> <tt class="py-keyword">and</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-32" class="py-name"><a title="api.serializers.LoginSerializer.password" class="py-name" href="#" onclick="return doclink('link-32', 'password', 'link-18');">password</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">settings</tt><tt class="py-op">.</tt><tt class="py-name">PASSWORD</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                    <tt id="link-33" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-33', 'APIError', 'link-9');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-34" class="py-name" targets="Class Method login.utils.APIError.debug_log()=login.utils.APIError-class.html#debug_log"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-34', 'debug_log', 'link-34');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"Admin user moab-admin"</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                    <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'session_permission_list'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">settings</tt><tt class="py-op">.</tt><tt class="py-name">PERMISSIONS_LIST</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                    <tt class="py-name">permission_obj</tt> <tt class="py-op">=</tt> <tt id="link-35" class="py-name"><a title="api.login_api.views.GetPermissionsForUser" class="py-name" href="#" onclick="return doclink('link-35', 'GetPermissionsForUser', 'link-5');">GetPermissionsForUser</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                    <tt class="py-name">permission_list</tt><tt class="py-op">,</tt> <tt class="py-name">status</tt> <tt class="py-op">=</tt> <tt class="py-name">permission_obj</tt><tt class="py-op">.</tt><tt id="link-36" class="py-name"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-36', 'get', 'link-17');">get</a></tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">)</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">                    <tt class="py-keyword">if</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">status</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-string">'1'</tt><tt class="py-op">:</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">                        <tt id="link-37" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-37', 'APIError', 'link-9');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-38" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-38', 'debug_log', 'link-34');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"permissions "</tt> <tt class="py-op">+</tt> <tt class="py-string">","</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">permission_list</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">                        <tt class="py-comment"># checking if not 'Insight_user' and 'Insight_priv' in permission list</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-string">'read-insight-user'</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">permission_list</tt> <tt class="py-keyword">and</tt> <tt class="py-string">'read-insight-privileged'</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">permission_list</tt><tt class="py-op">:</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                            <tt class="py-name">raw_message</tt> <tt class="py-op">=</tt> <tt class="py-string">"User {0} has no privileges."</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">                            <tt id="link-39" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-39', 'APIError', 'link-9');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-40" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-40', 'debug_log', 'link-34');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-name">raw_message</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt id="link-41" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-41', 'username', 'link-16');">username</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">                            <tt class="py-name">message</tt> <tt class="py-op">=</tt> <tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-name">raw_message</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt id="link-42" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-42', 'username', 'link-16');">username</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">                            <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">render_template</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="configuration.views.GetConfigurationView.template_name
+configuration.views.GetPrincipalCreateEditView.template_name
+configuration.views.PrincipalGridView.template_name
+configuration.views.PrincipalListView.template_name
+configuration.views.RoleListGridView.template_name
+configuration.views.RoleListView.template_name
+configuration.views.RoleManagementCreate.template_name
+configuration.views.RoleManagementDelete.template_name
+jobs.views.GetDashboardView.template_name
+jobs.views.GetGridView.template_name
+jobs.views.GetWorkloadView.template_name
+login.views.Login.template_name
+nodes.views.GetResourceListView.template_name
+nodes.views.NodeDetailsView.template_name" class="py-name" href="#" onclick="return doclink('link-43', 'template_name', 'link-13');">template_name</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                                                        <tt class="py-name">bad_string</tt><tt class="py-op">=</tt><tt class="py-name">message</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">                        <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'session_permission_list'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">permission_list</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                    <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">                        <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'session_permission_list'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line"> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">.</tt><tt class="py-name">set_expiry</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'expiry'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                    <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'path_previous'</tt><tt class="py-op">]</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'path_previous'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">                <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/dashboard/'</tt><tt class="py-op">)</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-44" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-44', 'username', 'link-16');">username</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt class="py-name">USERNAME</tt><tt class="py-op">)</tt> <tt class="py-keyword">and</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-45" class="py-name"><a title="api.serializers.LoginSerializer.password" class="py-name" href="#" onclick="return doclink('link-45', 'password', 'link-18');">password</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt class="py-name">PASSWORD</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">                    <tt class="py-comment"># Setting session for BackDoorUser as NotBackDoorUser on unsuccessful login</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                    <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'BackDoorUser'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'BackDoorUser'</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/configuration/?backdoor=yes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">render_template</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="configuration.views.GetConfigurationView.template_name
+configuration.views.GetPrincipalCreateEditView.template_name
+configuration.views.PrincipalGridView.template_name
+configuration.views.PrincipalListView.template_name
+configuration.views.RoleListGridView.template_name
+configuration.views.RoleListView.template_name
+configuration.views.RoleManagementCreate.template_name
+configuration.views.RoleManagementDelete.template_name
+jobs.views.GetDashboardView.template_name
+jobs.views.GetGridView.template_name
+jobs.views.GetWorkloadView.template_name
+login.views.Login.template_name
+nodes.views.GetResourceListView.template_name
+nodes.views.NodeDetailsView.template_name" class="py-name" href="#" onclick="return doclink('link-46', 'template_name', 'link-13');">template_name</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">                                                <tt class="py-name">bad_string</tt><tt class="py-op">=</tt><tt class="py-name">_</tt><tt class="py-op">(</tt><tt class="py-string">'Please provide correct login credentials.'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-47" class="py-name"><a title="api.serializers.LoginSerializer.username" class="py-name" href="#" onclick="return doclink('link-47', 'username', 'link-16');">username</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt class="py-name">USERNAME</tt><tt class="py-op">)</tt> <tt class="py-keyword">and</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt id="link-48" class="py-name"><a title="api.serializers.LoginSerializer.password" class="py-name" href="#" onclick="return doclink('link-48', 'password', 'link-18');">password</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">InitAPI_obj</tt><tt class="py-op">.</tt><tt class="py-name">PASSWORD</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">                <tt class="py-comment"># Setting session for BackDoorUser as NotBackDoorUser on unsuccessful login</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">                <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-string">'BackDoorUser'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'BackDoorUser'</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/configuration/?backdoor=yes'</tt><tt class="py-op">)</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/unauthorized/'</tt><tt class="py-op">)</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/login/'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"> </tt>
+<a name="Logout"></a><div id="Logout-def"><a name="L136"></a><tt class="py-lineno">136</tt> <a class="py-toggle" href="#" id="Logout-toggle" onclick="return toggle('Logout');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="login.views.Logout-class.html">Logout</a><tt class="py-op">(</tt><tt class="py-base-class">ViewBase</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Logout-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Logout-expanded"><a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"><tt class="py-docstring">    Handles logout related functionality.</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line"><tt class="py-docstring">    Attributes:</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line"><tt class="py-docstring">            None</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="Logout.get"></a><div id="Logout.get-def"><a name="L143"></a><tt class="py-lineno">143</tt> <a class="py-toggle" href="#" id="Logout.get-toggle" onclick="return toggle('Logout.get');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="login.views.Logout-class.html#get">get</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">args</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Logout.get-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Logout.get-expanded"><a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line"><tt class="py-docstring">        Deletes session key if found in request.session() otherwise</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line"><tt class="py-docstring">        redirect to login page.</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line"><tt class="py-docstring">        Args:</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line"><tt class="py-docstring">            request: represents a single HTTP request. Request objects</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line"><tt class="py-docstring">                     also have</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line"><tt class="py-docstring">                     a few useful methods like GET,POST,DELETE etc.</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line"><tt class="py-docstring">            *args: Variable length argument list.</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line"><tt class="py-docstring">            **kwargs: Arbitrary keyword arguments.</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line"><tt class="py-docstring">        Returns:</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line"><tt class="py-docstring">            HttpResponseRedirect to login page, if any exception occures</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line"><tt class="py-docstring">            it redirects to login page.</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line"><tt class="py-docstring">        Raises:</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line"><tt class="py-docstring">            None</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">sesskey</tt> <tt class="py-keyword">in</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">                <tt class="py-keyword">del</tt> <tt class="py-name">request</tt><tt class="py-op">.</tt><tt class="py-name">session</tt><tt class="py-op">[</tt><tt class="py-name">sesskey</tt><tt class="py-op">]</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line"> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/login/'</tt><tt class="py-op">)</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">redirect</tt><tt class="py-op">(</tt><tt class="py-string">'/login/'</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Feb 16 15:05:11 2015
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

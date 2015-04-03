@@ -1,0 +1,38 @@
+## Copyright © 2014 by Adaptive Computing Enterprises, Inc. All Rights Reserved.
+
+<%! from django.utils.translation import ugettext as _ %>
+
+<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>${_("Principal Name")}</th>
+            <th colspan="2">${_("Description")}</th>
+            
+          </tr>
+        
+        </thead>
+        <tbody>
+        %if  status_code == 2000:
+		%for count, principals in enumerate( principallist_data):
+          <tr>
+
+			%for id in principals:
+
+              <td id= "principalName${count  }">${ principals[id]['name']  }</td> 
+              <td id= "description${count  }"class="ellipsis-text">${ principals[id]['description']  }</td>
+              <td><a class="link" onclick="editPrincipal('${ id  }')" title="Edit"><span id= "editPrincipal${count  }" class="glyphicon glyphicon-check"></span></a>
+              <a class="link"  onclick="deletePrincipal('${ id  }', '${ principals[id]['name']  } ')" title="Delete"><span  id= "deletePrincipal${count  }" class="glyphicon glyphicon-remove"></span></a></td>
+
+
+          </tr>
+		  %endfor
+		 %endfor
+         %else:
+            <div class="alert alert-success">${ principallist_data  }</div>
+         %endif
+		   <tr>
+          
+          </tr>
+         
+          </tbody>
+     </table>

@@ -1,0 +1,5 @@
+<project name="PythonCI" default="zip">
+	<target name="zip" description="zip files using ant">
+		<zip destfile="manual.zip" basedir="src"/>
+	</target>
+</project>

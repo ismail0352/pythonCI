@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>api.installation</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="api-module.html">Package&nbsp;api</a> ::
+        Module&nbsp;installation
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="api.installation-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="api.installation-module.html">Module api.installation</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment"># coding=utf-8</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">Copyright &#169; 2014 by Adaptive Computing Enterprises, Inc. All Rights Reserved.</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">json</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">conf</tt> <tt class="py-keyword">import</tt> <tt class="py-name">settings</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">requests</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package login=login-module.html"><a title="login" class="py-name" href="#" onclick="return doclink('link-0', 'login', 'link-0');">login</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Module login.utils=login.utils-module.html"><a title="login.utils" class="py-name" href="#" onclick="return doclink('link-1', 'utils', 'link-1');">utils</a></tt> <tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Class login.utils.APIError=login.utils.APIError-class.html"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-2', 'APIError', 'link-2');">APIError</a></tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="Installation_settings"></a><div id="Installation_settings-def"><a name="L13"></a><tt class="py-lineno"> 13</tt> <a class="py-toggle" href="#" id="Installation_settings-toggle" onclick="return toggle('Installation_settings');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="api.installation.Installation_settings-class.html">Installation_settings</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Installation_settings-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Installation_settings-expanded"><a name="Installation_settings.__init__"></a><div id="Installation_settings.__init__-def"><a name="L14"></a><tt class="py-lineno"> 14</tt> <a class="py-toggle" href="#" id="Installation_settings.__init__-toggle" onclick="return toggle('Installation_settings.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="api.installation.Installation_settings-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">api_obj</tt><tt class="py-op">,</tt> <tt class="py-param">params</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Installation_settings.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Installation_settings.__init__-expanded"><a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">            <tt class="py-keyword">with</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-name">settings</tt><tt class="py-op">.</tt><tt class="py-name">PERMISSIONS_PATH</tt><tt class="py-op">,</tt> <tt class="py-string">"r"</tt><tt class="py-op">)</tt> <tt class="py-keyword">as</tt> <tt class="py-name">permi_data</tt><tt class="py-op">:</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">                <tt class="py-name">permissions_json</tt> <tt class="py-op">=</tt> <tt class="py-name">permi_data</tt><tt class="py-op">.</tt><tt class="py-name">read</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">                <tt class="py-name">data</tt> <tt class="py-op">=</tt> <tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">loads</tt><tt class="py-op">(</tt><tt class="py-name">permissions_json</tt><tt class="py-op">)</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iris_per_data</tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt> <tt class="py-op">=</tt> <tt class="py-name">api_obj</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">params</tt> <tt class="py-op">=</tt> <tt class="py-name">params</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt> <tt class="py-name">Exception</tt> <tt class="py-keyword">as</tt> <tt class="py-name">eX</tt><tt class="py-op">:</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">            <tt id="link-3" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-3', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Class Method login.utils.APIError.error_log()=login.utils.APIError-class.html#error_log"><a title="login.utils.APIError.error_log" class="py-name" href="#" onclick="return doclink('link-4', 'error_log', 'link-4');">error_log</a></tt><tt class="py-op">(</tt><tt class="py-name">eX</tt><tt class="py-op">)</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">            <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">"Internal Server Error Please check logs"</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-string">"Exception"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+</div><a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"> </tt>
+<a name="Installation_settings.IRISPermissions"></a><div id="Installation_settings.IRISPermissions-def"><a name="L28"></a><tt class="py-lineno"> 28</tt> <a class="py-toggle" href="#" id="Installation_settings.IRISPermissions-toggle" onclick="return toggle('Installation_settings.IRISPermissions');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="api.installation.Installation_settings-class.html#IRISPermissions">IRISPermissions</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Installation_settings.IRISPermissions-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Installation_settings.IRISPermissions-expanded"><a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">            <tt class="py-comment"># Reset of all roles, Api will recreate the roles and re-attach the domain permissions.</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">            <tt class="py-name">resetRoles_url</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">baseUrl_resetRoles</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">api_version</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">            <tt id="link-5" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-5', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Class Method login.utils.APIError.debug_log()=login.utils.APIError-class.html#debug_log"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-6', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"resetRoles_url "</tt> <tt class="py-op">+</tt> <tt class="py-name">resetRoles_url</tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">            <tt class="py-name">response</tt> <tt class="py-op">=</tt> <tt class="py-name">requests</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method api.configuration.views.ConfigurationDataView.post()=api.configuration.views.ConfigurationDataView-class.html#post,Method api.configuration.views.PrincipalModel.post()=api.configuration.views.PrincipalModel-class.html#post,Method api.nodes.views.NodeDetailsDataView.post()=api.nodes.views.NodeDetailsDataView-class.html#post,Method configuration.views.GetConfigurationView.post()=configuration.views.GetConfigurationView-class.html#post,Method configuration.views.GetPrincipalCreateEditView.post()=configuration.views.GetPrincipalCreateEditView-class.html#post,Method configuration.views.RoleManagementCreate.post()=configuration.views.RoleManagementCreate-class.html#post,Method jobs.views.JobDetailsView.post()=jobs.views.JobDetailsView-class.html#post,Method login.views.Login.post()=login.views.Login-class.html#post,Method nodes.views.NodeDetailsView.post()=nodes.views.NodeDetailsView-class.html#post"><a title="api.configuration.views.ConfigurationDataView.post
+api.configuration.views.PrincipalModel.post
+api.nodes.views.NodeDetailsDataView.post
+configuration.views.GetConfigurationView.post
+configuration.views.GetPrincipalCreateEditView.post
+configuration.views.RoleManagementCreate.post
+jobs.views.JobDetailsView.post
+login.views.Login.post
+nodes.views.NodeDetailsView.post" class="py-name" href="#" onclick="return doclink('link-7', 'post', 'link-7');">post</a></tt><tt class="py-op">(</tt><tt class="py-name">resetRoles_url</tt><tt class="py-op">,</tt> <tt class="py-name">headers</tt><tt class="py-op">=</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">params</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">status_code</tt> <tt class="py-op">==</tt> <tt class="py-number">200</tt><tt class="py-op">:</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">                <tt class="py-name">user_permissions</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">                <tt class="py-name">admin_permissions</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-comment"># This api call gets all the permissions list using requests.get and same url is used for creating new iris permissions with requests.post</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt class="py-name">permission_url</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">baseUrl_permission</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">api_version</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">                <tt class="py-name">permission_data</tt> <tt class="py-op">=</tt> <tt class="py-name">requests</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method api.configuration.views.ConfigurationDataView.get()=api.configuration.views.ConfigurationDataView-class.html#get,Method api.configuration.views.RoleDataManagementView.get()=api.configuration.views.RoleDataManagementView-class.html#get,Method api.jobs.views.GenerateReportsDataView.get()=api.jobs.views.GenerateReportsDataView-class.html#get,Method api.jobs.views.JobDetailsGetDataView.get()=api.jobs.views.JobDetailsGetDataView-class.html#get,Method api.jobs.views.JobDetailsMultiReqDataView.get()=api.jobs.views.JobDetailsMultiReqDataView-class.html#get,Method api.jobs.views.JobDetailsPostDataView.get()=api.jobs.views.JobDetailsPostDataView-class.html#get,Method api.jobs.views.JobSummaryDataView.get()=api.jobs.views.JobSummaryDataView-class.html#get,Method api.jobs.views.ModifyJobsStatusView.get()=api.jobs.views.ModifyJobsStatusView-class.html#get,Method api.jobs.views.RequiredFeaturesDataView.get()=api.jobs.views.RequiredFeaturesDataView-class.html#get,Method api.jobs.views.SystemUtilizationDataView.get()=api.jobs.views.SystemUtilizationDataView-class.html#get,Method api.jobs.views.WorkLoadDataView.get()=api.jobs.views.WorkLoadDataView-class.html#get,Method api.login_api.views.GetPermissionsForUser.get()=api.login_api.views.GetPermissionsForUser-class.html#get,Method api.login_api.views.LoginDataView.get()=api.login_api.views.LoginDataView-class.html#get,Method api.nodes.views.ConfigurableFeaturesDataView.get()=api.nodes.views.ConfigurableFeaturesDataView-class.html#get,Method api.nodes.views.GenericResourceDataView.get()=api.nodes.views.GenericResourceDataView-class.html#get,Method api.nodes.views.GenericResourcePerNodeDataView.get()=api.nodes.views.GenericResourcePerNodeDataView-class.html#get,Method api.nodes.views.NodeDetailsDataView.get()=api.nodes.views.NodeDetailsDataView-class.html#get,Method api.nodes.views.ResourceListDataView.get()=api.nodes.views.ResourceListDataView-class.html#get,Method api.nodes.views.ResourceSummaryDataView.get()=api.nodes.views.ResourceSummaryDataView-class.html#get,Method configuration.views.GetConfigurationView.get()=configuration.views.GetConfigurationView-class.html#get,Method configuration.views.GetPrincipalCreateEditView.get()=configuration.views.GetPrincipalCreateEditView-class.html#get,Method configuration.views.GetPrincipalDeleteView.get()=configuration.views.GetPrincipalDeleteView-class.html#get,Method configuration.views.PrincipalGridView.get()=configuration.views.PrincipalGridView-class.html#get,Method configuration.views.PrincipalListView.get()=configuration.views.PrincipalListView-class.html#get,Method configuration.views.RoleListGridView.get()=configuration.views.RoleListGridView-class.html#get,Method configuration.views.RoleListView.get()=configuration.views.RoleListView-class.html#get,Method configuration.views.RoleManagementCreate.get()=configuration.views.RoleManagementCreate-class.html#get,Method configuration.views.RoleManagementDelete.get()=configuration.views.RoleManagementDelete-class.html#get,Method jobs.views.GenerateReportsView.get()=jobs.views.GenerateReportsView-class.html#get,Method jobs.views.GetDashboardView.get()=jobs.views.GetDashboardView-class.html#get,Method jobs.views.GetGridView.get()=jobs.views.GetGridView-class.html#get,Method jobs.views.GetWorkloadView.get()=jobs.views.GetWorkloadView-class.html#get,Method jobs.views.JobDetailsView.get()=jobs.views.JobDetailsView-class.html#get,Method jobs.views.ModifyJobsView.get()=jobs.views.ModifyJobsView-class.html#get,Method login.views.Login.get()=login.views.Login-class.html#get,Method login.views.Logout.get()=login.views.Logout-class.html#get,Method nodes.views.GetResouceGridView.get()=nodes.views.GetResouceGridView-class.html#get,Method nodes.views.GetResourceListView.get()=nodes.views.GetResourceListView-class.html#get,Method nodes.views.NodeDetailsView.get()=nodes.views.NodeDetailsView-class.html#get"><a title="api.configuration.views.ConfigurationDataView.get
+api.configuration.views.RoleDataManagementView.get
+api.jobs.views.GenerateReportsDataView.get
+api.jobs.views.JobDetailsGetDataView.get
+api.jobs.views.JobDetailsMultiReqDataView.get
+api.jobs.views.JobDetailsPostDataView.get
+api.jobs.views.JobSummaryDataView.get
+api.jobs.views.ModifyJobsStatusView.get
+api.jobs.views.RequiredFeaturesDataView.get
+api.jobs.views.SystemUtilizationDataView.get
+api.jobs.views.WorkLoadDataView.get
+api.login_api.views.GetPermissionsForUser.get
+api.login_api.views.LoginDataView.get
+api.nodes.views.ConfigurableFeaturesDataView.get
+api.nodes.views.GenericResourceDataView.get
+api.nodes.views.GenericResourcePerNodeDataView.get
+api.nodes.views.NodeDetailsDataView.get
+api.nodes.views.ResourceListDataView.get
+api.nodes.views.ResourceSummaryDataView.get
+configuration.views.GetConfigurationView.get
+configuration.views.GetPrincipalCreateEditView.get
+configuration.views.GetPrincipalDeleteView.get
+configuration.views.PrincipalGridView.get
+configuration.views.PrincipalListView.get
+configuration.views.RoleListGridView.get
+configuration.views.RoleListView.get
+configuration.views.RoleManagementCreate.get
+configuration.views.RoleManagementDelete.get
+jobs.views.GenerateReportsView.get
+jobs.views.GetDashboardView.get
+jobs.views.GetGridView.get
+jobs.views.GetWorkloadView.get
+jobs.views.JobDetailsView.get
+jobs.views.ModifyJobsView.get
+login.views.Login.get
+login.views.Logout.get
+nodes.views.GetResouceGridView.get
+nodes.views.GetResourceListView.get
+nodes.views.NodeDetailsView.get" class="py-name" href="#" onclick="return doclink('link-8', 'get', 'link-8');">get</a></tt><tt class="py-op">(</tt><tt class="py-name">permission_url</tt><tt class="py-op">,</tt> <tt class="py-name">headers</tt><tt class="py-op">=</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">params</tt><tt class="py-op">)</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">permission_data</tt><tt class="py-op">.</tt><tt class="py-name">status_code</tt> <tt class="py-op">==</tt> <tt class="py-number">200</tt><tt class="py-op">:</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">                    <tt class="py-name">existing_iris_permissions</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">                    <tt class="py-keyword">for</tt> <tt class="py-name">permi</tt> <tt class="py-keyword">in</tt> <tt class="py-name">permission_data</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'results'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'label'</tt><tt class="py-op">]</tt> <tt class="py-keyword">in</tt> <tt class="py-name">settings</tt><tt class="py-op">.</tt><tt class="py-name">PERMISSIONS_LIST</tt><tt class="py-op">:</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">                            <tt class="py-keyword">if</tt> <tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'label'</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-string">'read-insight-user'</tt><tt class="py-op">,</tt> <tt class="py-string">'read-insight-privileged'</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">                                <tt class="py-name">existing_iris_permissions</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'label'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                                <tt class="py-name">admin_permissions</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-op">{</tt><tt class="py-string">"id"</tt><tt class="py-op">:</tt> <tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'id'</tt><tt class="py-op">]</tt><tt class="py-op">}</tt><tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'label'</tt><tt class="py-op">]</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-string">"Workload"</tt><tt class="py-op">,</tt> <tt class="py-string">"Job Details"</tt><tt class="py-op">,</tt> <tt class="py-string">"Job Edit-user"</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">                                    <tt class="py-name">user_permissions</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-op">{</tt><tt class="py-string">"id"</tt><tt class="py-op">:</tt> <tt class="py-name">permi</tt><tt class="py-op">[</tt><tt class="py-string">'id'</tt><tt class="py-op">]</tt><tt class="py-op">}</tt><tt class="py-op">)</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">                    <tt class="py-name">perdict</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iris_per_data</tt><tt class="py-op">[</tt><tt class="py-string">"IRIS_permissions"</tt><tt class="py-op">]</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">                    <tt class="py-keyword">for</tt> <tt class="py-name">iris_permission</tt> <tt class="py-keyword">in</tt> <tt class="py-name">perdict</tt><tt class="py-op">:</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">iris_permission</tt><tt class="py-op">[</tt><tt class="py-string">'label'</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">existing_iris_permissions</tt><tt class="py-op">:</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                            <tt class="py-comment"># Post api call for permissions creation</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                            <tt class="py-name">params</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">params</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">headers</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">                            <tt id="link-9" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-9', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-10', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"permission_url "</tt> <tt class="py-op">+</tt> <tt class="py-name">permission_url</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">                            <tt class="py-name">response</tt> <tt class="py-op">=</tt> <tt class="py-name">requests</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="api.configuration.views.ConfigurationDataView.post
+api.configuration.views.PrincipalModel.post
+api.nodes.views.NodeDetailsDataView.post
+configuration.views.GetConfigurationView.post
+configuration.views.GetPrincipalCreateEditView.post
+configuration.views.RoleManagementCreate.post
+jobs.views.JobDetailsView.post
+login.views.Login.post
+nodes.views.NodeDetailsView.post" class="py-name" href="#" onclick="return doclink('link-11', 'post', 'link-7');">post</a></tt><tt class="py-op">(</tt><tt class="py-name">permission_url</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">=</tt><tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">dumps</tt><tt class="py-op">(</tt><tt class="py-name">iris_permission</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">headers</tt><tt class="py-op">=</tt><tt class="py-name">params</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                            <tt class="py-comment"># not getting response 200 from api</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">                            <tt class="py-keyword">if</tt> <tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">status_code</tt> <tt class="py-op">==</tt> <tt class="py-number">201</tt><tt class="py-op">:</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                                <tt class="py-name">permissionid</tt> <tt class="py-op">=</tt> <tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">"id"</tt><tt class="py-op">]</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                                <tt class="py-name">label</tt> <tt class="py-op">=</tt> <tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">"label"</tt><tt class="py-op">]</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">                                <tt class="py-name">admin_permissions</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-op">{</tt><tt class="py-string">"id"</tt><tt class="py-op">:</tt> <tt class="py-name">permissionid</tt><tt class="py-op">}</tt><tt class="py-op">)</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">label</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-string">"Workload"</tt><tt class="py-op">,</tt> <tt class="py-string">"Job Details"</tt><tt class="py-op">,</tt> <tt class="py-string">"Job Edit-user"</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                                    <tt class="py-name">user_permissions</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-op">{</tt><tt class="py-string">"id"</tt><tt class="py-op">:</tt> <tt class="py-name">permissionid</tt><tt class="py-op">}</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                            <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                                <tt id="link-12" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-12', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-13', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"permissions response status "</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">status_code</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                                <tt id="link-14" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-14', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-15', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"permissions response data "</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                                <tt id="link-16" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-16', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-17', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"status code 200 not found"</tt><tt class="py-op">)</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">                                <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'messages'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-string">"Fail"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                    <tt class="py-comment"># Resetting Roles and reattach IRIS Permissions to HPCAdmin and HPCUser</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">                    <tt class="py-name">role_status</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method api.installation.Installation_settings.Roles()=api.installation.Installation_settings-class.html#Roles"><a title="api.installation.Installation_settings.Roles" class="py-name" href="#" onclick="return doclink('link-18', 'Roles', 'link-18');">Roles</a></tt><tt class="py-op">(</tt><tt class="py-name">admin_permissions</tt><tt class="py-op">,</tt> <tt class="py-name">user_permissions</tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">                    <tt class="py-keyword">if</tt> <tt class="py-name">role_status</tt> <tt class="py-op">==</tt> <tt class="py-string">"Success"</tt><tt class="py-op">:</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">                        <tt class="py-keyword">return</tt> <tt class="py-string">"Success"</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">                    <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">                        <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">"Unable to create/edit Roles"</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">                        <tt class="py-keyword">return</tt> <tt class="py-string">"Exception"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                    <tt id="link-19" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-19', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-20', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"status code 200 not found"</tt><tt class="py-op">)</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">                    <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'messages'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                    <tt class="py-keyword">return</tt> <tt class="py-string">"Fail"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                <tt id="link-21" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-21', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-22', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"status code 200 not found"</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">.</tt><tt class="py-name">json</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-string">'messages'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-string">"Fail"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line"> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt> <tt class="py-name">Exception</tt> <tt class="py-keyword">as</tt> <tt class="py-name">eX</tt><tt class="py-op">:</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">            <tt id="link-23" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-23', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="login.utils.APIError.error_log" class="py-name" href="#" onclick="return doclink('link-24', 'error_log', 'link-4');">error_log</a></tt><tt class="py-op">(</tt><tt class="py-name">eX</tt><tt class="py-op">)</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">            <tt class="py-name">error_message</tt> <tt class="py-op">=</tt> <tt class="py-string">"Unable to create/edit permissions"</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-string">"Exception"</tt><tt class="py-op">,</tt> <tt class="py-name">error_message</tt> </tt>
+</div><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line"> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt>
+<a name="Installation_settings.Roles"></a><div id="Installation_settings.Roles-def"><a name="L101"></a><tt class="py-lineno">101</tt> <a class="py-toggle" href="#" id="Installation_settings.Roles-toggle" onclick="return toggle('Installation_settings.Roles');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="api.installation.Installation_settings-class.html#Roles">Roles</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">admin_permissions</tt><tt class="py-op">,</tt> <tt class="py-param">user_permissions</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Installation_settings.Roles-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Installation_settings.Roles-expanded"><a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">            <tt class="py-name">update_role</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">baseUrl_role</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">            <tt class="py-comment"># UPDATE THE ROLES FOR PERMISSION (HPCAdmin) IF USER ALREADY EXISTS After the call, all you should have to do is attach the page permissions to the roles</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">            <tt class="py-name">roleurl</tt> <tt class="py-op">=</tt> <tt class="py-name">update_role</tt> <tt class="py-op">+</tt> <tt class="py-string">"/HPCAdmin"</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">api_version</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">changemodeadd</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">            <tt class="py-name">roleurl</tt> <tt class="py-op">=</tt> <tt class="py-name">roleurl</tt><tt class="py-op">.</tt><tt class="py-name">strip</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line"> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">            <tt class="py-name">adminper</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">            <tt class="py-string">"permissions"</tt><tt class="py-op">:</tt> <tt class="py-name">admin_permissions</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">            <tt class="py-op">}</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">            <tt class="py-name">params</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">params</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">headers</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">            <tt id="link-25" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-25', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-26', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"roleurl update HPCAdmin "</tt> <tt class="py-op">+</tt> <tt class="py-name">roleurl</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">            <tt class="py-name">response</tt> <tt class="py-op">=</tt> <tt class="py-name">requests</tt><tt class="py-op">.</tt><tt class="py-name">put</tt><tt class="py-op">(</tt><tt class="py-name">roleurl</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">=</tt><tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">dumps</tt><tt class="py-op">(</tt><tt class="py-name">adminper</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">headers</tt><tt class="py-op">=</tt><tt class="py-name">params</tt><tt class="py-op">)</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">            <tt class="py-comment">#UPDATE THE ROLES FOR PERMISSION (HPCUser) IF USER ALREADY EXISTS</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">            <tt class="py-name">roleurl</tt> <tt class="py-op">=</tt> <tt class="py-name">update_role</tt> <tt class="py-op">+</tt> <tt class="py-string">"/HPCUser"</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">api_version</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">api_obj</tt><tt class="py-op">.</tt><tt class="py-name">changemodeadd</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">            <tt class="py-name">roleurl</tt> <tt class="py-op">=</tt> <tt class="py-name">roleurl</tt><tt class="py-op">.</tt><tt class="py-name">strip</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">            <tt class="py-name">userper</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">            <tt class="py-string">"permissions"</tt><tt class="py-op">:</tt> <tt class="py-name">user_permissions</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">            <tt class="py-op">}</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">            <tt id="link-27" class="py-name"><a title="login.utils.APIError" class="py-name" href="#" onclick="return doclink('link-27', 'APIError', 'link-2');">APIError</a></tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="login.utils.APIError.debug_log" class="py-name" href="#" onclick="return doclink('link-28', 'debug_log', 'link-6');">debug_log</a></tt><tt class="py-op">(</tt><tt class="py-string">"roleurl update HPCUser "</tt> <tt class="py-op">+</tt> <tt class="py-name">roleurl</tt><tt class="py-op">)</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">            <tt class="py-name">response</tt> <tt class="py-op">=</tt> <tt class="py-name">requests</tt><tt class="py-op">.</tt><tt class="py-name">put</tt><tt class="py-op">(</tt><tt class="py-name">roleurl</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">=</tt><tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">dumps</tt><tt class="py-op">(</tt><tt class="py-name">userper</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">headers</tt><tt class="py-op">=</tt><tt class="py-name">params</tt><tt class="py-op">)</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-string">"Success"</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt> <tt class="py-name">Exception</tt> <tt class="py-keyword">as</tt> <tt class="py-name">eX</tt><tt class="py-op">:</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-string">"Exception"</tt> </tt>
+</div></div><a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Feb 16 15:05:11 2015
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

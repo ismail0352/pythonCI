@@ -1,0 +1,744 @@
+msgid "Login Page"
+msgstr ""
+
+msgid "Login"
+msgstr "Anmelden"
+
+msgid "Please Provide Credentials!"
+msgstr "Bitte geben Sie Anmeldeinformationen!"
+
+msgid "User {0} has no privileges."
+msgstr "GUser {0} has no privileges."
+
+msgid "Please provide correct login credentials."
+msgstr "GPlease provide correct login credentials."
+
+#Dashboard Page
+msgid "Dashboard"
+msgstr "Armaturenbrett"
+
+msgid "Welcome"
+msgstr "Willkommen"
+
+msgid "Workload"
+msgstr "Pensum"
+
+msgid "Sign Out"
+msgstr "austragen"
+
+msgid "Home"
+msgstr "Zuhause"
+
+msgid "Policies"
+msgstr "Richtlinien"
+
+msgid "Reporting"
+msgstr "Berichterstattung"
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Job ID"
+msgstr "GJob-ID"
+
+msgid "Export to"
+msgstr "exportieren nach"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Priority"
+msgstr "GPriority"
+
+msgid "Job Status"
+msgstr "Auftragsstatus"
+
+msgid "Rank"
+msgstr "GRang"
+
+msgid "Wall Clock"
+msgstr "Wanduhr"
+
+msgid "Utilization"
+msgstr "Nutzung"
+
+msgid "System Utilization"
+msgstr "Systemnutzungs"
+
+msgid "Resource Summary"
+msgstr "Ressourcenzusammenfassung"
+
+msgid "CREATE RESERVATION"
+msgstr "CREATE RESERVATION"
+
+msgid "Job Summary"
+msgstr "Jobübersicht"
+
+msgid "No Records Found"
+msgstr "Kein Eintrag vorhanden"
+
+msgid "RESOURCE UTILIZATION"
+msgstr "Ressourcennutzung"
+
+msgid "MEMORY"
+msgstr "MEMORY"
+
+msgid "View"
+msgstr "anzeigen"
+
+msgid "Per Page"
+msgstr "pro Seite"
+
+msgid "Page"
+msgstr "Seite"
+
+msgid "Understanding Rank"
+msgstr "verstehen Rang"
+
+msgid "Scheduling with control over a priority-weighting hierarchy where each priority and customer credentials are calculated"
+msgstr "Planen mit Kontrolle über eine Prioritätengewichtung Hierarchie, wo jeder Kunde Priorität und Anmeldeinformationen werden berechnet"
+
+msgid "Further scheduling management with reservations, Fairshare, backfill, job access, resource access, and customer access"
+msgstr "GFurther scheduling management with reservations, Fairshare, backfill, job access, resource access, and customer access"
+
+#workload page
+msgid "Admin Workload Page"
+msgstr "GAdmin Workload Page"
+
+msgid "Create Reservation"
+msgstr "GCreate Reservation"
+
+msgid "Current Search"
+msgstr "GCurrent Search"
+
+msgid "Jobs"
+msgstr "GJobs"
+
+msgid "Filters"
+msgstr "GFilters"
+
+msgid "Select"
+msgstr "GSelect"
+
+msgid "Narrow Search"
+msgstr "GNarrow Search"
+
+msgid "Filter"
+msgstr "GFilter"
+
+msgid "User Name"
+msgstr "GUser_Name"
+
+msgid "Select Job State"
+msgstr "GSelect Job State"
+
+msgid "Start Date"
+msgstr "GStart Date"
+
+msgid "To"
+msgstr "GTo"
+
+msgid "Procs"
+msgstr "GProcs"
+
+msgid "From"
+msgstr "GFrom"
+
+#resourcelist page
+msgid "Node List"
+msgstr "GNode List"
+
+msgid "Nodes"
+msgstr "GNodes"
+
+msgid "Node"
+msgstr "GNode"
+
+msgid "Node ID"
+msgstr "GNode ID"
+
+msgid "Features"
+msgstr "GFeatures"
+
+msgid "Feature"
+msgstr "GFeature"
+
+msgid "Select Status"
+msgstr "GSelect Status"
+
+msgid "Processors"
+msgstr "GProcessors"
+
+msgid "Memory Utilization"
+msgstr "GMemory Utilization"
+
+msgid "of"
+msgstr "Gof"
+
+#Job Detail Page
+msgid "Job Detail Page"
+msgstr "GJob Detail Page"
+
+msgid "Time Frame"
+msgstr "GTime Frame"
+
+msgid "Start Time"
+msgstr "GStart Time"
+
+msgid "Duration"
+msgstr "GDuration"
+
+msgid "Completion Time"
+msgstr "GCompletion Time"
+
+msgid "Actual"
+msgstr "GActual"
+
+msgid "and"
+msgstr "Gand"
+
+msgid "Quality of Service"
+msgstr "GQuality of Service"
+
+msgid "Class"
+msgstr "GClass"
+
+msgid "Account"
+msgstr "GAccount"
+
+msgid "Group"
+msgstr "GGroup"
+
+msgid "User"
+msgstr "GUser"
+
+msgid "Credentials"
+msgstr "GCredentials"
+
+msgid "Processors per Task"
+msgstr "GProcessors per Task"
+
+msgid "Operating System"
+msgstr "GOperating System"
+
+msgid "Allocated Partition"
+msgstr "GAllocated Partition"
+
+msgid "Processor Statistics"
+msgstr "GProcessor Statistics"
+
+msgid "Required Features"
+msgstr "GRequired Features"
+
+msgid "System Priority"
+msgstr "GSystem Priority"
+
+msgid "User Job Prioriy"
+msgstr "GUser Job Prioriy"
+
+msgid "Start Priority"
+msgstr "GStart Priority"
+
+msgid "Start Count"
+msgstr "GStart Count"
+
+msgid "Job Priority"
+msgstr "GJob Priority"
+
+msgid "Cancel"
+msgstr "GCancel"
+
+msgid "Done"
+msgstr "GDone"
+
+msgid "DONE"
+msgstr "GDONE"
+
+msgid "Apply"
+msgstr "GApply"
+
+msgid "APPLY"
+msgstr "GAPPLY"
+
+msgid "Required Minimum Tasks"
+msgstr "GRequired Minimum Tasks"
+
+msgid "Job Details"
+msgstr "GJob Details"
+
+msgid "Status"
+msgstr "GStatus"
+
+msgid "ERROR : The Job Status is Complete but the resource is not idle"
+msgstr "GERROR : The Job Status is Complete but the resource is not idle"
+
+msgid "ERROR"
+msgstr "GERROR"
+
+msgid "Add"
+msgstr "GAdd"
+
+msgid "Select Nodes"
+msgstr "GSelect Nodes"
+
+msgid "Description"
+msgstr "GDescription"
+
+msgid "Available"
+msgstr "GAvailable"
+
+msgid "Select Resources"
+msgstr "GSelect Resources"
+
+msgid "Add Generic Resource"
+msgstr "GAdd Generic Resource"
+
+msgid "Node Details Page"
+msgstr "GNode Details Page"
+
+msgid "Node '{0}' does not exist"
+msgstr "GNode '{0}' does not exist"
+
+msgid "Job '{0}' does not exist"
+msgstr "GJob '{0}' does not exist"
+
+msgid "Job id must be specified to view details"
+msgstr "GJob ID must be specified to view details"
+
+msgid "Reservations"
+msgstr "GReservations"
+
+msgid "Virtual Machines"
+msgstr "GVirtual Machines"
+
+msgid "Resource Managers"
+msgstr "GResource Managers"
+
+msgid "Hypervisor type"
+msgstr "GHypervisor type"
+
+msgid "Type"
+msgstr "GType"
+
+msgid "Image"
+msgstr "GImage"
+
+msgid "IP Address"
+msgstr "GIP Address"
+
+msgid "Tenant"
+msgstr "GTenant"
+
+msgid "Power"
+msgstr "GPower"
+
+msgid "Node Details"
+msgstr "GNode Details"
+
+msgid "Generic Resources"
+msgstr "GGeneric Resources"
+
+msgid "Available memory"
+msgstr "GAvailable memory"
+
+msgid "Memory (MB) overcommit limit"
+msgstr "GMemory (MB) overcommit limit"
+
+msgid "Real memory"
+msgstr "GReal memory"
+
+msgid "Available processors"
+msgstr "GAvailable processors"
+
+msgid "Processor overcommit limit"
+msgstr "GProcessor overcommit limit"
+
+msgid "Real processors"
+msgstr "GReal processors"
+
+msgid "Configurable features"
+msgstr "GConfigurable features"
+
+msgid "Reported features"
+msgstr "GReported features"
+
+msgid "Modify"
+msgstr "GModify"
+
+msgid "State"
+msgstr "GState"
+
+msgid "Datacenter"
+msgstr "GDatacenter"
+
+msgid "Test"
+msgstr "GTest"
+
+msgid "Save"
+msgstr "GSave"
+
+msgid "Use Google Analytics to help improve this product"
+msgstr "GUse Google Analytics to help improve this product"
+
+msgid "Client Secret"
+msgstr "GClient Secret"
+
+msgid "Client Id"
+msgstr "GClient Id"
+
+msgid "Path"
+msgstr "GPath"
+
+msgid "Password"
+msgstr "GPassword"
+
+msgid "Username"
+msgstr "GUsername"
+
+msgid "Server"
+msgstr "GServer"
+
+msgid "Error"
+msgstr "GError"
+
+msgid "Saved Successfully"
+msgstr "GSaved Successfully"
+
+msgid "Principals"
+msgstr "GPrincipals"
+
+msgid "Roles"
+msgstr "GRoles"
+
+msgid "Configuration"
+msgstr "GConfiguration"
+
+msgid "Roles management"
+msgstr "GRoles management"
+
+msgid "Role Management"
+msgstr "GRole Management"
+
+msgid "Create"
+msgstr "GCreate"
+
+msgid "Principal Name"
+msgstr "GPrincipal Name"
+
+msgid "Principal Management"
+msgstr "GPrincipal Management"
+
+msgid "Role Name"
+msgstr "GRole Name"
+
+msgid "Principal Entity"
+msgstr "GPrincipal Entity"
+
+msgid "Permissions"
+msgstr "GPermissions"
+
+msgid "Please Enter Principal Name"
+msgstr "GPlease Enter Principal Name"
+
+msgid "A principal's resources and access is based on the role(s) they are granted.  Each role has a list of permissions that can be configured in the Roles tab"
+msgstr "GA principal's resources and access is based on the role(s) they are granted.  Each role has a list of permissions that can be configured in the Roles tab"
+
+msgid "Bad Request"
+msgstr "GBad Request"
+
+msgid "Unauthorized Request"
+msgstr "GUnauthorized Request"
+
+msgid "Forbidden"
+msgstr "GForbidden"
+
+msgid "Page Not Found"
+msgstr "GPage Not Found"
+
+msgid "500......Internal Server error"
+msgstr "G500......Internal Server error"
+
+msgid "403......Forbidden"
+msgstr "G403......Forbidden"
+
+msgid "CSRF verification failed: {0}"
+msgstr "GCSRF verification failed: {0}"
+
+msgid "Are you sure you want to delete "
+msgstr "GAre you sure you want to delete "
+
+msgid "principal ?"
+msgstr "Gprincipal ?"
+
+msgid "Deleted Successfully"
+msgstr "GDeleted Successfully"
+
+msgid "No Data Found"
+msgstr "GNo Data Found"
+
+msgid "No Features added"
+msgstr "GNo Features added"
+
+msgid "Please enter principal name"
+msgstr "GPlease enter principal name"
+
+msgid "Create Role"
+msgstr "GCreate Role"
+
+msgid "Enter Role Name"
+msgstr "GEnter Role Name"
+
+msgid "Role"
+msgstr "Grole"
+
+msgid "was created Successfully"
+msgstr "Gwas created Successfully"
+
+msgid "was updated Successfully"
+msgstr "Gwas updated Successfully"
+
+msgid "Principal"
+msgstr "Gprincipal"
+
+msgid "Submitter ID"
+msgstr "GSubmitter ID"
+
+msgid "Successfully Modified. Please Login Again."
+msgstr "GSuccessfully Modified. Please Login Again."
+
+msgid "Please check inputs.."
+msgstr "GPlease check inputs.."
+
+msgid "Exception while processing.."
+msgstr "GException while processing.."
+
+
+msgid "Reset Permissions"
+msgstr "GReset Permissions"
+
+msgid "Warning : All permissions will be reset to default !"
+msgstr "GWarning : All permissions will be reset to default !"
+
+msgid "Job_Name"
+msgstr "GJob_Name"
+
+msgid "Job_ID"
+msgstr "GJob_Name"
+
+msgid "Submitter Id"
+msgstr "GSubmitter_Id"
+
+msgid "Job_Custom_Name"
+msgstr "GJob_Custom_Name"
+
+msgid "Resource_States"
+msgstr "GResource_States"
+
+msgid "Utilized_Processor_Seconds"
+msgstr "GUtilized_Processor_Seconds"
+
+msgid "Utilized_Memory_Seconds"
+msgstr "GUtilized_Memory_Seconds"
+
+msgid "Wallclock_Seconds"
+msgstr "GWallclock_Seconds"
+
+msgid "Job_Sort"
+msgstr "GJob_Sort"
+
+msgid "Job_Start_Datetime"
+msgstr "GJob_Start_Datetime"
+
+msgid "Job_State"
+msgstr "GJob_State"
+
+msgid "Job"
+msgstr "GJob"
+
+msgid "Submitter_ID"
+msgstr "GSubmitter_ID"
+
+msgid "root"
+msgstr "Groot"
+
+msgid "Start Datetime"
+msgstr "GStart Datetime"
+
+msgid "Moab Web Services is not responding. Please contact your administrator"
+msgstr "GMoab Web Services is not responding. Please contact your administrator"
+
+msgid "Only administrators may view node and job features."
+msgstr "GOnly administrators may view node and job features."
+
+msgid "Dedicated System Resources"
+msgstr "GDedicated System Resources"
+
+msgid "Available/Configured"
+msgstr "GAvailable/Configured"
+
+msgid "Are you sure you want to delete principal '{0}'?"
+msgstr "GAre you sure you want to delete principal '{0}'?"
+
+msgid "Principal {0} was updated Successfully"
+msgstr "GPrincipal {0} was updated Successfully"
+
+msgid "Are you sure you want to delete role '{0}'?"
+msgstr "GAre you sure you want to delete role '{0}'?"
+
+msgid "Principal {0} was created Successfully"
+msgstr "GPrincipal {0} was created Successfully"
+msgid "Principal Identify by '{0}' deleted successfully"
+msgstr "GPrincipal Identify by '{0}' deleted successfully"
+
+msgid "Role Identify by '{0}' deleted Successfully"
+msgstr "GRole Identify by '{0}' deleted Successfully"
+
+msgid "Role {0} was updated Successfully"
+msgstr "GRole {0} was updated Successfully"
+
+msgid "Role {0} was created Successfully"
+msgstr "GRole {0} was created Successfully"
+
+msgid "MWS Configuration"
+msgstr "GMWS Configuration"
+
+msgid "Viewpoint Login"
+msgstr "GViewpoint Login"
+
+msgid "Viewpoint Configuration"
+msgstr "GViewpoint Configuration"
+
+msgid "Viewpoint Dashboard"
+msgstr "GViewpoint Dashboard"
+
+msgid "Viewpoint Workload"
+msgstr "GViewpoint Workload"
+
+msgid "Viewpoint Resources"
+msgstr "GViewpoint Resources"
+
+msgid "Viewpoint Job Details"
+msgstr "GViewpoint Job Details"
+
+msgid "Viewpoint Node Details"
+msgstr "GViewpoint Node Details"
+
+msgid "Viewpoint Principals"
+msgstr "GViewpoint Principals"
+
+msgid "Viewpoint Principal management"
+msgstr "GViewpoint Principal management"
+
+msgid "Viewpoint Role management"
+msgstr "GViewpoint Role management"
+
+msgid "Viewpoint Roles"
+msgstr "GViewpoint Roles"
+
+msgid "Are you sure you want to delete principal '{0}'?"
+msgstr "GAre you sure you want to delete principal '{0}'?"
+
+msgid "CPU Utilization"
+msgstr "GCPU Utilization"
+
+msgid "Viewpoint Permissions"
+msgstr "GViewpoint Permissions"
+
+msgid "Domain Permissions"
+msgstr "GDomain Permissions"
+
+msgid "No Domain permissions found!!"
+msgstr "GNo Domain permissions found!!"
+
+msgid "No view point permissions found!!"
+msgstr "GNo view point permissions found!!"
+
+msgid "Select All"
+msgstr "GSelect All"
+
+msgid "Welcome, {0}"
+msgstr "GWelcome, {0}"
+
+msgid "Actual Duration"
+msgstr "GActual Duration"
+
+msgid "Cores"
+msgstr "GCores"
+
+msgid "Node Summary"
+msgstr "GNode Summary"
+
+msgid "Workload Summary"
+msgstr "GWorkload Summary"
+
+msgid "View All Nodes"
+msgstr "GView All Nodes"
+
+msgid "View All Workload"
+msgstr "GView All Workload"
+
+msgid "Viewpoint Build Information"
+msgstr "GViewpoint Build Information"
+
+msgid "Version"
+msgstr "GVersion"
+
+msgid "Revision"
+msgstr "GRevision"
+
+msgid "Build Date"
+msgstr "GBuild Date"
+
+msgid "Error trying to retrieve build information. Please contact your administrator"
+msgstr "GError trying to retrieve build information. Please contact your administrator"
+
+msgid "Exception During data proccessing.."
+msgstr "GException During data proccessing.."
+
+msgid "Provided information is invalid"
+msgstr "GProvided information is invalid"
+
+msgid "Server URL is syntactically invalid"
+msgstr "GServer URL is syntactically invalid"
+
+msgid "Path Not Found"
+msgstr "GPath Not Found"
+
+msgid "Provided information is valid"
+msgstr "GProvided information is valid"
+
+msgid "Invalid URL: No such host"
+msgstr "GInvalid URL: No such host"
+
+msgid "Invalid URL: Unknown protocol (schema)"
+msgstr "GInvalid URL: Unknown protocol (schema)"
+
+msgid "Invalid URL: Syntax error"
+msgstr "GInvalid URL: Syntax error"
+
+msgid "Invalid URL: No protocol (schema) supplied. Try http or https"
+msgstr "GInvalid URL: No protocol (schema) supplied. Try http or https"
+
+msgid "Either MWS is not running or the Path is wrong"
+msgstr "GEither MWS is not running or the Path is wrong"
+
+msgid "Error authenticating with OAuth: {0}"
+msgstr "GError authenticating with OAuth: {0}"
+
+msgid "No response content: {0}"
+msgstr "GNo response content: {0}"
+
+msgid "Connection error: {0}"
+msgstr "GConnection error: {0}"
+
+msgid "Exception of type {0}: {1}"
+msgstr "GException of type {0}: {1}"
+
+msgid "Response contains invalid JSON. Server is probably not an MWS server."
+msgstr "GResponse contains invalid JSON. Server is probably not an MWS server."
+
+msgid "Read timed out. MWS Server is probably not responding."
+msgstr "GRead timed out. MWS Server is probably not responding."
+
+msgid "Unsupported MWS version"
+msgstr "GUnsupported MWS version"

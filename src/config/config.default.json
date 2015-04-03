@@ -1,0 +1,11 @@
+{
+    "URL": "",
+    "USERNAME": "moab-admin",
+    "PASSWORD": "changeme!",
+    "SUB_URL": "/mws/",
+    "CLIENTID": "",
+    "CLIENTSECRET": "",
+    "GOOGLE_ANALYTICS": "1",
+    "SERVER_TIMEZONE": "UTC",
+    "ACTION": "save"
+}

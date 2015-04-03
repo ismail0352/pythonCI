@@ -1,0 +1,99 @@
+{ 
+   "IRIS_permissions":[{
+						"resource" : "Configuration",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Configuration page",
+						"description" : "View and make changes to the configuration"
+						},
+						{
+						"resource" : "Principal and Roles",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Principal and Roles Pages",
+						"description" : "View, create, edit and delete Roles and Principals."
+						},
+						{
+						"resource" : "Jobs",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Workload",
+						"description" : "Admin sees all jobs, user only sees his own jobs"
+						},
+						{
+						"resource" : "Jobs",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Job Details",
+						"description" : "Can you see the Job Details page"
+						},
+						{
+						"resource" : "Jobs",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Job Edit-user",
+						"description" : "There are fields that a user can edit (credentials, wallclock)"
+						},
+						{
+						"resource" : "Jobs",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Job Edit-admin",
+						"description" : "There are other fields than(credentials, wallclock) that only an admin should change"
+						},
+						{
+						"resource" : "Nodes",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Resources",
+						"description" : "Includes all Resources and Nodes pages, as well as the system utilization and resource summary charts on the Dashboard page"
+						},
+						{
+						"resource" : "Nodes",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Resource edit",
+						"description" : "Add and remove features, power on/off a given node"
+						},
+						{
+						"resource" : "Reservation",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Reservation",
+						"description" : "Create, view and delete reservations (after Kilby)"
+						},
+						{
+						"resource" : "Credentials",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Credential Pages",
+						"description" : "Includes all of the credential pages, as well as the credential section on the Dashboard page (after Kilby)"
+						},
+						{
+						"resource" : "Policy",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Policy Pages",
+						"description" : "Includes all of the Policy pages, as well as the policy section on the Dashboard page (after Kilby)"
+						},
+						{
+						"resource" : "Jobs",
+						"action" : "read",
+						"type" : "page",
+						"scope" : "NONE",
+						"label" : "Job View All",
+						"description" : "View All the Jobs"
+						}
+						]
+}

@@ -1,0 +1,2496 @@
+************* Module configuration
+configuration/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module configuration.admin
+configuration/admin.py:6: [W0611(unused-import), ] Unused import admin
+************* Module configuration.models
+configuration/models.py:6: [W0611(unused-import), ] Unused import models
+************* Module configuration.tests
+configuration/tests.py:6: [W0611(unused-import), ] Unused import TestCase
+************* Module configuration.urls
+configuration/urls.py:14: [C0301(line-too-long), ] Line too long (102/80)
+configuration/urls.py:15: [C0301(line-too-long), ] Line too long (96/80)
+configuration/urls.py:16: [C0301(line-too-long), ] Line too long (96/80)
+configuration/urls.py:17: [C0301(line-too-long), ] Line too long (84/80)
+configuration/urls.py:18: [C0301(line-too-long), ] Line too long (97/80)
+configuration/urls.py:19: [C0301(line-too-long), ] Line too long (99/80)
+configuration/urls.py:20: [C0301(line-too-long), ] Line too long (108/80)
+configuration/urls.py:21: [C0301(line-too-long), ] Line too long (100/80)
+configuration/urls.py:22: [C0301(line-too-long), ] Line too long (108/80)
+configuration/urls.py:24: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+configuration/urls.py:13: [C0103(invalid-name), ] Invalid constant name "urlpatterns"
+************* Module configuration.views
+configuration/views.py:24: [C0301(line-too-long), ] Line too long (82/80)
+configuration/views.py:34: [C0301(line-too-long), ] Line too long (81/80)
+configuration/views.py:87: [C0301(line-too-long), ] Line too long (90/80)
+configuration/views.py:89: [C0301(line-too-long), ] Line too long (92/80)
+configuration/views.py:99: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       username=username,
+                                    |  ^
+configuration/views.py:100: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       fileData=fileData,
+                                    |  ^
+configuration/views.py:101: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+configuration/views.py:102: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       build_info=build_obj,
+                                    |  ^
+configuration/views.py:103: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=session_permission_list,
+                                    |  ^
+configuration/views.py:103: [C0301(line-too-long), ] Line too long (87/80)
+configuration/views.py:104: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'],)
+                                    |  ^
+configuration/views.py:104: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:163: [C0301(line-too-long), ] Line too long (84/80)
+configuration/views.py:177: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:256: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:257: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               data=data,
+                                            |  ^
+configuration/views.py:258: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               errormessage=errormessage,
+                                            |  ^
+configuration/views.py:259: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               role=role,
+                                            |  ^
+configuration/views.py:260: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               rolepermission=rolepermission,
+                                            |  ^
+configuration/views.py:261: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+configuration/views.py:262: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+configuration/views.py:263: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+configuration/views.py:263: [C0301(line-too-long), ] Line too long (114/80)
+configuration/views.py:264: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'],)
+                                            |  ^
+configuration/views.py:264: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:277: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:278: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               data=data,
+                                            |  ^
+configuration/views.py:279: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               errormessage=errormessage,
+                                            |  ^
+configuration/views.py:280: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               role=role,
+                                            |  ^
+configuration/views.py:281: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               rolepermission=rolepermission,
+                                            |  ^
+configuration/views.py:282: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+configuration/views.py:283: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+configuration/views.py:284: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+configuration/views.py:284: [C0301(line-too-long), ] Line too long (114/80)
+configuration/views.py:285: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'],)
+                                            |  ^
+configuration/views.py:285: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:298: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:299: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               data=data,
+                                            |  ^
+configuration/views.py:300: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               errormessage=errormessage,
+                                            |  ^
+configuration/views.py:301: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               role=role,
+                                            |  ^
+configuration/views.py:302: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               rolepermission=rolepermission,
+                                            |  ^
+configuration/views.py:303: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+configuration/views.py:304: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+configuration/views.py:305: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+configuration/views.py:305: [C0301(line-too-long), ] Line too long (114/80)
+configuration/views.py:306: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'],)
+                                            |  ^
+configuration/views.py:306: [C0301(line-too-long), ] Line too long (101/80)
+configuration/views.py:324: [C0301(line-too-long), ] Line too long (94/80)
+configuration/views.py:355: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:357: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:358: [C0301(line-too-long), ] Line too long (97/80)
+configuration/views.py:368: [C0301(line-too-long), ] Line too long (147/80)
+configuration/views.py:373: [C0301(line-too-long), ] Line too long (97/80)
+configuration/views.py:379: [C0301(line-too-long), ] Line too long (86/80)
+configuration/views.py:478: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:479: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+configuration/views.py:480: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status=status,
+                                    |  ^
+configuration/views.py:481: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],
+                                    |  ^
+configuration/views.py:481: [C0301(line-too-long), ] Line too long (106/80)
+configuration/views.py:482: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'],)
+                                    |  ^
+configuration/views.py:482: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:526: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       username=request.session['username'],
+                                    |  ^
+configuration/views.py:527: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       rolelist=rolelist,
+                                    |  ^
+configuration/views.py:528: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       mesaages=message,
+                                    |  ^
+configuration/views.py:529: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status=status,
+                                    |  ^
+configuration/views.py:530: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],)
+                                    |  ^
+configuration/views.py:530: [C0301(line-too-long), ] Line too long (107/80)
+configuration/views.py:556: [C0301(line-too-long), ] Line too long (98/80)
+configuration/views.py:574: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:575: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+configuration/views.py:576: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status=status,
+                                    |  ^
+configuration/views.py:577: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],
+                                    |  ^
+configuration/views.py:577: [C0301(line-too-long), ] Line too long (106/80)
+configuration/views.py:578: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'],)
+                                    |  ^
+configuration/views.py:578: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:604: [C0301(line-too-long), ] Line too long (98/80)
+configuration/views.py:615: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:617: [C0301(line-too-long), ] Line too long (95/80)
+configuration/views.py:620: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       username=request.session['username'],
+                                    |  ^
+configuration/views.py:621: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       principallist_data=principallist_data,
+                                    |  ^
+configuration/views.py:622: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,                                       
+                                    |  ^
+configuration/views.py:622: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:623: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],)
+                                    |  ^
+configuration/views.py:623: [C0301(line-too-long), ] Line too long (107/80)
+configuration/views.py:641: [C0301(line-too-long), ] Line too long (84/80)
+configuration/views.py:649: [C0301(line-too-long), ] Line too long (95/80)
+configuration/views.py:650: [C0301(line-too-long), ] Line too long (88/80)
+configuration/views.py:673: [C0301(line-too-long), ] Line too long (89/80)
+configuration/views.py:681: [C0301(line-too-long), ] Line too long (119/80)
+configuration/views.py:695: [C0301(line-too-long), ] Line too long (83/80)
+configuration/views.py:705: [C0301(line-too-long), ] Line too long (133/80)
+configuration/views.py:719: [W0311(bad-indentation), ] Bad indentation. Found 16 spaces, expected 12
+configuration/views.py:721: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:722: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       principalId=id,
+                                    |  ^
+configuration/views.py:723: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       name=name,
+                                    |  ^
+configuration/views.py:724: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       description=description,
+                                    |  ^
+configuration/views.py:725: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       existing_roles_list=existing_roles,
+                                    |  ^
+configuration/views.py:726: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       groupslist=groups,
+                                    |  ^
+configuration/views.py:727: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       rolelist=roledata,
+                                    |  ^
+configuration/views.py:728: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status_code_roles=status_code_roles,
+                                    |  ^
+configuration/views.py:729: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       LDAP_Entity=LDAP_Entity,
+                                    |  ^
+configuration/views.py:730: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       PAM_Entity=PAM_Entity,
+                                    |  ^
+configuration/views.py:731: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+configuration/views.py:732: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status=status,
+                                    |  ^
+configuration/views.py:733: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],
+                                    |  ^
+configuration/views.py:733: [C0301(line-too-long), ] Line too long (106/80)
+configuration/views.py:734: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'],)
+                                    |  ^
+configuration/views.py:734: [C0301(line-too-long), ] Line too long (93/80)
+configuration/views.py:742: [C0301(line-too-long), ] Line too long (84/80)
+configuration/views.py:793: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:801: [C0301(line-too-long), ] Line too long (114/80)
+configuration/views.py:804: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:809: [C0301(line-too-long), ] Line too long (147/80)
+configuration/views.py:816: [C0301(line-too-long), ] Line too long (89/80)
+configuration/views.py:818: [C0301(line-too-long), ] Line too long (81/80)
+configuration/views.py:841: [C0301(line-too-long), ] Line too long (96/80)
+configuration/views.py:858: [C0303(trailing-whitespace), ] Trailing whitespace
+configuration/views.py:29: [R0914(too-many-locals), GetConfigurationView.get] Too many local variables (16/15)
+configuration/views.py:60: [C0103(invalid-name), GetConfigurationView.get] Invalid variable name "InitAPI_obj"
+configuration/views.py:61: [C0103(invalid-name), GetConfigurationView.get] Invalid variable name "fileData"
+configuration/views.py:76: [C0103(invalid-name), GetConfigurationView.get] Invalid variable name "configObj"
+configuration/views.py:77: [C0103(invalid-name), GetConfigurationView.get] Invalid variable name "fileData"
+configuration/views.py:83: [W0702(bare-except), GetConfigurationView.get] No exception type(s) specified
+configuration/views.py:95: [W0703(broad-except), GetConfigurationView.get] Catching too general exception Exception
+configuration/views.py:29: [W0613(unused-argument), GetConfigurationView.get] Unused argument 'args'
+configuration/views.py:29: [W0613(unused-argument), GetConfigurationView.get] Unused argument 'kwargs'
+configuration/views.py:106: [R0914(too-many-locals), GetConfigurationView.post] Too many local variables (20/15)
+configuration/views.py:127: [C0103(invalid-name), GetConfigurationView.post._fixPath] Invalid function name "_fixPath"
+configuration/views.py:127: [C0111(missing-docstring), GetConfigurationView.post._fixPath] Missing function docstring
+configuration/views.py:157: [C0103(invalid-name), GetConfigurationView.post] Invalid variable name "configObj"
+configuration/views.py:106: [W0613(unused-argument), GetConfigurationView.post] Unused argument 'args'
+configuration/views.py:160: [W0612(unused-variable), GetConfigurationView.post] Unused variable 'result'
+configuration/views.py:172: [W0612(unused-variable), GetConfigurationView.post] Unused variable 'error_message'
+configuration/views.py:106: [W0613(unused-argument), GetConfigurationView.post] Unused argument 'kwargs'
+configuration/views.py:106: [R0201(no-self-use), GetConfigurationView.post] Method could be a function
+configuration/views.py:194: [R0914(too-many-locals), RoleManagementCreate.get] Too many local variables (17/15)
+configuration/views.py:217: [W0702(bare-except), RoleManagementCreate.get] No exception type(s) specified
+configuration/views.py:308: [W0703(broad-except), RoleManagementCreate.get] Catching too general exception Exception
+configuration/views.py:233: [W0105(pointless-string-statement), RoleManagementCreate.get] String statement has no effect
+configuration/views.py:234: [C0103(invalid-name), RoleManagementCreate.get] Invalid variable name "roleObj"
+configuration/views.py:251: [W0105(pointless-string-statement), RoleManagementCreate.get] String statement has no effect
+configuration/views.py:253: [C0103(invalid-name), RoleManagementCreate.get] Invalid variable name "roleObj"
+configuration/views.py:267: [C0103(invalid-name), RoleManagementCreate.get] Invalid variable name "roleObj"
+configuration/views.py:289: [C0103(invalid-name), RoleManagementCreate.get] Invalid variable name "roleObj"
+configuration/views.py:308: [C0103(invalid-name), RoleManagementCreate.get] Invalid variable name "eX"
+configuration/views.py:194: [W0613(unused-argument), RoleManagementCreate.get] Unused argument 'args'
+configuration/views.py:308: [W0612(unused-variable), RoleManagementCreate.get] Unused variable 'eX'
+configuration/views.py:194: [W0613(unused-argument), RoleManagementCreate.get] Unused argument 'kwargs'
+configuration/views.py:346: [W0622(redefined-builtin), RoleManagementCreate.post] Redefining built-in 'id'
+configuration/views.py:311: [R0914(too-many-locals), RoleManagementCreate.post] Too many local variables (18/15)
+configuration/views.py:335: [W0702(bare-except), RoleManagementCreate.post] No exception type(s) specified
+configuration/views.py:382: [W0702(bare-except), RoleManagementCreate.post] No exception type(s) specified
+configuration/views.py:339: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "roleObj"
+configuration/views.py:340: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "submitValue"
+configuration/views.py:342: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "roleName"
+configuration/views.py:346: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "id"
+configuration/views.py:358: [W0632(unbalanced-tuple-unpacking), RoleManagementCreate.post] Possible unbalanced tuple unpacking with sequence defined at line 338 of api.configuration.views: left side has 3 label(s), right side has 2 value(s)
+configuration/views.py:358: [W0632(unbalanced-tuple-unpacking), RoleManagementCreate.post] Possible unbalanced tuple unpacking with sequence defined at line 343 of api.configuration.views: left side has 3 label(s), right side has 2 value(s)
+configuration/views.py:358: [W0632(unbalanced-tuple-unpacking), RoleManagementCreate.post] Possible unbalanced tuple unpacking with sequence defined at line 348 of api.configuration.views: left side has 3 label(s), right side has 2 value(s)
+configuration/views.py:358: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "Onsuccessid"
+configuration/views.py:376: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "roleObj"
+configuration/views.py:378: [C0103(invalid-name), RoleManagementCreate.post] Invalid variable name "id"
+configuration/views.py:311: [W0613(unused-argument), RoleManagementCreate.post] Unused argument 'args'
+configuration/views.py:311: [W0613(unused-argument), RoleManagementCreate.post] Unused argument 'kwargs'
+configuration/views.py:311: [R0911(too-many-return-statements), RoleManagementCreate.post] Too many return statements (7/6)
+configuration/views.py:422: [W0622(redefined-builtin), RoleManagementDelete.get] Redefining built-in 'id'
+configuration/views.py:418: [W0702(bare-except), RoleManagementDelete.get] No exception type(s) specified
+configuration/views.py:422: [C0103(invalid-name), RoleManagementDelete.get] Invalid variable name "id"
+configuration/views.py:424: [C0103(invalid-name), RoleManagementDelete.get] Invalid variable name "roleObj"
+configuration/views.py:430: [W0702(bare-except), RoleManagementDelete.get] No exception type(s) specified
+configuration/views.py:396: [W0613(unused-argument), RoleManagementDelete.get] Unused argument 'args'
+configuration/views.py:426: [W0612(unused-variable), RoleManagementDelete.get] Unused variable 'errormessage'
+configuration/views.py:396: [W0613(unused-argument), RoleManagementDelete.get] Unused argument 'kwargs'
+configuration/views.py:468: [W0702(bare-except), RoleListView.get] No exception type(s) specified
+configuration/views.py:517: [W0702(bare-except), RoleListGridView.get] No exception type(s) specified
+configuration/views.py:521: [C0103(invalid-name), RoleListGridView.get] Invalid variable name "roleObj"
+configuration/views.py:565: [W0702(bare-except), PrincipalListView.get] No exception type(s) specified
+configuration/views.py:613: [W0702(bare-except), PrincipalGridView.get] No exception type(s) specified
+configuration/views.py:616: [C0103(invalid-name), PrincipalGridView.get] Invalid variable name "principalObj"
+configuration/views.py:617: [W0612(unused-variable), PrincipalGridView.get] Unused variable 'totalcount'
+configuration/views.py:675: [W0622(redefined-builtin), GetPrincipalCreateEditView.get] Redefining built-in 'id'
+configuration/views.py:636: [R0914(too-many-locals), GetPrincipalCreateEditView.get] Too many local variables (21/15)
+configuration/views.py:659: [W0702(bare-except), GetPrincipalCreateEditView.get] No exception type(s) specified
+configuration/views.py:669: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "peditObj"
+configuration/views.py:675: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "id"
+configuration/views.py:676: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "LDAP_Entity"
+configuration/views.py:676: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "PAM_Entity"
+configuration/views.py:679: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "id"
+configuration/views.py:687: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "LDAP_Entity"
+configuration/views.py:687: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "PAM_Entity"
+configuration/views.py:697: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "id"
+configuration/views.py:703: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "LDAP_Entity"
+configuration/views.py:703: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "PAM_Entity"
+configuration/views.py:708: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "id"
+configuration/views.py:710: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "LDAP_Entity"
+configuration/views.py:710: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "PAM_Entity"
+configuration/views.py:714: [C0103(invalid-name), GetPrincipalCreateEditView.get] Invalid variable name "roleObj"
+configuration/views.py:788: [W0622(redefined-builtin), GetPrincipalCreateEditView.post] Redefining built-in 'type'
+configuration/views.py:737: [R0914(too-many-locals), GetPrincipalCreateEditView.post] Too many local variables (22/15)
+configuration/views.py:758: [W0702(bare-except), GetPrincipalCreateEditView.post] No exception type(s) specified
+configuration/views.py:764: [C0103(invalid-name), GetPrincipalCreateEditView.post] Invalid variable name "principalId"
+configuration/views.py:765: [C0103(invalid-name), GetPrincipalCreateEditView.post] Invalid variable name "principalName"
+configuration/views.py:768: [C0103(invalid-name), GetPrincipalCreateEditView.post] Invalid variable name "attachedRoles"
+configuration/views.py:800: [C0103(invalid-name), GetPrincipalCreateEditView.post] Invalid variable name "peditObj"
+configuration/views.py:801: [C0103(invalid-name), GetPrincipalCreateEditView.post] Invalid variable name "Onsuccessid"
+configuration/views.py:850: [W0702(bare-except), GetPrincipalDeleteView.get] No exception type(s) specified
+configuration/views.py:856: [C0103(invalid-name), GetPrincipalDeleteView.get] Invalid variable name "peditObj"
+************* Module nodes
+nodes/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module nodes.admin
+nodes/admin.py:6: [W0611(unused-import), ] Unused import admin
+************* Module nodes.models
+nodes/models.py:6: [W0611(unused-import), ] Unused import models
+************* Module nodes.tests
+nodes/tests.py:6: [W0611(unused-import), ] Unused import TestCase
+************* Module nodes.urls
+nodes/urls.py:11: [C0301(line-too-long), ] Line too long (91/80)
+nodes/urls.py:12: [C0301(line-too-long), ] Line too long (94/80)
+nodes/urls.py:13: [C0301(line-too-long), ] Line too long (93/80)
+nodes/urls.py:14: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+nodes/urls.py:10: [C0103(invalid-name), ] Invalid constant name "urlpatterns"
+************* Module nodes.views
+nodes/views.py:66: [C0326(bad-whitespace), ] Exactly one space required after comma
+                status_code = request.GET.get('status_code','')
+                                                           ^
+nodes/views.py:67: [C0301(line-too-long), ] Line too long (101/80)
+nodes/views.py:68: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               jobStatus=jobStatus,
+                                            |  ^
+nodes/views.py:69: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status_code = status_code,
+                                            |  ^
+nodes/views.py:69: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                               status_code = status_code,
+                                                           ^
+nodes/views.py:70: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+nodes/views.py:70: [C0301(line-too-long), ] Line too long (114/80)
+nodes/views.py:71: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+nodes/views.py:72: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+nodes/views.py:73: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'],
+                                            |  ^
+nodes/views.py:73: [C0301(line-too-long), ] Line too long (100/80)
+nodes/views.py:74: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               resource_filter=RESOURCE_FILTER_STATUS,)
+                                            |  ^
+nodes/views.py:74: [C0301(line-too-long), ] Line too long (87/80)
+nodes/views.py:86: [C0301(line-too-long), ] Line too long (91/80)
+nodes/views.py:87: [C0301(line-too-long), ] Line too long (82/80)
+nodes/views.py:94: [C0301(line-too-long), ] Line too long (84/80)
+nodes/views.py:131: [C0301(line-too-long), ] Line too long (115/80)
+nodes/views.py:134: [C0301(line-too-long), ] Line too long (112/80)
+nodes/views.py:137: [C0301(line-too-long), ] Line too long (118/80)
+nodes/views.py:140: [C0301(line-too-long), ] Line too long (121/80)
+nodes/views.py:144: [C0301(line-too-long), ] Line too long (121/80)
+nodes/views.py:153: [C0301(line-too-long), ] Line too long (86/80)
+nodes/views.py:154: [C0301(line-too-long), ] Line too long (106/80)
+nodes/views.py:164: [C0301(line-too-long), ] Line too long (177/80)
+nodes/views.py:169: [C0301(line-too-long), ] Line too long (106/80)
+nodes/views.py:173: [C0301(line-too-long), ] Line too long (84/80)
+nodes/views.py:174: [C0301(line-too-long), ] Line too long (177/80)
+nodes/views.py:179: [C0301(line-too-long), ] Line too long (107/80)
+nodes/views.py:186: [C0301(line-too-long), ] Line too long (104/80)
+nodes/views.py:213: [C0301(line-too-long), ] Line too long (96/80)
+nodes/views.py:222: [C0301(line-too-long), ] Line too long (124/80)
+nodes/views.py:225: [C0301(line-too-long), ] Line too long (110/80)
+nodes/views.py:229: [C0301(line-too-long), ] Line too long (94/80)
+nodes/views.py:233: [C0301(line-too-long), ] Line too long (101/80)
+nodes/views.py:234: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           total_count=resourcelist_data_count,
+                                        |  ^
+nodes/views.py:235: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           entries=resourcelist_data,
+                                        |  ^
+nodes/views.py:236: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           total_pages=len(nums),
+                                        |  ^
+nodes/views.py:237: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           page_nums=nums,
+                                        |  ^
+nodes/views.py:238: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           max=max,
+                                        |  ^
+nodes/views.py:239: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           offset=offset,
+                                        |  ^
+nodes/views.py:240: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           active=active_tab,
+                                        |  ^
+nodes/views.py:241: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           session_permission_list=request.session['session_permission_list'],)
+                                        |  ^
+nodes/views.py:241: [C0301(line-too-long), ] Line too long (111/80)
+nodes/views.py:252: [C0301(line-too-long), ] Line too long (96/80)
+nodes/views.py:253: [C0301(line-too-long), ] Line too long (82/80)
+nodes/views.py:263: [C0301(line-too-long), ] Line too long (84/80)
+nodes/views.py:308: [C0301(line-too-long), ] Line too long (87/80)
+nodes/views.py:327: [C0301(line-too-long), ] Line too long (91/80)
+nodes/views.py:332: [C0301(line-too-long), ] Line too long (94/80)
+nodes/views.py:336: [C0301(line-too-long), ] Line too long (114/80)
+nodes/views.py:339: [C0301(line-too-long), ] Line too long (86/80)
+nodes/views.py:340: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       username=request.session['username'],
+                                    |  ^
+nodes/views.py:341: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       entries=node_data,
+                                    |  ^
+nodes/views.py:342: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status_code=success_status,
+                                    |  ^
+nodes/views.py:343: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       torquelist=torquelist,
+                                    |  ^
+nodes/views.py:344: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       featurelist=featurelist,
+                                    |  ^
+nodes/views.py:345: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],
+                                    |  ^
+nodes/views.py:345: [C0301(line-too-long), ] Line too long (106/80)
+nodes/views.py:346: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       config_features_list=configurablefeatures_data,
+                                    |  ^
+nodes/views.py:346: [C0301(line-too-long), ] Line too long (86/80)
+nodes/views.py:347: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       config_features=configurablefeatures,
+                                    |  ^
+nodes/views.py:348: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       generic_resources=genericresourcespernode_data,
+                                    |  ^
+nodes/views.py:348: [C0301(line-too-long), ] Line too long (86/80)
+nodes/views.py:349: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+nodes/views.py:350: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status=status,
+                                    |  ^
+nodes/views.py:351: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'],)
+                                    |  ^
+nodes/views.py:351: [C0301(line-too-long), ] Line too long (93/80)
+nodes/views.py:358: [C0301(line-too-long), ] Line too long (84/80)
+nodes/views.py:378: [C0301(line-too-long), ] Line too long (113/80)
+nodes/views.py:393: [C0301(line-too-long), ] Line too long (82/80)
+nodes/views.py:396: [C0301(line-too-long), ] Line too long (96/80)
+nodes/views.py:399: [C0301(line-too-long), ] Line too long (113/80)
+nodes/views.py:52: [W0702(bare-except), GetResourceListView.get] No exception type(s) specified
+nodes/views.py:65: [C0103(invalid-name), GetResourceListView.get] Invalid variable name "jobStatus"
+nodes/views.py:30: [W0613(unused-argument), GetResourceListView.get] Unused argument 'args'
+nodes/views.py:30: [W0613(unused-argument), GetResourceListView.get] Unused argument 'kwargs'
+nodes/views.py:110: [W0622(redefined-builtin), GetResouceGridView.get] Redefining built-in 'max'
+nodes/views.py:90: [R0914(too-many-locals), GetResouceGridView.get] Too many local variables (42/15)
+nodes/views.py:242: [W0703(broad-except), GetResouceGridView.get] Catching too general exception Exception
+nodes/views.py:112: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "jobStatus"
+nodes/views.py:117: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "procsFrom"
+nodes/views.py:118: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "procsTo"
+nodes/views.py:119: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "jobsFrom"
+nodes/views.py:120: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "jobsTo"
+nodes/views.py:121: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "proc_utilFrom"
+nodes/views.py:122: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "proc_utilTo"
+nodes/views.py:123: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "memory_utilFrom"
+nodes/views.py:124: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "memory_utilTo"
+nodes/views.py:131: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "query_ResourceId"
+nodes/views.py:184: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "jobStatus"
+nodes/views.py:199: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "lastOffset"
+nodes/views.py:205: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "lastOffset"
+nodes/views.py:215: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "sortState"
+nodes/views.py:242: [C0103(invalid-name), GetResouceGridView.get] Invalid variable name "eX"
+nodes/views.py:90: [R0912(too-many-branches), GetResouceGridView.get] Too many branches (35/12)
+nodes/views.py:90: [R0915(too-many-statements), GetResouceGridView.get] Too many statements (105/50)
+nodes/views.py:257: [R0914(too-many-locals), NodeDetailsView.get] Too many local variables (19/15)
+nodes/views.py:280: [W0702(bare-except), NodeDetailsView.get] No exception type(s) specified
+nodes/views.py:257: [W0613(unused-argument), NodeDetailsView.get] Unused argument 'args'
+nodes/views.py:257: [W0613(unused-argument), NodeDetailsView.get] Unused argument 'kwargs'
+nodes/views.py:375: [W0702(bare-except), NodeDetailsView.post] No exception type(s) specified
+nodes/views.py:394: [C0103(invalid-name), NodeDetailsView.post] Invalid variable name "nodeviewPost_obj"
+nodes/views.py:353: [W0613(unused-argument), NodeDetailsView.post] Unused argument 'args'
+nodes/views.py:353: [W0613(unused-argument), NodeDetailsView.post] Unused argument 'kwargs'
+************* Module api
+api/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module api.serializers
+api/serializers.py:15: [C0301(line-too-long), ] Line too long (82/80)
+api/serializers.py:16: [C0301(line-too-long), ] Line too long (88/80)
+api/serializers.py:25: [C0326(bad-whitespace), ] Exactly one space required before assignment
+    node_count  = serializers.IntegerField(required=False)
+                ^
+api/serializers.py:58: [C0301(line-too-long), ] Line too long (82/80)
+api/serializers.py:63: [C0301(line-too-long), ] Line too long (81/80)
+api/serializers.py:73: [C0301(line-too-long), ] Line too long (81/80)
+api/serializers.py:124: [C0301(line-too-long), ] Line too long (82/80)
+api/serializers.py:8: [C0111(missing-docstring), WorkLoadSerializer] Missing class docstring
+api/serializers.py:8: [R0904(too-many-public-methods), WorkLoadSerializer] Too many public methods (25/20)
+api/serializers.py:27: [C0111(missing-docstring), ResourceSummarySerializer] Missing class docstring
+api/serializers.py:27: [R0904(too-many-public-methods), ResourceSummarySerializer] Too many public methods (25/20)
+api/serializers.py:32: [C0111(missing-docstring), JobSummarySerializer] Missing class docstring
+api/serializers.py:32: [R0904(too-many-public-methods), JobSummarySerializer] Too many public methods (25/20)
+api/serializers.py:37: [C0111(missing-docstring), JobDetailSerializer] Missing class docstring
+api/serializers.py:37: [R0904(too-many-public-methods), JobDetailSerializer] Too many public methods (25/20)
+api/serializers.py:67: [C0111(missing-docstring), JobMultiRequirementsSerializer] Missing class docstring
+api/serializers.py:67: [R0904(too-many-public-methods), JobMultiRequirementsSerializer] Too many public methods (25/20)
+api/serializers.py:77: [C0111(missing-docstring), SystemUtilizationSerializer] Missing class docstring
+api/serializers.py:77: [R0904(too-many-public-methods), SystemUtilizationSerializer] Too many public methods (25/20)
+api/serializers.py:83: [C0111(missing-docstring), UtilizationSerializer] Missing class docstring
+api/serializers.py:85: [C0103(invalid-name), UtilizationSerializer] Invalid class attribute name "processor_utilization_percentage"
+api/serializers.py:83: [R0904(too-many-public-methods), UtilizationSerializer] Too many public methods (25/20)
+api/serializers.py:88: [C0111(missing-docstring), LoginSerializer] Missing class docstring
+api/serializers.py:88: [R0904(too-many-public-methods), LoginSerializer] Too many public methods (25/20)
+api/serializers.py:93: [C0111(missing-docstring), ResourceListSerializer] Missing class docstring
+api/serializers.py:100: [C0103(invalid-name), ResourceListSerializer] Invalid class attribute name "processor_utilization_percentage"
+api/serializers.py:93: [R0904(too-many-public-methods), ResourceListSerializer] Too many public methods (25/20)
+api/serializers.py:106: [C0111(missing-docstring), NodeDetailsSerializer] Missing class docstring
+api/serializers.py:106: [R0904(too-many-public-methods), NodeDetailsSerializer] Too many public methods (25/20)
+api/serializers.py:127: [C0111(missing-docstring), RequiredFeaturesSerializer] Missing class docstring
+api/serializers.py:127: [R0904(too-many-public-methods), RequiredFeaturesSerializer] Too many public methods (25/20)
+api/serializers.py:133: [C0111(missing-docstring), GenericResourcesSerializer] Missing class docstring
+api/serializers.py:134: [C0103(invalid-name), GenericResourcesSerializer] Invalid class attribute name "id"
+api/serializers.py:133: [R0904(too-many-public-methods), GenericResourcesSerializer] Too many public methods (25/20)
+api/serializers.py:140: [C0111(missing-docstring), ConfigurableFeaturesSerializer] Missing class docstring
+api/serializers.py:140: [R0904(too-many-public-methods), ConfigurableFeaturesSerializer] Too many public methods (25/20)
+api/serializers.py:149: [C0111(missing-docstring), GenericResourcesPerNodeSerializer] Missing class docstring
+api/serializers.py:149: [R0904(too-many-public-methods), GenericResourcesPerNodeSerializer] Too many public methods (25/20)
+************* Module api.installation
+api/installation.py:30: [C0301(line-too-long), ] Line too long (99/80)
+api/installation.py:31: [C0301(line-too-long), ] Line too long (87/80)
+api/installation.py:39: [C0301(line-too-long), ] Line too long (154/80)
+api/installation.py:40: [C0301(line-too-long), ] Line too long (91/80)
+api/installation.py:42: [C0301(line-too-long), ] Line too long (83/80)
+api/installation.py:47: [C0301(line-too-long), ] Line too long (102/80)
+api/installation.py:51: [C0301(line-too-long), ] Line too long (98/80)
+api/installation.py:57: [C0301(line-too-long), ] Line too long (85/80)
+api/installation.py:59: [C0301(line-too-long), ] Line too long (93/80)
+api/installation.py:60: [C0301(line-too-long), ] Line too long (82/80)
+api/installation.py:61: [C0301(line-too-long), ] Line too long (118/80)
+api/installation.py:68: [C0301(line-too-long), ] Line too long (89/80)
+api/installation.py:69: [C0301(line-too-long), ] Line too long (81/80)
+api/installation.py:72: [C0301(line-too-long), ] Line too long (110/80)
+api/installation.py:73: [C0301(line-too-long), ] Line too long (103/80)
+api/installation.py:75: [C0301(line-too-long), ] Line too long (92/80)
+api/installation.py:78: [C0301(line-too-long), ] Line too long (91/80)
+api/installation.py:79: [C0301(line-too-long), ] Line too long (81/80)
+api/installation.py:105: [C0301(line-too-long), ] Line too long (165/80)
+api/installation.py:106: [C0301(line-too-long), ] Line too long (103/80)
+api/installation.py:110: [C0330(bad-continuation), ] Wrong hanging indentation.
+            "permissions": admin_permissions
+            ^   |
+api/installation.py:114: [C0301(line-too-long), ] Line too long (87/80)
+api/installation.py:117: [C0301(line-too-long), ] Line too long (102/80)
+api/installation.py:120: [C0330(bad-continuation), ] Wrong hanging indentation.
+            "permissions": user_permissions
+            ^   |
+api/installation.py:123: [C0301(line-too-long), ] Line too long (86/80)
+api/installation.py:13: [C0103(invalid-name), Installation_settings] Invalid class name "Installation_settings"
+api/installation.py:13: [C0111(missing-docstring), Installation_settings] Missing class docstring
+api/installation.py:13: [C1001(old-style-class), Installation_settings] Old-style class defined.
+api/installation.py:14: [E0101(return-in-init), Installation_settings.__init__] Explicit return in __init__
+api/installation.py:23: [W0703(broad-except), Installation_settings.__init__] Catching too general exception Exception
+api/installation.py:23: [C0103(invalid-name), Installation_settings.__init__] Invalid variable name "eX"
+api/installation.py:28: [C0103(invalid-name), Installation_settings.IRISPermissions] Invalid method name "IRISPermissions"
+api/installation.py:28: [C0111(missing-docstring), Installation_settings.IRISPermissions] Missing method docstring
+api/installation.py:28: [R0914(too-many-locals), Installation_settings.IRISPermissions] Too many local variables (17/15)
+api/installation.py:95: [W0703(broad-except), Installation_settings.IRISPermissions] Catching too general exception Exception
+api/installation.py:31: [C0103(invalid-name), Installation_settings.IRISPermissions] Invalid variable name "resetRoles_url"
+api/installation.py:95: [C0103(invalid-name), Installation_settings.IRISPermissions] Invalid variable name "eX"
+api/installation.py:28: [R0912(too-many-branches), Installation_settings.IRISPermissions] Too many branches (16/12)
+api/installation.py:101: [C0103(invalid-name), Installation_settings.Roles] Invalid method name "Roles"
+api/installation.py:101: [C0111(missing-docstring), Installation_settings.Roles] Missing method docstring
+api/installation.py:127: [W0703(broad-except), Installation_settings.Roles] Catching too general exception Exception
+api/installation.py:127: [C0103(invalid-name), Installation_settings.Roles] Invalid variable name "eX"
+api/installation.py:114: [W0612(unused-variable), Installation_settings.Roles] Unused variable 'response'
+api/installation.py:127: [W0612(unused-variable), Installation_settings.Roles] Unused variable 'eX'
+************* Module api.models
+api/models.py:7: [W0611(unused-import), ] Unused import models
+************* Module api.tests
+api/tests.py:12: [W0611(unused-import), ] Unused import TestCase
+************* Module api.urls
+api/urls.py:15: [C0301(line-too-long), ] Line too long (99/80)
+api/urls.py:16: [C0301(line-too-long), ] Line too long (105/80)
+api/urls.py:17: [C0301(line-too-long), ] Line too long (120/80)
+api/urls.py:18: [C0301(line-too-long), ] Line too long (126/80)
+api/urls.py:19: [C0301(line-too-long), ] Line too long (108/80)
+api/urls.py:20: [C0301(line-too-long), ] Line too long (112/80)
+api/urls.py:21: [C0301(line-too-long), ] Line too long (107/80)
+api/urls.py:23: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+api/urls.py:14: [C0103(invalid-name), ] Invalid constant name "urlpatterns"
+************* Module api.build_info
+api/build_info.py:24: [C0301(line-too-long), ] Line too long (83/80)
+api/build_info.py:31: [C0301(line-too-long), ] Line too long (89/80)
+api/build_info.py:37: [C0301(line-too-long), ] Line too long (83/80)
+api/build_info.py:41: [C0301(line-too-long), ] Line too long (101/80)
+api/build_info.py:46: [C0301(line-too-long), ] Line too long (84/80)
+api/build_info.py:39: [E0602(undefined-variable), BuildInfo.load_build_info] Undefined variable 'APIError'
+api/build_info.py:51: [C0111(missing-docstring), BuildInfo.__parse_epoch_date] Missing method docstring
+api/build_info.py:14: [R0903(too-few-public-methods), BuildInfo] Too few public methods (1/2)
+************* Module api.login_api
+api/login_api/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module api.login_api.views
+api/login_api/views.py:19: [C0301(line-too-long), ] Line too long (85/80)
+api/login_api/views.py:20: [C0301(line-too-long), ] Line too long (97/80)
+api/login_api/views.py:47: [C0301(line-too-long), ] Line too long (84/80)
+api/login_api/views.py:66: [C0301(line-too-long), ] Line too long (165/80)
+api/login_api/views.py:80: [C0301(line-too-long), ] Line too long (85/80)
+api/login_api/views.py:81: [C0301(line-too-long), ] Line too long (97/80)
+api/login_api/views.py:88: [C0301(line-too-long), ] Line too long (89/80)
+api/login_api/views.py:107: [C0301(line-too-long), ] Line too long (90/80)
+api/login_api/views.py:111: [C0301(line-too-long), ] Line too long (86/80)
+api/login_api/views.py:115: [C0301(line-too-long), ] Line too long (83/80)
+api/login_api/views.py:24: [W0622(redefined-builtin), LoginDataView.get] Redefining built-in 'format'
+api/login_api/views.py:55: [W0622(redefined-builtin), LoginDataView.get] Redefining built-in 'dict'
+api/login_api/views.py:70: [W0703(broad-except), LoginDataView.get] Catching too general exception Exception
+api/login_api/views.py:67: [C0103(invalid-name), LoginDataView.get] Invalid variable name "loginApi_url"
+api/login_api/views.py:70: [C0103(invalid-name), LoginDataView.get] Invalid variable name "e"
+api/login_api/views.py:70: [W0612(unused-variable), LoginDataView.get] Unused variable 'e'
+api/login_api/views.py:24: [W0613(unused-argument), LoginDataView.get] Unused argument 'format'
+api/login_api/views.py:24: [W0613(unused-argument), LoginDataView.get] Unused argument 'request'
+api/login_api/views.py:15: [R0904(too-many-public-methods), LoginDataView] Too many public methods (33/20)
+api/login_api/views.py:134: [W0703(broad-except), GetPermissionsForUser.get] Catching too general exception Exception
+api/login_api/views.py:111: [C0103(invalid-name), GetPermissionsForUser.get] Invalid variable name "permissionsApi_url"
+api/login_api/views.py:123: [W0702(bare-except), GetPermissionsForUser.get] No exception type(s) specified
+api/login_api/views.py:126: [C0103(invalid-name), GetPermissionsForUser.get] Invalid variable name "e"
+api/login_api/views.py:134: [C0103(invalid-name), GetPermissionsForUser.get] Invalid variable name "eX"
+api/login_api/views.py:76: [R0904(too-many-public-methods), GetPermissionsForUser] Too many public methods (33/20)
+************* Module api.configuration
+api/configuration/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module api.configuration.views
+api/configuration/views.py:27: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:28: [C0301(line-too-long), ] Line too long (97/80)
+api/configuration/views.py:41: [C0301(line-too-long), ] Line too long (81/80)
+api/configuration/views.py:72: [C0301(line-too-long), ] Line too long (100/80)
+api/configuration/views.py:92: [C0301(line-too-long), ] Line too long (106/80)
+api/configuration/views.py:93: [C0301(line-too-long), ] Line too long (88/80)
+api/configuration/views.py:95: [C0301(line-too-long), ] Line too long (94/80)
+api/configuration/views.py:98: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:98: [C0326(bad-whitespace), ] Exactly one space required after comma
+            params = {'grant_type' : "password",'username' : username,'password' : passwd,
+                                               ^
+api/configuration/views.py:98: [C0326(bad-whitespace), ] Exactly one space required after comma
+            params = {'grant_type' : "password",'username' : username,'password' : passwd,
+                                                                     ^
+api/configuration/views.py:99: [C0326(bad-whitespace), ] No space allowed before bracket
+                      'client_id' : clientid, 'client_secret' : clientsecret }
+                                                                             ^
+api/configuration/views.py:100: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:102: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:104: [C0301(line-too-long), ] Line too long (118/80)
+api/configuration/views.py:104: [C0326(bad-whitespace), ] Exactly one space required after comma
+            configtest_response = requests.post(ConfigCheckApi_url, data=params,  timeout=settings.CONNECTION_TIMEOUT)
+                                                                               ^
+api/configuration/views.py:105: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:106: [C0301(line-too-long), ] Line too long (98/80)
+api/configuration/views.py:107: [C0301(line-too-long), ] Line too long (116/80)
+api/configuration/views.py:111: [C0301(line-too-long), ] Line too long (96/80)
+api/configuration/views.py:113: [C0301(line-too-long), ] Line too long (96/80)
+api/configuration/views.py:114: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:115: [C0301(line-too-long), ] Line too long (81/80)
+api/configuration/views.py:118: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:124: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:128: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:139: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:142: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:144: [C0301(line-too-long), ] Line too long (117/80)
+api/configuration/views.py:150: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:153: [C0301(line-too-long), ] Line too long (154/80)
+api/configuration/views.py:156: [C0301(line-too-long), ] Line too long (107/80)
+api/configuration/views.py:162: [C0301(line-too-long), ] Line too long (100/80)
+api/configuration/views.py:171: [C0301(line-too-long), ] Line too long (101/80)
+api/configuration/views.py:180: [C0301(line-too-long), ] Line too long (109/80)
+api/configuration/views.py:183: [C0301(line-too-long), ] Line too long (94/80)
+api/configuration/views.py:188: [C0301(line-too-long), ] Line too long (93/80)
+api/configuration/views.py:197: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:198: [C0301(line-too-long), ] Line too long (97/80)
+api/configuration/views.py:223: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:236: [C0301(line-too-long), ] Line too long (94/80)
+api/configuration/views.py:271: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:272: [C0301(line-too-long), ] Line too long (97/80)
+api/configuration/views.py:302: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:307: [C0301(line-too-long), ] Line too long (98/80)
+api/configuration/views.py:309: [C0301(line-too-long), ] Line too long (98/80)
+api/configuration/views.py:313: [C0301(line-too-long), ] Line too long (83/80)
+api/configuration/views.py:315: [C0301(line-too-long), ] Line too long (99/80)
+api/configuration/views.py:321: [C0301(line-too-long), ] Line too long (96/80)
+api/configuration/views.py:324: [C0301(line-too-long), ] Line too long (96/80)
+api/configuration/views.py:330: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:333: [W0311(bad-indentation), ] Bad indentation. Found 15 spaces, expected 16
+api/configuration/views.py:369: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:411: [C0301(line-too-long), ] Line too long (94/80)
+api/configuration/views.py:449: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:496: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:518: [C0301(line-too-long), ] Line too long (83/80)
+api/configuration/views.py:520: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:521: [C0301(line-too-long), ] Line too long (97/80)
+api/configuration/views.py:542: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:546: [C0301(line-too-long), ] Line too long (83/80)
+api/configuration/views.py:562: [C0301(line-too-long), ] Line too long (83/80)
+api/configuration/views.py:601: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:604: [C0301(line-too-long), ] Line too long (93/80)
+api/configuration/views.py:605: [C0301(line-too-long), ] Line too long (84/80)
+api/configuration/views.py:606: [C0301(line-too-long), ] Line too long (91/80)
+api/configuration/views.py:609: [C0301(line-too-long), ] Line too long (84/80)
+api/configuration/views.py:610: [C0301(line-too-long), ] Line too long (104/80)
+api/configuration/views.py:614: [C0301(line-too-long), ] Line too long (95/80)
+api/configuration/views.py:658: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:661: [C0301(line-too-long), ] Line too long (93/80)
+api/configuration/views.py:662: [C0301(line-too-long), ] Line too long (84/80)
+api/configuration/views.py:663: [C0301(line-too-long), ] Line too long (82/80)
+api/configuration/views.py:671: [C0301(line-too-long), ] Line too long (89/80)
+api/configuration/views.py:710: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:713: [C0301(line-too-long), ] Line too long (95/80)
+api/configuration/views.py:714: [C0301(line-too-long), ] Line too long (84/80)
+api/configuration/views.py:715: [C0301(line-too-long), ] Line too long (82/80)
+api/configuration/views.py:734: [C0301(line-too-long), ] Line too long (97/80)
+api/configuration/views.py:767: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:770: [C0301(line-too-long), ] Line too long (100/80)
+api/configuration/views.py:773: [C0301(line-too-long), ] Line too long (117/80)
+api/configuration/views.py:774: [C0301(line-too-long), ] Line too long (119/80)
+api/configuration/views.py:777: [C0301(line-too-long), ] Line too long (103/80)
+api/configuration/views.py:778: [C0301(line-too-long), ] Line too long (106/80)
+api/configuration/views.py:785: [C0301(line-too-long), ] Line too long (101/80)
+api/configuration/views.py:788: [C0301(line-too-long), ] Line too long (101/80)
+api/configuration/views.py:793: [C0301(line-too-long), ] Line too long (95/80)
+api/configuration/views.py:796: [C0301(line-too-long), ] Line too long (86/80)
+api/configuration/views.py:827: [C0301(line-too-long), ] Line too long (90/80)
+api/configuration/views.py:828: [C0301(line-too-long), ] Line too long (88/80)
+api/configuration/views.py:830: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:831: [C0301(line-too-long), ] Line too long (84/80)
+api/configuration/views.py:832: [C0301(line-too-long), ] Line too long (88/80)
+api/configuration/views.py:837: [C0303(trailing-whitespace), ] Trailing whitespace
+api/configuration/views.py:840: [C0301(line-too-long), ] Line too long (85/80)
+api/configuration/views.py:58: [W0703(broad-except), ConfigurationDataView.get] Catching too general exception Exception
+api/configuration/views.py:58: [C0103(invalid-name), ConfigurationDataView.get] Invalid variable name "eX"
+api/configuration/views.py:32: [W0613(unused-argument), ConfigurationDataView.get] Unused argument 'request'
+api/configuration/views.py:63: [R0914(too-many-locals), ConfigurationDataView.post] Too many local variables (23/15)
+api/configuration/views.py:184: [W0703(broad-except), ConfigurationDataView.post] Catching too general exception Exception
+api/configuration/views.py:92: [E1101(no-member), ConfigurationDataView.post] Instance of 'LookupDict' has no 'not_found' member
+api/configuration/views.py:101: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "ConfigCheckApi_url"
+api/configuration/views.py:112: [W0702(bare-except), ConfigurationDataView.post] No exception type(s) specified
+api/configuration/views.py:129: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "APIobj"
+api/configuration/views.py:130: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "install_Obj"
+api/configuration/views.py:143: [E1101(no-member), ConfigurationDataView.post] Instance of 'LookupDict' has no 'not_found' member
+api/configuration/views.py:158: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "eX"
+api/configuration/views.py:159: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:159: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:159: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:159: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:159: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:162: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:162: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:162: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:162: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:162: [E1101(no-member), ConfigurationDataView.post] Class 'message' has no 'reason' member
+api/configuration/views.py:164: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "eX"
+api/configuration/views.py:168: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "mSx"
+api/configuration/views.py:172: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "eX"
+api/configuration/views.py:177: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "jEx"
+api/configuration/views.py:181: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "eX"
+api/configuration/views.py:184: [C0103(invalid-name), ConfigurationDataView.post] Invalid variable name "eX"
+api/configuration/views.py:63: [R0201(no-self-use), ConfigurationDataView.post] Method could be a function
+api/configuration/views.py:63: [R0911(too-many-return-statements), ConfigurationDataView.post] Too many return statements (7/6)
+api/configuration/views.py:63: [R0912(too-many-branches), ConfigurationDataView.post] Too many branches (21/12)
+api/configuration/views.py:63: [R0915(too-many-statements), ConfigurationDataView.post] Too many statements (79/50)
+api/configuration/views.py:23: [R0904(too-many-public-methods), ConfigurationDataView] Too many public methods (34/20)
+api/configuration/views.py:261: [W0703(broad-except), RoleDataManagementView.get] Catching too general exception Exception
+api/configuration/views.py:221: [W0105(pointless-string-statement), RoleDataManagementView.get] String statement has no effect
+api/configuration/views.py:222: [C0103(invalid-name), RoleDataManagementView.get] Invalid variable name "permissionList"
+api/configuration/views.py:247: [W0702(bare-except), RoleDataManagementView.get] No exception type(s) specified
+api/configuration/views.py:251: [C0103(invalid-name), RoleDataManagementView.get] Invalid variable name "e"
+api/configuration/views.py:261: [C0103(invalid-name), RoleDataManagementView.get] Invalid variable name "eX"
+api/configuration/views.py:193: [R0904(too-many-public-methods), RoleDataManagementView] Too many public methods (33/20)
+api/configuration/views.py:276: [C0103(invalid-name), RoleModel.createRole] Invalid method name "createRole"
+api/configuration/views.py:345: [W0703(broad-except), RoleModel.createRole] Catching too general exception Exception
+api/configuration/views.py:309: [C0103(invalid-name), RoleModel.createRole] Invalid variable name "roleStatus_data"
+api/configuration/views.py:315: [C0103(invalid-name), RoleModel.createRole] Invalid variable name "roleStatus_data"
+api/configuration/views.py:332: [W0702(bare-except), RoleModel.createRole] No exception type(s) specified
+api/configuration/views.py:319: [C0103(invalid-name), RoleModel.createRole] Invalid variable name "Onsuccessid"
+api/configuration/views.py:329: [W0106(expression-not-assigned), RoleModel.createRole] Expression "roleStatus_data.json()['messages']" is assigned to nothing
+api/configuration/views.py:335: [C0103(invalid-name), RoleModel.createRole] Invalid variable name "e"
+api/configuration/views.py:345: [C0103(invalid-name), RoleModel.createRole] Invalid variable name "eX"
+api/configuration/views.py:350: [C0103(invalid-name), RoleModel.getRole] Invalid method name "getRole"
+api/configuration/views.py:386: [W0703(broad-except), RoleModel.getRole] Catching too general exception Exception
+api/configuration/views.py:378: [C0103(invalid-name), RoleModel.getRole] Invalid variable name "e"
+api/configuration/views.py:386: [C0103(invalid-name), RoleModel.getRole] Invalid variable name "eX"
+api/configuration/views.py:390: [C0103(invalid-name), RoleModel.getRoleByName] Invalid method name "getRoleByName"
+api/configuration/views.py:427: [W0703(broad-except), RoleModel.getRoleByName] Catching too general exception Exception
+api/configuration/views.py:419: [C0103(invalid-name), RoleModel.getRoleByName] Invalid variable name "e"
+api/configuration/views.py:427: [C0103(invalid-name), RoleModel.getRoleByName] Invalid variable name "eX"
+api/configuration/views.py:431: [C0103(invalid-name), RoleModel.getRoles] Invalid method name "getRoles"
+api/configuration/views.py:475: [W0703(broad-except), RoleModel.getRoles] Catching too general exception Exception
+api/configuration/views.py:463: [W0702(bare-except), RoleModel.getRoles] No exception type(s) specified
+api/configuration/views.py:467: [C0103(invalid-name), RoleModel.getRoles] Invalid variable name "e"
+api/configuration/views.py:475: [C0103(invalid-name), RoleModel.getRoles] Invalid variable name "eX"
+api/configuration/views.py:498: [W0622(redefined-builtin), RoleModel.deleteRole] Redefining built-in 'id'
+api/configuration/views.py:479: [C0103(invalid-name), RoleModel.deleteRole] Invalid method name "deleteRole"
+api/configuration/views.py:511: [W0703(broad-except), RoleModel.deleteRole] Catching too general exception Exception
+api/configuration/views.py:498: [C0103(invalid-name), RoleModel.deleteRole] Invalid variable name "id"
+api/configuration/views.py:503: [C0103(invalid-name), RoleModel.deleteRole] Invalid variable name "e"
+api/configuration/views.py:511: [C0103(invalid-name), RoleModel.deleteRole] Invalid variable name "eX"
+api/configuration/views.py:267: [R0904(too-many-public-methods), RoleModel] Too many public methods (37/20)
+api/configuration/views.py:525: [C0103(invalid-name), PrincipalModel.getPrincipalListing] Invalid method name "getPrincipalListing"
+api/configuration/views.py:572: [W0703(broad-except), PrincipalModel.getPrincipalListing] Catching too general exception Exception
+api/configuration/views.py:559: [W0702(bare-except), PrincipalModel.getPrincipalListing] No exception type(s) specified
+api/configuration/views.py:564: [C0103(invalid-name), PrincipalModel.getPrincipalListing] Invalid variable name "e"
+api/configuration/views.py:572: [C0103(invalid-name), PrincipalModel.getPrincipalListing] Invalid variable name "eX"
+api/configuration/views.py:577: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid method name "deletePrincipal"
+api/configuration/views.py:629: [W0703(broad-except), PrincipalModel.deletePrincipal] Catching too general exception Exception
+api/configuration/views.py:604: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid variable name "principalDeletetApi_url"
+api/configuration/views.py:606: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid variable name "principalStatus_data"
+api/configuration/views.py:617: [W0703(broad-except), PrincipalModel.deletePrincipal] Catching too general exception Exception
+api/configuration/views.py:613: [W0106(expression-not-assigned), PrincipalModel.deletePrincipal] Expression "principalStatus_data.json()['messages']" is assigned to nothing
+api/configuration/views.py:617: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid variable name "eX"
+api/configuration/views.py:621: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid variable name "e"
+api/configuration/views.py:629: [C0103(invalid-name), PrincipalModel.deletePrincipal] Invalid variable name "eX"
+api/configuration/views.py:577: [W0613(unused-argument), PrincipalModel.deletePrincipal] Unused argument 'principalname'
+api/configuration/views.py:634: [W0622(redefined-builtin), PrincipalModel.getPrincipal] Redefining built-in 'format'
+api/configuration/views.py:634: [C0103(invalid-name), PrincipalModel.getPrincipal] Invalid method name "getPrincipal"
+api/configuration/views.py:682: [W0703(broad-except), PrincipalModel.getPrincipal] Catching too general exception Exception
+api/configuration/views.py:661: [C0103(invalid-name), PrincipalModel.getPrincipal] Invalid variable name "principalEditGetApi_url"
+api/configuration/views.py:673: [W0702(bare-except), PrincipalModel.getPrincipal] No exception type(s) specified
+api/configuration/views.py:670: [W0106(expression-not-assigned), PrincipalModel.getPrincipal] Expression "principal_data.json()['messages']" is assigned to nothing
+api/configuration/views.py:676: [C0103(invalid-name), PrincipalModel.getPrincipal] Invalid variable name "e"
+api/configuration/views.py:682: [C0103(invalid-name), PrincipalModel.getPrincipal] Invalid variable name "eX"
+api/configuration/views.py:667: [W0612(unused-variable), PrincipalModel.getPrincipal] Unused variable 'name'
+api/configuration/views.py:634: [W0613(unused-argument), PrincipalModel.getPrincipal] Unused argument 'format'
+api/configuration/views.py:686: [W0622(redefined-builtin), PrincipalModel.getPrincipalByName] Redefining built-in 'format'
+api/configuration/views.py:686: [C0103(invalid-name), PrincipalModel.getPrincipalByName] Invalid method name "getPrincipalByName"
+api/configuration/views.py:730: [W0703(broad-except), PrincipalModel.getPrincipalByName] Catching too general exception Exception
+api/configuration/views.py:713: [C0103(invalid-name), PrincipalModel.getPrincipalByName] Invalid variable name "principalEditGetApi_url"
+api/configuration/views.py:721: [W0702(bare-except), PrincipalModel.getPrincipalByName] No exception type(s) specified
+api/configuration/views.py:724: [C0103(invalid-name), PrincipalModel.getPrincipalByName] Invalid variable name "e"
+api/configuration/views.py:730: [C0103(invalid-name), PrincipalModel.getPrincipalByName] Invalid variable name "eX"
+api/configuration/views.py:718: [W0612(unused-variable), PrincipalModel.getPrincipalByName] Unused variable 'name'
+api/configuration/views.py:686: [W0613(unused-argument), PrincipalModel.getPrincipalByName] Unused argument 'format'
+api/configuration/views.py:734: [W0622(redefined-builtin), PrincipalModel.post] Redefining built-in 'format'
+api/configuration/views.py:734: [R0913(too-many-arguments), PrincipalModel.post] Too many arguments (6/5)
+api/configuration/views.py:734: [R0914(too-many-locals), PrincipalModel.post] Too many local variables (17/15)
+api/configuration/views.py:806: [W0703(broad-except), PrincipalModel.post] Catching too general exception Exception
+api/configuration/views.py:773: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "principalEditApi_url"
+api/configuration/views.py:774: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "principalStatus_data"
+api/configuration/views.py:777: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "principalCreateApi_url"
+api/configuration/views.py:778: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "principalStatus_data"
+api/configuration/views.py:795: [W0702(bare-except), PrincipalModel.post] No exception type(s) specified
+api/configuration/views.py:783: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "Onsuccessid"
+api/configuration/views.py:798: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "e"
+api/configuration/views.py:806: [C0103(invalid-name), PrincipalModel.post] Invalid variable name "eX"
+api/configuration/views.py:734: [W0613(unused-argument), PrincipalModel.post] Unused argument 'format'
+api/configuration/views.py:810: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid method name "getPrincipalEntity"
+api/configuration/views.py:849: [W0703(broad-except), PrincipalModel.getPrincipalEntity] Catching too general exception Exception
+api/configuration/views.py:830: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "principalEntity_Api_url"
+api/configuration/views.py:832: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "principalEntity_data"
+api/configuration/views.py:839: [W0702(bare-except), PrincipalModel.getPrincipalEntity] No exception type(s) specified
+api/configuration/views.py:835: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "LDAP"
+api/configuration/views.py:836: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "PAM"
+api/configuration/views.py:843: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "e"
+api/configuration/views.py:849: [C0103(invalid-name), PrincipalModel.getPrincipalEntity] Invalid variable name "eX"
+api/configuration/views.py:516: [R0904(too-many-public-methods), PrincipalModel] Too many public methods (38/20)
+************* Module api.nodes
+api/nodes/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module api.nodes.views
+api/nodes/views.py:24: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:25: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:32: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:36: [C0301(line-too-long), ] Line too long (162/80)
+api/nodes/views.py:48: [C0301(line-too-long), ] Line too long (86/80)
+api/nodes/views.py:57: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:59: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:61: [C0301(line-too-long), ] Line too long (82/80)
+api/nodes/views.py:62: [C0301(line-too-long), ] Line too long (87/80)
+api/nodes/views.py:64: [C0301(line-too-long), ] Line too long (110/80)
+api/nodes/views.py:92: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:93: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:100: [C0301(line-too-long), ] Line too long (82/80)
+api/nodes/views.py:111: [C0301(line-too-long), ] Line too long (108/80)
+api/nodes/views.py:112: [C0301(line-too-long), ] Line too long (93/80)
+api/nodes/views.py:120: [C0301(line-too-long), ] Line too long (83/80)
+api/nodes/views.py:121: [C0301(line-too-long), ] Line too long (105/80)
+api/nodes/views.py:131: [C0301(line-too-long), ] Line too long (156/80)
+api/nodes/views.py:134: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:139: [C0301(line-too-long), ] Line too long (86/80)
+api/nodes/views.py:140: [C0301(line-too-long), ] Line too long (118/80)
+api/nodes/views.py:141: [C0330(bad-continuation), ] Wrong hanging indentation.
+                        query_set['query']) + ']}'
+                        ^   |
+api/nodes/views.py:144: [C0301(line-too-long), ] Line too long (86/80)
+api/nodes/views.py:148: [C0301(line-too-long), ] Line too long (103/80)
+api/nodes/views.py:149: [C0301(line-too-long), ] Line too long (112/80)
+api/nodes/views.py:152: [C0301(line-too-long), ] Line too long (86/80)
+api/nodes/views.py:153: [C0301(line-too-long), ] Line too long (108/80)
+api/nodes/views.py:156: [C0301(line-too-long), ] Line too long (104/80)
+api/nodes/views.py:160: [C0301(line-too-long), ] Line too long (106/80)
+api/nodes/views.py:165: [C0301(line-too-long), ] Line too long (105/80)
+api/nodes/views.py:168: [C0301(line-too-long), ] Line too long (150/80)
+api/nodes/views.py:169: [C0301(line-too-long), ] Line too long (139/80)
+api/nodes/views.py:173: [C0301(line-too-long), ] Line too long (81/80)
+api/nodes/views.py:175: [C0301(line-too-long), ] Line too long (104/80)
+api/nodes/views.py:179: [C0301(line-too-long), ] Line too long (98/80)
+api/nodes/views.py:183: [C0301(line-too-long), ] Line too long (82/80)
+api/nodes/views.py:185: [C0301(line-too-long), ] Line too long (99/80)
+api/nodes/views.py:209: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:210: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:219: [C0301(line-too-long), ] Line too long (81/80)
+api/nodes/views.py:222: [C0301(line-too-long), ] Line too long (98/80)
+api/nodes/views.py:237: [C0301(line-too-long), ] Line too long (105/80)
+api/nodes/views.py:246: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:249: [C0301(line-too-long), ] Line too long (113/80)
+api/nodes/views.py:255: [C0301(line-too-long), ] Line too long (102/80)
+api/nodes/views.py:263: [C0301(line-too-long), ] Line too long (81/80)
+api/nodes/views.py:301: [W0311(bad-indentation), ] Bad indentation. Found 16 spaces, expected 12
+api/nodes/views.py:302: [W0311(bad-indentation), ] Bad indentation. Found 16 spaces, expected 12
+api/nodes/views.py:303: [C0301(line-too-long), ] Line too long (86/80)
+api/nodes/views.py:314: [C0301(line-too-long), ] Line too long (82/80)
+api/nodes/views.py:341: [C0301(line-too-long), ] Line too long (81/80)
+api/nodes/views.py:350: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:351: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:379: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:384: [C0301(line-too-long), ] Line too long (84/80)
+api/nodes/views.py:385: [C0301(line-too-long), ] Line too long (89/80)
+api/nodes/views.py:387: [C0301(line-too-long), ] Line too long (112/80)
+api/nodes/views.py:404: [C0301(line-too-long), ] Line too long (83/80)
+api/nodes/views.py:406: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:407: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:435: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:438: [C0301(line-too-long), ] Line too long (95/80)
+api/nodes/views.py:439: [C0301(line-too-long), ] Line too long (84/80)
+api/nodes/views.py:440: [C0301(line-too-long), ] Line too long (92/80)
+api/nodes/views.py:441: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:443: [C0301(line-too-long), ] Line too long (120/80)
+api/nodes/views.py:460: [C0301(line-too-long), ] Line too long (84/80)
+api/nodes/views.py:462: [C0301(line-too-long), ] Line too long (85/80)
+api/nodes/views.py:463: [C0301(line-too-long), ] Line too long (97/80)
+api/nodes/views.py:491: [C0301(line-too-long), ] Line too long (90/80)
+api/nodes/views.py:495: [C0301(line-too-long), ] Line too long (129/80)
+api/nodes/views.py:497: [C0301(line-too-long), ] Line too long (89/80)
+api/nodes/views.py:499: [C0301(line-too-long), ] Line too long (98/80)
+api/nodes/views.py:501: [C0301(line-too-long), ] Line too long (103/80)
+api/nodes/views.py:504: [C0301(line-too-long), ] Line too long (115/80)
+api/nodes/views.py:29: [W0622(redefined-builtin), ResourceSummaryDataView.get] Redefining built-in 'format'
+api/nodes/views.py:84: [W0703(broad-except), ResourceSummaryDataView.get] Catching too general exception Exception
+api/nodes/views.py:59: [C0103(invalid-name), ResourceSummaryDataView.get] Invalid variable name "resourceSummaryApi_url"
+api/nodes/views.py:67: [W0702(bare-except), ResourceSummaryDataView.get] No exception type(s) specified
+api/nodes/views.py:76: [C0103(invalid-name), ResourceSummaryDataView.get] Invalid variable name "e"
+api/nodes/views.py:84: [C0103(invalid-name), ResourceSummaryDataView.get] Invalid variable name "eX"
+api/nodes/views.py:29: [W0613(unused-argument), ResourceSummaryDataView.get] Unused argument 'format'
+api/nodes/views.py:20: [R0904(too-many-public-methods), ResourceSummaryDataView] Too many public methods (33/20)
+api/nodes/views.py:97: [W0622(redefined-builtin), ResourceListDataView.get] Redefining built-in 'format'
+api/nodes/views.py:97: [R0914(too-many-locals), ResourceListDataView.get] Too many local variables (16/15)
+api/nodes/views.py:201: [W0703(broad-except), ResourceListDataView.get] Catching too general exception Exception
+api/nodes/views.py:165: [C0103(invalid-name), ResourceListDataView.get] Invalid variable name "resourceListApi_url"
+api/nodes/views.py:169: [C0103(invalid-name), ResourceListDataView.get] Invalid variable name "resourceListApi_url"
+api/nodes/views.py:180: [W0702(bare-except), ResourceListDataView.get] No exception type(s) specified
+api/nodes/views.py:193: [C0103(invalid-name), ResourceListDataView.get] Invalid variable name "e"
+api/nodes/views.py:201: [C0103(invalid-name), ResourceListDataView.get] Invalid variable name "eX"
+api/nodes/views.py:97: [W0613(unused-argument), ResourceListDataView.get] Unused argument 'format'
+api/nodes/views.py:97: [R0912(too-many-branches), ResourceListDataView.get] Too many branches (16/12)
+api/nodes/views.py:88: [R0904(too-many-public-methods), ResourceListDataView] Too many public methods (33/20)
+api/nodes/views.py:216: [W0622(redefined-builtin), NodeDetailsDataView.get] Redefining built-in 'format'
+api/nodes/views.py:216: [R0914(too-many-locals), NodeDetailsDataView.get] Too many local variables (16/15)
+api/nodes/views.py:280: [W0703(broad-except), NodeDetailsDataView.get] Catching too general exception Exception
+api/nodes/views.py:251: [C0103(invalid-name), NodeDetailsDataView.get] Invalid variable name "nodeDetailsApi_url"
+api/nodes/views.py:260: [W0702(bare-except), NodeDetailsDataView.get] No exception type(s) specified
+api/nodes/views.py:272: [C0103(invalid-name), NodeDetailsDataView.get] Invalid variable name "e"
+api/nodes/views.py:280: [C0103(invalid-name), NodeDetailsDataView.get] Invalid variable name "eX"
+api/nodes/views.py:216: [W0613(unused-argument), NodeDetailsDataView.get] Unused argument 'format'
+api/nodes/views.py:320: [W0703(broad-except), NodeDetailsDataView.post] Catching too general exception Exception
+api/nodes/views.py:316: [C0103(invalid-name), NodeDetailsDataView.post] Invalid variable name "e"
+api/nodes/views.py:320: [C0103(invalid-name), NodeDetailsDataView.post] Invalid variable name "e"
+api/nodes/views.py:328: [W0703(broad-except), NodeDetailsDataView.post] Catching too general exception Exception
+api/nodes/views.py:328: [C0103(invalid-name), NodeDetailsDataView.post] Invalid variable name "e"
+api/nodes/views.py:205: [R0904(too-many-public-methods), NodeDetailsDataView] Too many public methods (34/20)
+api/nodes/views.py:355: [W0622(redefined-builtin), GenericResourceDataView.get] Redefining built-in 'format'
+api/nodes/views.py:399: [W0703(broad-except), GenericResourceDataView.get] Catching too general exception Exception
+api/nodes/views.py:383: [C0103(invalid-name), GenericResourceDataView.get] Invalid variable name "genericresourcesApi_url"
+api/nodes/views.py:390: [W0702(bare-except), GenericResourceDataView.get] No exception type(s) specified
+api/nodes/views.py:393: [C0103(invalid-name), GenericResourceDataView.get] Invalid variable name "e"
+api/nodes/views.py:399: [C0103(invalid-name), GenericResourceDataView.get] Invalid variable name "eX"
+api/nodes/views.py:355: [W0613(unused-argument), GenericResourceDataView.get] Unused argument 'format'
+api/nodes/views.py:355: [W0613(unused-argument), GenericResourceDataView.get] Unused argument 'job_name'
+api/nodes/views.py:346: [R0904(too-many-public-methods), GenericResourceDataView] Too many public methods (33/20)
+api/nodes/views.py:411: [W0622(redefined-builtin), ConfigurableFeaturesDataView.get] Redefining built-in 'format'
+api/nodes/views.py:455: [W0703(broad-except), ConfigurableFeaturesDataView.get] Catching too general exception Exception
+api/nodes/views.py:439: [C0103(invalid-name), ConfigurableFeaturesDataView.get] Invalid variable name "configurableFeaturesApi_url"
+api/nodes/views.py:446: [W0702(bare-except), ConfigurableFeaturesDataView.get] No exception type(s) specified
+api/nodes/views.py:449: [C0103(invalid-name), ConfigurableFeaturesDataView.get] Invalid variable name "e"
+api/nodes/views.py:450: [E1101(no-member), ConfigurableFeaturesDataView.get] Class 'APIError' has no 'redirect_error_page' member
+api/nodes/views.py:453: [E1101(no-member), ConfigurableFeaturesDataView.get] Class 'APIError' has no 'redirect_error_page' member
+api/nodes/views.py:455: [C0103(invalid-name), ConfigurableFeaturesDataView.get] Invalid variable name "eX"
+api/nodes/views.py:456: [E1101(no-member), ConfigurableFeaturesDataView.get] Class 'APIError' has no 'redirect_error_page' member
+api/nodes/views.py:411: [W0613(unused-argument), ConfigurableFeaturesDataView.get] Unused argument 'format'
+api/nodes/views.py:411: [W0613(unused-argument), ConfigurableFeaturesDataView.get] Unused argument 'job_name'
+api/nodes/views.py:402: [R0904(too-many-public-methods), ConfigurableFeaturesDataView] Too many public methods (33/20)
+api/nodes/views.py:467: [W0622(redefined-builtin), GenericResourcePerNodeDataView.get] Redefining built-in 'format'
+api/nodes/views.py:517: [W0703(broad-except), GenericResourcePerNodeDataView.get] Catching too general exception Exception
+api/nodes/views.py:497: [C0103(invalid-name), GenericResourcePerNodeDataView.get] Invalid variable name "genericresourcespernodeApi_url"
+api/nodes/views.py:508: [W0702(bare-except), GenericResourcePerNodeDataView.get] No exception type(s) specified
+api/nodes/views.py:511: [C0103(invalid-name), GenericResourcePerNodeDataView.get] Invalid variable name "e"
+api/nodes/views.py:517: [C0103(invalid-name), GenericResourcePerNodeDataView.get] Invalid variable name "eX"
+api/nodes/views.py:467: [W0613(unused-argument), GenericResourcePerNodeDataView.get] Unused argument 'format'
+api/nodes/views.py:458: [R0904(too-many-public-methods), GenericResourcePerNodeDataView] Too many public methods (33/20)
+************* Module api.jobs
+api/jobs/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module api.jobs.views
+api/jobs/views.py:27: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:28: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:38: [C0301(line-too-long), ] Line too long (91/80)
+api/jobs/views.py:46: [C0301(line-too-long), ] Line too long (108/80)
+api/jobs/views.py:47: [C0301(line-too-long), ] Line too long (93/80)
+api/jobs/views.py:65: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:69: [C0301(line-too-long), ] Line too long (120/80)
+api/jobs/views.py:70: [C0301(line-too-long), ] Line too long (102/80)
+api/jobs/views.py:73: [C0301(line-too-long), ] Line too long (120/80)
+api/jobs/views.py:75: [C0301(line-too-long), ] Line too long (81/80)
+api/jobs/views.py:76: [C0301(line-too-long), ] Line too long (81/80)
+api/jobs/views.py:79: [C0301(line-too-long), ] Line too long (109/80)
+api/jobs/views.py:80: [C0301(line-too-long), ] Line too long (108/80)
+api/jobs/views.py:83: [C0301(line-too-long), ] Line too long (82/80)
+api/jobs/views.py:84: [C0301(line-too-long), ] Line too long (104/80)
+api/jobs/views.py:87: [C0301(line-too-long), ] Line too long (100/80)
+api/jobs/views.py:91: [C0301(line-too-long), ] Line too long (82/80)
+api/jobs/views.py:92: [C0301(line-too-long), ] Line too long (83/80)
+api/jobs/views.py:94: [C0301(line-too-long), ] Line too long (94/80)
+api/jobs/views.py:95: [C0301(line-too-long), ] Line too long (150/80)
+api/jobs/views.py:96: [C0301(line-too-long), ] Line too long (128/80)
+api/jobs/views.py:103: [C0301(line-too-long), ] Line too long (96/80)
+api/jobs/views.py:132: [C0301(line-too-long), ] Line too long (118/80)
+api/jobs/views.py:137: [C0301(line-too-long), ] Line too long (185/80)
+api/jobs/views.py:140: [C0301(line-too-long), ] Line too long (103/80)
+api/jobs/views.py:141: [C0301(line-too-long), ] Line too long (84/80)
+api/jobs/views.py:142: [C0330(bad-continuation), ] Wrong hanging indentation.
+                                    re.sub("\ \w*$", "", str(i['job_start_datetime'])), FMT)
+                                    ^                          |
+api/jobs/views.py:142: [C0301(line-too-long), ] Line too long (92/80)
+api/jobs/views.py:157: [C0301(line-too-long), ] Line too long (120/80)
+api/jobs/views.py:159: [C0301(line-too-long), ] Line too long (101/80)
+api/jobs/views.py:163: [C0301(line-too-long), ] Line too long (93/80)
+api/jobs/views.py:164: [C0301(line-too-long), ] Line too long (84/80)
+api/jobs/views.py:165: [C0301(line-too-long), ] Line too long (111/80)
+api/jobs/views.py:166: [C0301(line-too-long), ] Line too long (84/80)
+api/jobs/views.py:167: [C0330(bad-continuation), ] Wrong hanging indentation.
+                                    re.sub("\ \w*$", "", str(i['job_start_datetime'])), FMT)
+                                    ^                          |
+api/jobs/views.py:167: [C0301(line-too-long), ] Line too long (92/80)
+api/jobs/views.py:182: [C0301(line-too-long), ] Line too long (120/80)
+api/jobs/views.py:184: [C0301(line-too-long), ] Line too long (101/80)
+api/jobs/views.py:216: [C0301(line-too-long), ] Line too long (83/80)
+api/jobs/views.py:239: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:240: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:250: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:262: [C0301(line-too-long), ] Line too long (86/80)
+api/jobs/views.py:271: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:273: [C0301(line-too-long), ] Line too long (84/80)
+api/jobs/views.py:275: [C0301(line-too-long), ] Line too long (150/80)
+api/jobs/views.py:276: [C0301(line-too-long), ] Line too long (127/80)
+api/jobs/views.py:283: [C0301(line-too-long), ] Line too long (100/80)
+api/jobs/views.py:312: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:313: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:320: [C0301(line-too-long), ] Line too long (87/80)
+api/jobs/views.py:323: [C0301(line-too-long), ] Line too long (126/80)
+api/jobs/views.py:335: [C0301(line-too-long), ] Line too long (86/80)
+api/jobs/views.py:344: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:346: [C0301(line-too-long), ] Line too long (107/80)
+api/jobs/views.py:347: [C0301(line-too-long), ] Line too long (94/80)
+api/jobs/views.py:349: [C0301(line-too-long), ] Line too long (95/80)
+api/jobs/views.py:350: [C0301(line-too-long), ] Line too long (191/80)
+api/jobs/views.py:355: [C0301(line-too-long), ] Line too long (86/80)
+api/jobs/views.py:356: [C0301(line-too-long), ] Line too long (91/80)
+api/jobs/views.py:359: [C0301(line-too-long), ] Line too long (114/80)
+api/jobs/views.py:480: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:481: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:491: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:511: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:515: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:516: [C0301(line-too-long), ] Line too long (120/80)
+api/jobs/views.py:518: [C0301(line-too-long), ] Line too long (83/80)
+api/jobs/views.py:519: [C0301(line-too-long), ] Line too long (126/80)
+api/jobs/views.py:521: [C0301(line-too-long), ] Line too long (108/80)
+api/jobs/views.py:525: [C0301(line-too-long), ] Line too long (89/80)
+api/jobs/views.py:526: [C0301(line-too-long), ] Line too long (154/80)
+api/jobs/views.py:528: [C0301(line-too-long), ] Line too long (87/80)
+api/jobs/views.py:529: [C0301(line-too-long), ] Line too long (160/80)
+api/jobs/views.py:534: [C0301(line-too-long), ] Line too long (96/80)
+api/jobs/views.py:561: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:562: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:572: [C0301(line-too-long), ] Line too long (163/80)
+api/jobs/views.py:601: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:605: [C0301(line-too-long), ] Line too long (111/80)
+api/jobs/views.py:612: [C0301(line-too-long), ] Line too long (107/80)
+api/jobs/views.py:620: [C0301(line-too-long), ] Line too long (89/80)
+api/jobs/views.py:623: [C0301(line-too-long), ] Line too long (89/80)
+api/jobs/views.py:646: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:647: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:670: [C0301(line-too-long), ] Line too long (105/80)
+api/jobs/views.py:679: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:683: [C0301(line-too-long), ] Line too long (113/80)
+api/jobs/views.py:687: [C0301(line-too-long), ] Line too long (150/80)
+api/jobs/views.py:688: [C0301(line-too-long), ] Line too long (95/80)
+api/jobs/views.py:694: [C0301(line-too-long), ] Line too long (99/80)
+api/jobs/views.py:728: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:729: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:736: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:748: [C0301(line-too-long), ] Line too long (105/80)
+api/jobs/views.py:757: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:761: [C0301(line-too-long), ] Line too long (118/80)
+api/jobs/views.py:769: [C0301(line-too-long), ] Line too long (150/80)
+api/jobs/views.py:770: [C0301(line-too-long), ] Line too long (94/80)
+api/jobs/views.py:773: [C0301(line-too-long), ] Line too long (82/80)
+api/jobs/views.py:775: [C0301(line-too-long), ] Line too long (115/80)
+api/jobs/views.py:803: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:804: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:829: [C0301(line-too-long), ] Line too long (86/80)
+api/jobs/views.py:869: [C0301(line-too-long), ] Line too long (81/80)
+api/jobs/views.py:878: [C0301(line-too-long), ] Line too long (85/80)
+api/jobs/views.py:879: [C0301(line-too-long), ] Line too long (97/80)
+api/jobs/views.py:911: [C0301(line-too-long), ] Line too long (90/80)
+api/jobs/views.py:916: [C0303(trailing-whitespace), ] Trailing whitespace
+api/jobs/views.py:917: [C0301(line-too-long), ] Line too long (150/80)
+api/jobs/views.py:918: [C0301(line-too-long), ] Line too long (101/80)
+api/jobs/views.py:920: [C0301(line-too-long), ] Line too long (84/80)
+api/jobs/views.py:921: [C0301(line-too-long), ] Line too long (89/80)
+api/jobs/views.py:923: [C0301(line-too-long), ] Line too long (112/80)
+api/jobs/views.py:927: [C0301(line-too-long), ] Line too long (86/80)
+api/jobs/views.py:119: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+api/jobs/views.py:119: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+api/jobs/views.py:140: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+api/jobs/views.py:140: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+api/jobs/views.py:142: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+api/jobs/views.py:142: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+api/jobs/views.py:165: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+api/jobs/views.py:165: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+api/jobs/views.py:167: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+api/jobs/views.py:167: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\W'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\W'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\W'. String constant might be missing an r prefix.
+api/jobs/views.py:348: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+api/jobs/views.py:109: [W0622(redefined-builtin), WorkLoadDataView.get] Redefining built-in 'dict'
+api/jobs/views.py:32: [W0622(redefined-builtin), WorkLoadDataView.get] Redefining built-in 'format'
+api/jobs/views.py:32: [R0914(too-many-locals), WorkLoadDataView.get] Too many local variables (33/15)
+api/jobs/views.py:230: [W0703(broad-except), WorkLoadDataView.get] Catching too general exception Exception
+api/jobs/views.py:94: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:96: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:98: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:218: [W0702(bare-except), WorkLoadDataView.get] No exception type(s) specified
+api/jobs/views.py:106: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "Total_Count"
+api/jobs/views.py:110: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "FMT"
+api/jobs/views.py:117: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "d"
+api/jobs/views.py:224: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "e"
+api/jobs/views.py:230: [C0103(invalid-name), WorkLoadDataView.get] Invalid variable name "eX"
+api/jobs/views.py:32: [W0613(unused-argument), WorkLoadDataView.get] Unused argument 'format'
+api/jobs/views.py:32: [R0912(too-many-branches), WorkLoadDataView.get] Too many branches (38/12)
+api/jobs/views.py:32: [R0915(too-many-statements), WorkLoadDataView.get] Too many statements (124/50)
+api/jobs/views.py:23: [R0904(too-many-public-methods), WorkLoadDataView] Too many public methods (33/20)
+api/jobs/views.py:244: [W0622(redefined-builtin), JobSummaryDataView.get] Redefining built-in 'format'
+api/jobs/views.py:303: [W0703(broad-except), JobSummaryDataView.get] Catching too general exception Exception
+api/jobs/views.py:273: [C0103(invalid-name), JobSummaryDataView.get] Invalid variable name "jobSummaryApi_url"
+api/jobs/views.py:276: [C0103(invalid-name), JobSummaryDataView.get] Invalid variable name "jobSummaryApi_url"
+api/jobs/views.py:286: [W0702(bare-except), JobSummaryDataView.get] No exception type(s) specified
+api/jobs/views.py:295: [C0103(invalid-name), JobSummaryDataView.get] Invalid variable name "e"
+api/jobs/views.py:303: [C0103(invalid-name), JobSummaryDataView.get] Invalid variable name "eX"
+api/jobs/views.py:244: [W0613(unused-argument), JobSummaryDataView.get] Unused argument 'format'
+api/jobs/views.py:235: [R0904(too-many-public-methods), JobSummaryDataView] Too many public methods (33/20)
+api/jobs/views.py:317: [W0622(redefined-builtin), SystemUtilizationDataView.get] Redefining built-in 'format'
+api/jobs/views.py:379: [W0703(broad-except), SystemUtilizationDataView.get] Catching too general exception Exception
+api/jobs/views.py:353: [C0103(invalid-name), SystemUtilizationDataView.get] Invalid variable name "systemUtilizationApi_url"
+api/jobs/views.py:362: [W0702(bare-except), SystemUtilizationDataView.get] No exception type(s) specified
+api/jobs/views.py:371: [C0103(invalid-name), SystemUtilizationDataView.get] Invalid variable name "e"
+api/jobs/views.py:379: [C0103(invalid-name), SystemUtilizationDataView.get] Invalid variable name "eX"
+api/jobs/views.py:317: [W0613(unused-argument), SystemUtilizationDataView.get] Unused argument 'format'
+api/jobs/views.py:308: [R0904(too-many-public-methods), SystemUtilizationDataView] Too many public methods (33/20)
+api/jobs/views.py:474: [W0105(pointless-string-statement), ] String statement has no effect
+api/jobs/views.py:485: [W0622(redefined-builtin), GenerateReportsDataView.get] Redefining built-in 'format'
+api/jobs/views.py:552: [W0703(broad-except), GenerateReportsDataView.get] Catching too general exception Exception
+api/jobs/views.py:516: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:519: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:526: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:529: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "workLoadApi_url"
+api/jobs/views.py:537: [W0702(bare-except), GenerateReportsDataView.get] No exception type(s) specified
+api/jobs/views.py:544: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "e"
+api/jobs/views.py:552: [C0103(invalid-name), GenerateReportsDataView.get] Invalid variable name "eX"
+api/jobs/views.py:485: [W0613(unused-argument), GenerateReportsDataView.get] Unused argument 'query_set'
+api/jobs/views.py:485: [W0613(unused-argument), GenerateReportsDataView.get] Unused argument 'format'
+api/jobs/views.py:476: [R0904(too-many-public-methods), GenerateReportsDataView] Too many public methods (33/20)
+api/jobs/views.py:566: [W0622(redefined-builtin), ModifyJobsStatusView.get] Redefining built-in 'format'
+api/jobs/views.py:566: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid argument name "jobId"
+api/jobs/views.py:566: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid argument name "changeStatus"
+api/jobs/views.py:637: [W0703(broad-except), ModifyJobsStatusView.get] Catching too general exception Exception
+api/jobs/views.py:605: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "jobmodifyApi_url"
+api/jobs/views.py:612: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "jobStatus_data"
+api/jobs/views.py:615: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "jobStatus_data"
+api/jobs/views.py:625: [W0703(broad-except), ModifyJobsStatusView.get] Catching too general exception Exception
+api/jobs/views.py:625: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "eX"
+api/jobs/views.py:629: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "e"
+api/jobs/views.py:637: [C0103(invalid-name), ModifyJobsStatusView.get] Invalid variable name "eX"
+api/jobs/views.py:566: [W0613(unused-argument), ModifyJobsStatusView.get] Unused argument 'format'
+api/jobs/views.py:557: [R0904(too-many-public-methods), ModifyJobsStatusView] Too many public methods (33/20)
+api/jobs/views.py:651: [W0622(redefined-builtin), JobDetailsGetDataView.get] Redefining built-in 'format'
+api/jobs/views.py:651: [R0914(too-many-locals), JobDetailsGetDataView.get] Too many local variables (16/15)
+api/jobs/views.py:719: [W0703(broad-except), JobDetailsGetDataView.get] Catching too general exception Exception
+api/jobs/views.py:685: [C0103(invalid-name), JobDetailsGetDataView.get] Invalid variable name "jobDetailsApi_url"
+api/jobs/views.py:688: [C0103(invalid-name), JobDetailsGetDataView.get] Invalid variable name "jobDetailsApi_url"
+api/jobs/views.py:699: [W0702(bare-except), JobDetailsGetDataView.get] No exception type(s) specified
+api/jobs/views.py:711: [C0103(invalid-name), JobDetailsGetDataView.get] Invalid variable name "e"
+api/jobs/views.py:719: [C0103(invalid-name), JobDetailsGetDataView.get] Invalid variable name "eX"
+api/jobs/views.py:651: [W0613(unused-argument), JobDetailsGetDataView.get] Unused argument 'format'
+api/jobs/views.py:642: [R0904(too-many-public-methods), JobDetailsGetDataView] Too many public methods (33/20)
+api/jobs/views.py:794: [W0703(broad-except), JobDetailsMultiReqDataView.get] Catching too general exception Exception
+api/jobs/views.py:767: [C0103(invalid-name), JobDetailsMultiReqDataView.get] Invalid variable name "jobDetailsApi_url"
+api/jobs/views.py:770: [C0103(invalid-name), JobDetailsMultiReqDataView.get] Invalid variable name "jobDetailsApi_url"
+api/jobs/views.py:780: [W0702(bare-except), JobDetailsMultiReqDataView.get] No exception type(s) specified
+api/jobs/views.py:786: [C0103(invalid-name), JobDetailsMultiReqDataView.get] Invalid variable name "e"
+api/jobs/views.py:794: [C0103(invalid-name), JobDetailsMultiReqDataView.get] Invalid variable name "eX"
+api/jobs/views.py:724: [R0904(too-many-public-methods), JobDetailsMultiReqDataView] Too many public methods (33/20)
+api/jobs/views.py:847: [W0703(broad-except), JobDetailsPostDataView.get] Catching too general exception Exception
+api/jobs/views.py:843: [C0103(invalid-name), JobDetailsPostDataView.get] Invalid variable name "e"
+api/jobs/views.py:847: [C0103(invalid-name), JobDetailsPostDataView.get] Invalid variable name "e"
+api/jobs/views.py:856: [W0703(broad-except), JobDetailsPostDataView.get] Catching too general exception Exception
+api/jobs/views.py:856: [C0103(invalid-name), JobDetailsPostDataView.get] Invalid variable name "e"
+api/jobs/views.py:799: [R0904(too-many-public-methods), JobDetailsPostDataView] Too many public methods (33/20)
+api/jobs/views.py:885: [W0622(redefined-builtin), RequiredFeaturesDataView.get] Redefining built-in 'format'
+api/jobs/views.py:936: [W0703(broad-except), RequiredFeaturesDataView.get] Catching too general exception Exception
+api/jobs/views.py:915: [C0103(invalid-name), RequiredFeaturesDataView.get] Invalid variable name "required_featureApi_url"
+api/jobs/views.py:918: [C0103(invalid-name), RequiredFeaturesDataView.get] Invalid variable name "required_featureApi_url"
+api/jobs/views.py:926: [W0702(bare-except), RequiredFeaturesDataView.get] No exception type(s) specified
+api/jobs/views.py:930: [C0103(invalid-name), RequiredFeaturesDataView.get] Invalid variable name "e"
+api/jobs/views.py:936: [C0103(invalid-name), RequiredFeaturesDataView.get] Invalid variable name "eX"
+api/jobs/views.py:885: [W0613(unused-argument), RequiredFeaturesDataView.get] Unused argument 'format'
+api/jobs/views.py:885: [W0613(unused-argument), RequiredFeaturesDataView.get] Unused argument 'job_name'
+api/jobs/views.py:874: [R0904(too-many-public-methods), RequiredFeaturesDataView] Too many public methods (33/20)
+************* Module login
+login/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module login.admin
+login/admin.py:6: [W0611(unused-import), ] Unused import admin
+************* Module login.models
+login/models.py:6: [W0611(unused-import), ] Unused import models
+************* Module login.tests
+login/tests.py:6: [W0611(unused-import), ] Unused import TestCase
+************* Module login.urls
+login/urls.py:17: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+login/urls.py:12: [C0103(invalid-name), ] Invalid constant name "urlpatterns"
+************* Module login.views
+login/views.py:25: [C0301(line-too-long), ] Line too long (95/80)
+login/views.py:26: [C0301(line-too-long), ] Line too long (112/80)
+login/views.py:27: [C0301(line-too-long), ] Line too long (104/80)
+login/views.py:28: [C0301(line-too-long), ] Line too long (103/80)
+login/views.py:29: [C0301(line-too-long), ] Line too long (105/80)
+login/views.py:30: [C0330(bad-continuation), ] Wrong continued indentation.
+                                         default_filters=['decode.utf8','h'],
+                            |            ^
+login/views.py:30: [C0326(bad-whitespace), ] Exactly one space required after comma
+                                         default_filters=['decode.utf8','h'],
+                                                                       ^
+login/views.py:31: [C0330(bad-continuation), ] Wrong continued indentation.
+                                         input_encoding='utf-8', output_encoding='utf-8')
+                            |            ^
+login/views.py:31: [C0301(line-too-long), ] Line too long (89/80)
+login/views.py:62: [C0301(line-too-long), ] Line too long (121/80)
+login/views.py:73: [C0303(trailing-whitespace), ] Trailing whitespace
+login/views.py:75: [C0303(trailing-whitespace), ] Trailing whitespace
+login/views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+        timezone_offset = get_timezone_offset(timezone_local,server_timezone)
+                                                            ^
+login/views.py:84: [C0301(line-too-long), ] Line too long (87/80)
+login/views.py:85: [C0301(line-too-long), ] Line too long (83/80)
+login/views.py:88: [C0301(line-too-long), ] Line too long (91/80)
+login/views.py:90: [C0301(line-too-long), ] Line too long (119/80)
+login/views.py:91: [C0301(line-too-long), ] Line too long (103/80)
+login/views.py:93: [C0301(line-too-long), ] Line too long (90/80)
+login/views.py:98: [C0301(line-too-long), ] Line too long (86/80)
+login/views.py:99: [C0301(line-too-long), ] Line too long (94/80)
+login/views.py:100: [C0301(line-too-long), ] Line too long (123/80)
+login/views.py:106: [C0301(line-too-long), ] Line too long (84/80)
+login/views.py:119: [C0301(line-too-long), ] Line too long (109/80)
+login/views.py:120: [C0301(line-too-long), ] Line too long (95/80)
+login/views.py:125: [C0301(line-too-long), ] Line too long (106/80)
+login/views.py:127: [C0301(line-too-long), ] Line too long (105/80)
+login/views.py:128: [C0301(line-too-long), ] Line too long (91/80)
+login/views.py:25: [C0103(invalid-name), ] Invalid constant name "tpl_lookup"
+login/views.py:33: [C0103(invalid-name), ] Invalid constant name "log"
+login/views.py:51: [C0111(missing-docstring), Login.get] Missing method docstring
+login/views.py:61: [W0702(bare-except), Login.get] No exception type(s) specified
+login/views.py:51: [W0613(unused-argument), Login.get] Unused argument 'args'
+login/views.py:51: [W0613(unused-argument), Login.get] Unused argument 'kwargs'
+login/views.py:67: [C0111(missing-docstring), Login.post] Missing method docstring
+login/views.py:67: [R0914(too-many-locals), Login.post] Too many local variables (17/15)
+login/views.py:72: [C0103(invalid-name), Login.post] Invalid variable name "InitAPI_obj"
+login/views.py:126: [W0702(bare-except), Login.post] No exception type(s) specified
+login/views.py:84: [E1103(maybe-no-member), Login.post] Instance of 'Response' has no 'json' member (but some types could not be inferred)
+login/views.py:84: [E1103(maybe-no-member), Login.post] Instance of 'str' has no 'json' member (but some types could not be inferred)
+login/views.py:85: [E1103(maybe-no-member), Login.post] Instance of 'str' has no 'json' member (but some types could not be inferred)
+login/views.py:85: [E1103(maybe-no-member), Login.post] Instance of 'Response' has no 'json' member (but some types could not be inferred)
+login/views.py:87: [E1103(maybe-no-member), Login.post] Instance of 'Response' has no 'json' member (but some types could not be inferred)
+login/views.py:87: [E1103(maybe-no-member), Login.post] Instance of 'str' has no 'json' member (but some types could not be inferred)
+login/views.py:116: [W0702(bare-except), Login.post] No exception type(s) specified
+login/views.py:113: [W0104(pointless-statement), Login.post] Statement seems to have no effect
+login/views.py:67: [W0613(unused-argument), Login.post] Unused argument 'args'
+login/views.py:67: [W0613(unused-argument), Login.post] Unused argument 'kwargs'
+login/views.py:67: [R0911(too-many-return-statements), Login.post] Too many return statements (8/6)
+login/views.py:67: [R0912(too-many-branches), Login.post] Too many branches (13/12)
+login/views.py:169: [W0702(bare-except), Logout.get] No exception type(s) specified
+login/views.py:143: [W0613(unused-argument), Logout.get] Unused argument 'args'
+login/views.py:143: [W0613(unused-argument), Logout.get] Unused argument 'kwargs'
+************* Module login.utils
+login/utils.py:6: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:46: [C0301(line-too-long), ] Line too long (132/80)
+login/utils.py:49: [C0326(bad-whitespace), ] Exactly one space required after comma
+def Error403(request,error=None):
+                    ^
+login/utils.py:74: [C0301(line-too-long), ] Line too long (153/80)
+login/utils.py:102: [C0301(line-too-long), ] Line too long (132/80)
+login/utils.py:134: [C0301(line-too-long), ] Line too long (132/80)
+login/utils.py:163: [C0301(line-too-long), ] Line too long (153/80)
+login/utils.py:165: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+def csrf_failure(request, reason = ""):
+                                 ^
+login/utils.py:166: [C0301(line-too-long), ] Line too long (87/80)
+login/utils.py:166: [W0311(bad-indentation), ] Bad indentation. Found 5 spaces, expected 4
+login/utils.py:178: [C0301(line-too-long), ] Line too long (83/80)
+login/utils.py:180: [C0301(line-too-long), ] Line too long (93/80)
+login/utils.py:212: [C0301(line-too-long), ] Line too long (83/80)
+login/utils.py:216: [C0301(line-too-long), ] Line too long (87/80)
+login/utils.py:221: [C0301(line-too-long), ] Line too long (91/80)
+login/utils.py:242: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:247: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:250: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:253: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:256: [C0303(trailing-whitespace), ] Trailing whitespace
+login/utils.py:262: [C0301(line-too-long), ] Line too long (86/80)
+login/utils.py:287: [C0301(line-too-long), ] Line too long (109/80)
+login/utils.py:310: [C0301(line-too-long), ] Line too long (113/80)
+login/utils.py:311: [C0301(line-too-long), ] Line too long (112/80)
+login/utils.py:312: [C0301(line-too-long), ] Line too long (118/80)
+login/utils.py:17: [C0103(invalid-name), ] Invalid constant name "logger"
+login/utils.py:20: [C0103(invalid-name), Error404] Invalid function name "Error404"
+login/utils.py:42: [W0702(bare-except), Error404] No exception type(s) specified
+login/utils.py:49: [C0103(invalid-name), Error403] Invalid function name "Error403"
+login/utils.py:70: [W0702(bare-except), Error403] No exception type(s) specified
+login/utils.py:77: [C0103(invalid-name), Error400] Invalid function name "Error400"
+login/utils.py:98: [W0702(bare-except), Error400] No exception type(s) specified
+login/utils.py:105: [C0103(invalid-name), Error401] Invalid function name "Error401"
+login/utils.py:125: [W0702(bare-except), Error401] No exception type(s) specified
+login/utils.py:130: [W0702(bare-except), Error401] No exception type(s) specified
+login/utils.py:137: [C0103(invalid-name), Error500] Invalid function name "Error500"
+login/utils.py:159: [W0702(bare-except), Error500] No exception type(s) specified
+login/utils.py:165: [C0111(missing-docstring), csrf_failure] Missing function docstring
+login/utils.py:214: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_role"
+login/utils.py:207: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "SERVER_TIMEZONE"
+login/utils.py:215: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_principal"
+login/utils.py:205: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "CLIENTSECRET"
+login/utils.py:225: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl"
+login/utils.py:221: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_principalEntity"
+login/utils.py:210: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_login"
+login/utils.py:202: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "USERNAME"
+login/utils.py:216: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_resetRoles"
+login/utils.py:201: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "SUB_URL"
+login/utils.py:200: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "URL"
+login/utils.py:204: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "CLIENTID"
+login/utils.py:206: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "GOOGLE_ANALYTICS"
+login/utils.py:203: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "PASSWORD"
+login/utils.py:209: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "Server_baseUrl"
+login/utils.py:211: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_jobModify"
+login/utils.py:213: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_permission"
+login/utils.py:212: [C0103(invalid-name), InitAPI.__init__] Invalid attribute name "baseUrl_configfeaturesModify"
+login/utils.py:168: [R0902(too-many-instance-attributes), InitAPI] Too many instance attributes (24/7)
+login/utils.py:260: [W0232(no-init), APIError] Class has no __init__ method
+login/utils.py:260: [C1001(old-style-class), APIError] Old-style class defined.
+login/utils.py:270: [C0202(bad-classmethod-argument), APIError.error_log] Class method error_log should have 'cls' as first argument
+login/utils.py:291: [C0103(invalid-name), APIError.debug_log] Invalid argument name "db"
+login/utils.py:291: [C0202(bad-classmethod-argument), APIError.debug_log] Class method debug_log should have 'cls' as first argument
+login/utils.py:307: [W0107(unnecessary-pass), APIError.debug_log] Unnecessary pass statement
+************* Module jobs
+jobs/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
+************* Module jobs.admin
+jobs/admin.py:6: [W0611(unused-import), ] Unused import admin
+************* Module jobs.models
+jobs/models.py:6: [W0611(unused-import), ] Unused import models
+************* Module jobs.tests
+jobs/tests.py:6: [W0611(unused-import), ] Unused import TestCase
+************* Module jobs.urls
+jobs/urls.py:13: [C0301(line-too-long), ] Line too long (87/80)
+jobs/urls.py:14: [C0301(line-too-long), ] Line too long (95/80)
+jobs/urls.py:15: [C0301(line-too-long), ] Line too long (90/80)
+jobs/urls.py:16: [C0301(line-too-long), ] Line too long (90/80)
+jobs/urls.py:17: [C0301(line-too-long), ] Line too long (105/80)
+jobs/urls.py:18: [C0301(line-too-long), ] Line too long (88/80)
+jobs/urls.py:19: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+jobs/urls.py:12: [C0103(invalid-name), ] Invalid constant name "urlpatterns"
+************* Module jobs.views
+jobs/views.py:21: [C0301(line-too-long), ] Line too long (83/80)
+jobs/views.py:52: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               username=request.session['username'],
+                                            |  ^
+jobs/views.py:52: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:53: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+jobs/views.py:54: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+jobs/views.py:55: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               active=request.session['active_tab'],
+                                            |  ^
+jobs/views.py:55: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:56: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+jobs/views.py:56: [C0301(line-too-long), ] Line too long (114/80)
+jobs/views.py:57: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'])
+                                            |  ^
+jobs/views.py:57: [C0301(line-too-long), ] Line too long (100/80)
+jobs/views.py:72: [C0301(line-too-long), ] Line too long (87/80)
+jobs/views.py:112: [C0301(line-too-long), ] Line too long (132/80)
+jobs/views.py:116: [C0301(line-too-long), ] Line too long (115/80)
+jobs/views.py:135: [C0301(line-too-long), ] Line too long (126/80)
+jobs/views.py:152: [C0301(line-too-long), ] Line too long (97/80)
+jobs/views.py:152: [C0326(bad-whitespace), ] Exactly one space required after comma
+                    startTimeUTC = str(local_2_utc(startDate,request.session['timezone_offset']))
+                                                            ^
+jobs/views.py:153: [C0301(line-too-long), ] Line too long (93/80)
+jobs/views.py:153: [C0326(bad-whitespace), ] Exactly one space required after comma
+                    endTimeUTC = str(local_2_utc(endDate,request.session['timezone_offset']))
+                                                        ^
+jobs/views.py:154: [C0301(line-too-long), ] Line too long (100/80)
+jobs/views.py:155: [C0301(line-too-long), ] Line too long (96/80)
+jobs/views.py:159: [C0326(bad-whitespace), ] No space allowed before :
+            if startDate == ""  and endDate != "null" and endDate != "" :
+                                                                        ^
+jobs/views.py:160: [C0301(line-too-long), ] Line too long (89/80)
+jobs/views.py:160: [C0326(bad-whitespace), ] Exactly one space required after comma
+                endTimeUTC = str(local_2_utc(endDate,request.session['timezone_offset']))
+                                                    ^
+jobs/views.py:161: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:165: [C0326(bad-whitespace), ] Exactly one space required before comparison
+            if startDate != "null" and endDate == "" and startDate!= "":
+                                                                  ^^
+jobs/views.py:166: [C0301(line-too-long), ] Line too long (93/80)
+jobs/views.py:166: [C0326(bad-whitespace), ] Exactly one space required after comma
+                startTimeUTC = str(local_2_utc(startDate,request.session['timezone_offset']))
+                                                        ^
+jobs/views.py:167: [C0301(line-too-long), ] Line too long (93/80)
+jobs/views.py:170: [C0301(line-too-long), ] Line too long (177/80)
+jobs/views.py:171: [C0301(line-too-long), ] Line too long (154/80)
+jobs/views.py:172: [C0301(line-too-long), ] Line too long (144/80)
+jobs/views.py:173: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:174: [C0301(line-too-long), ] Line too long (162/80)
+jobs/views.py:179: [C0301(line-too-long), ] Line too long (106/80)
+jobs/views.py:191: [C0301(line-too-long), ] Line too long (100/80)
+jobs/views.py:222: [C0301(line-too-long), ] Line too long (96/80)
+jobs/views.py:240: [C0301(line-too-long), ] Line too long (139/80)
+jobs/views.py:242: [C0301(line-too-long), ] Line too long (124/80)
+jobs/views.py:246: [C0301(line-too-long), ] Line too long (98/80)
+jobs/views.py:250: [W0311(bad-indentation), ] Bad indentation. Found 15 spaces, expected 16
+jobs/views.py:251: [C0326(bad-whitespace), ] Exactly one space required after comma
+                    utcTime = i['job_start_datetime'].replace("UTC","").strip()
+                                                                   ^
+jobs/views.py:254: [C0301(line-too-long), ] Line too long (91/80)
+jobs/views.py:254: [C0326(bad-whitespace), ] Exactly one space required after comma
+                        localTime = utc_2_local(utcTime,request.session['timezone_offset'])
+                                                       ^
+jobs/views.py:260: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:265: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:266: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           total_count=workload_data_count,
+                                        |  ^
+jobs/views.py:267: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           entries=workload_data,
+                                        |  ^
+jobs/views.py:268: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           total_pages=len(nums),
+                                        |  ^
+jobs/views.py:269: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           page_nums=nums,
+                                        |  ^
+jobs/views.py:270: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           max=max,
+                                        |  ^
+jobs/views.py:271: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           active=active_tab,
+                                        |  ^
+jobs/views.py:272: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           offset=offset,
+                                        |  ^
+jobs/views.py:273: [C0330(bad-continuation), ] Wrong continued indentation.
+                                           session_permission_list=request.session['session_permission_list'],)
+                                        |  ^
+jobs/views.py:273: [C0301(line-too-long), ] Line too long (111/80)
+jobs/views.py:290: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:291: [C0301(line-too-long), ] Line too long (87/80)
+jobs/views.py:302: [C0301(line-too-long), ] Line too long (82/80)
+jobs/views.py:325: [C0301(line-too-long), ] Line too long (101/80)
+jobs/views.py:326: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               statusCode=jobStatus,
+                                            |  ^
+jobs/views.py:327: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               messages=message,
+                                            |  ^
+jobs/views.py:328: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               status=status,
+                                            |  ^
+jobs/views.py:329: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               active=request.session['active_tab'],
+                                            |  ^
+jobs/views.py:329: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:330: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               session_permission_list=request.session['session_permission_list'],
+                                            |  ^
+jobs/views.py:330: [C0301(line-too-long), ] Line too long (114/80)
+jobs/views.py:331: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               google_analytics=request.session['google_analytics'],
+                                            |  ^
+jobs/views.py:331: [C0301(line-too-long), ] Line too long (100/80)
+jobs/views.py:332: [C0330(bad-continuation), ] Wrong continued indentation.
+                                               workload_filter=WORKLOAD_FILTER_STATUS,)
+                                            |  ^
+jobs/views.py:332: [C0301(line-too-long), ] Line too long (87/80)
+jobs/views.py:345: [C0301(line-too-long), ] Line too long (119/80)
+jobs/views.py:346: [C0301(line-too-long), ] Line too long (101/80)
+jobs/views.py:348: [C0301(line-too-long), ] Line too long (114/80)
+jobs/views.py:349: [C0301(line-too-long), ] Line too long (94/80)
+jobs/views.py:356: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:357: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:361: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:369: [C0301(line-too-long), ] Line too long (88/80)
+jobs/views.py:370: [C0301(line-too-long), ] Line too long (89/80)
+jobs/views.py:372: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:386: [C0301(line-too-long), ] Line too long (111/80)
+jobs/views.py:416: [C0301(line-too-long), ] Line too long (87/80)
+jobs/views.py:437: [C0301(line-too-long), ] Line too long (97/80)
+jobs/views.py:442: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:442: [C0326(bad-whitespace), ] Exactly one space required after comma
+                    utcTime = job_data[0]['start_datetime'].replace("UTC","").strip()
+                                                                         ^
+jobs/views.py:443: [C0301(line-too-long), ] Line too long (108/80)
+jobs/views.py:448: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:448: [C0326(bad-whitespace), ] Exactly one space required after comma
+                    utcTime = job_data[0]['completion_datetime'].replace("UTC","").strip()
+                                                                              ^
+jobs/views.py:449: [C0301(line-too-long), ] Line too long (113/80)
+jobs/views.py:453: [C0301(line-too-long), ] Line too long (181/80)
+jobs/views.py:456: [C0301(line-too-long), ] Line too long (179/80)
+jobs/views.py:471: [C0301(line-too-long), ] Line too long (107/80)
+jobs/views.py:477: [C0301(line-too-long), ] Line too long (87/80)
+jobs/views.py:478: [C0301(line-too-long), ] Line too long (88/80)
+jobs/views.py:479: [C0301(line-too-long), ] Line too long (197/80)
+jobs/views.py:494: [C0301(line-too-long), ] Line too long (107/80)
+jobs/views.py:528: [C0301(line-too-long), ] Line too long (82/80)
+jobs/views.py:542: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:543: [C0301(line-too-long), ] Line too long (86/80)
+jobs/views.py:544: [C0301(line-too-long), ] Line too long (99/80)
+jobs/views.py:545: [C0301(line-too-long), ] Line too long (105/80)
+jobs/views.py:546: [C0301(line-too-long), ] Line too long (97/80)
+jobs/views.py:547: [C0301(line-too-long), ] Line too long (94/80)
+jobs/views.py:548: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:551: [C0301(line-too-long), ] Line too long (100/80)
+jobs/views.py:551: [C0326(bad-whitespace), ] No space allowed before comma
+            resourcelist_data  ,resourcelist_data_count, status_code = resourcelist_obj.get(request)
+                               ^
+jobs/views.py:551: [C0326(bad-whitespace), ] Exactly one space required after comma
+            resourcelist_data  ,resourcelist_data_count, status_code = resourcelist_obj.get(request)
+                               ^
+jobs/views.py:560: [C0301(line-too-long), ] Line too long (112/80)
+jobs/views.py:565: [C0301(line-too-long), ] Line too long (105/80)
+jobs/views.py:568: [C0301(line-too-long), ] Line too long (291/80)
+jobs/views.py:580: [C0301(line-too-long), ] Line too long (143/80)
+jobs/views.py:585: [C0326(bad-whitespace), ] Exactly one space required after comma
+        return self.render_template(tpl,username=request.session['username'],
+                                       ^
+jobs/views.py:586: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       entries=job_data,
+                                    |  ^
+jobs/views.py:587: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       nodelist_allocated=nodelist_allocated,
+                                    |  ^
+jobs/views.py:588: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       duration_format=duration_format,
+                                    |  ^
+jobs/views.py:589: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       actualduration_format=actualduration_format,
+                                    |  ^
+jobs/views.py:589: [C0301(line-too-long), ] Line too long (83/80)
+jobs/views.py:590: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status_code=success_status,
+                                    |  ^
+jobs/views.py:591: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       featurelist=features,
+                                    |  ^
+jobs/views.py:592: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       generic_resourceslist=generic_resourceslist,
+                                    |  ^
+jobs/views.py:592: [C0301(line-too-long), ] Line too long (83/80)
+jobs/views.py:593: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       job_id=job_id,
+                                    |  ^
+jobs/views.py:594: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       job_status=job_status,
+                                    |  ^
+jobs/views.py:595: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       required_nodelist=nodelist_required,
+                                    |  ^
+jobs/views.py:596: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       requiredfeatures=requiredfeatures_data,
+                                    |  ^
+jobs/views.py:597: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       node_list = data_resourcelist,
+                                    |  ^
+jobs/views.py:597: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                       node_list = data_resourcelist,
+                                                 ^
+jobs/views.py:598: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       job_requirements = requirements,
+                                    |  ^
+jobs/views.py:598: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                       job_requirements = requirements,
+                                                        ^
+jobs/views.py:599: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       hasMultiReqs = (len(requirements) > 1),
+                                    |  ^
+jobs/views.py:599: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                       hasMultiReqs = (len(requirements) > 1),
+                                                    ^
+jobs/views.py:600: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       #genericresoucres = genericresoucres_data,
+                                    |  ^
+jobs/views.py:600: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:601: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       status = status,
+                                    |  ^
+jobs/views.py:601: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                       status = status,
+                                              ^
+jobs/views.py:602: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       messages=message,
+                                    |  ^
+jobs/views.py:603: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       storage_messages=storage_messages,
+                                    |  ^
+jobs/views.py:604: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       session_permission_list=request.session['session_permission_list'],
+                                    |  ^
+jobs/views.py:604: [C0301(line-too-long), ] Line too long (106/80)
+jobs/views.py:605: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       google_analytics=request.session['google_analytics'])
+                                    |  ^
+jobs/views.py:605: [C0301(line-too-long), ] Line too long (92/80)
+jobs/views.py:609: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:610: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:614: [C0301(line-too-long), ] Line too long (92/80)
+jobs/views.py:615: [C0301(line-too-long), ] Line too long (103/80)
+jobs/views.py:622: [C0301(line-too-long), ] Line too long (96/80)
+jobs/views.py:624: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:625: [C0301(line-too-long), ] Line too long (89/80)
+jobs/views.py:631: [C0301(line-too-long), ] Line too long (110/80)
+jobs/views.py:656: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:680: [C0301(line-too-long), ] Line too long (147/80)
+jobs/views.py:689: [C0301(line-too-long), ] Line too long (97/80)
+jobs/views.py:702: [C0301(line-too-long), ] Line too long (83/80)
+jobs/views.py:706: [C0301(line-too-long), ] Line too long (89/80)
+jobs/views.py:717: [C0301(line-too-long), ] Line too long (109/80)
+jobs/views.py:724: [C0301(line-too-long), ] Line too long (135/80)
+jobs/views.py:724: [C0326(bad-whitespace), ] No space allowed before :
+            if isMultiReqJob != "True" and (sorted(req_features_list) != sorted(request.session['required_fetaures_'+str(job_name)])) :
+                                                                                                                                      ^
+jobs/views.py:734: [C0301(line-too-long), ] Line too long (122/80)
+jobs/views.py:742: [C0301(line-too-long), ] Line too long (82/80)
+jobs/views.py:745: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:749: [C0301(line-too-long), ] Line too long (234/80)
+jobs/views.py:754: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:756: [C0301(line-too-long), ] Line too long (94/80)
+jobs/views.py:758: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:781: [C0301(line-too-long), ] Line too long (81/80)
+jobs/views.py:783: [C0301(line-too-long), ] Line too long (84/80)
+jobs/views.py:800: [C0301(line-too-long), ] Line too long (93/80)
+jobs/views.py:802: [C0301(line-too-long), ] Line too long (146/80)
+jobs/views.py:803: [C0301(line-too-long), ] Line too long (118/80)
+jobs/views.py:804: [C0301(line-too-long), ] Line too long (103/80)
+jobs/views.py:805: [C0301(line-too-long), ] Line too long (110/80)
+jobs/views.py:828: [C0301(line-too-long), ] Line too long (93/80)
+jobs/views.py:838: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:848: [C0301(line-too-long), ] Line too long (85/80)
+jobs/views.py:850: [C0301(line-too-long), ] Line too long (107/80)
+jobs/views.py:851: [C0301(line-too-long), ] Line too long (96/80)
+jobs/views.py:852: [C0301(line-too-long), ] Line too long (101/80)
+jobs/views.py:853: [C0301(line-too-long), ] Line too long (90/80)
+jobs/views.py:854: [C0301(line-too-long), ] Line too long (89/80)
+jobs/views.py:860: [C0301(line-too-long), ] Line too long (91/80)
+jobs/views.py:423: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+jobs/views.py:423: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+jobs/views.py:456: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+jobs/views.py:456: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+jobs/views.py:456: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+jobs/views.py:456: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+jobs/views.py:479: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+jobs/views.py:479: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+jobs/views.py:479: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\ '. String constant might be missing an r prefix.
+jobs/views.py:479: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+jobs/views.py:502: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+jobs/views.py:502: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+jobs/views.py:502: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\d'. String constant might be missing an r prefix.
+jobs/views.py:40: [C0111(missing-docstring), GetDashboardView.get] Missing method docstring
+jobs/views.py:40: [W0613(unused-argument), GetDashboardView.get] Unused argument 'kwargs'
+jobs/views.py:40: [W0613(unused-argument), GetDashboardView.get] Unused argument 'args'
+jobs/views.py:79: [W0622(redefined-builtin), GetGridView.get] Redefining built-in 'max'
+jobs/views.py:77: [C0111(missing-docstring), GetGridView.get] Missing method docstring
+jobs/views.py:77: [R0914(too-many-locals), GetGridView.get] Too many local variables (55/15)
+jobs/views.py:274: [W0703(broad-except), GetGridView.get] Catching too general exception Exception
+jobs/views.py:82: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobId"
+jobs/views.py:83: [C0103(invalid-name), GetGridView.get] Invalid variable name "userName"
+jobs/views.py:84: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobStatus"
+jobs/views.py:85: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobState"
+jobs/views.py:87: [C0103(invalid-name), GetGridView.get] Invalid variable name "priorityFrom"
+jobs/views.py:88: [C0103(invalid-name), GetGridView.get] Invalid variable name "priorityTo"
+jobs/views.py:92: [C0103(invalid-name), GetGridView.get] Invalid variable name "dateTimeRange"
+jobs/views.py:93: [C0103(invalid-name), GetGridView.get] Invalid variable name "startDate"
+jobs/views.py:94: [C0103(invalid-name), GetGridView.get] Invalid variable name "endDate"
+jobs/views.py:95: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockStartDay"
+jobs/views.py:96: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockStartHr"
+jobs/views.py:97: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockStartMin"
+jobs/views.py:98: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockStartSec"
+jobs/views.py:99: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockEndDay"
+jobs/views.py:100: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockEndHr"
+jobs/views.py:101: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockEndMin"
+jobs/views.py:102: [C0103(invalid-name), GetGridView.get] Invalid variable name "wallclockEndSec"
+jobs/views.py:112: [C0103(invalid-name), GetGridView.get] Invalid variable name "query_userName"
+jobs/views.py:116: [C0103(invalid-name), GetGridView.get] Invalid variable name "query_jobId"
+jobs/views.py:120: [C0103(invalid-name), GetGridView.get] Invalid variable name "query_jobState"
+jobs/views.py:129: [W0105(pointless-string-statement), GetGridView.get] String statement has no effect
+jobs/views.py:142: [W0105(pointless-string-statement), GetGridView.get] String statement has no effect
+jobs/views.py:147: [W0702(bare-except), GetGridView.get] No exception type(s) specified
+jobs/views.py:145: [C0103(invalid-name), GetGridView.get] Invalid variable name "endDate"
+jobs/views.py:146: [C0103(invalid-name), GetGridView.get] Invalid variable name "endDate"
+jobs/views.py:152: [C0103(invalid-name), GetGridView.get] Invalid variable name "startTimeUTC"
+jobs/views.py:153: [C0103(invalid-name), GetGridView.get] Invalid variable name "endTimeUTC"
+jobs/views.py:154: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobStartTimeQuery"
+jobs/views.py:155: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobEndTimeQuery"
+jobs/views.py:160: [C0103(invalid-name), GetGridView.get] Invalid variable name "endTimeUTC"
+jobs/views.py:166: [C0103(invalid-name), GetGridView.get] Invalid variable name "startTimeUTC"
+jobs/views.py:185: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobStatus"
+jobs/views.py:187: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobStatus"
+jobs/views.py:189: [C0103(invalid-name), GetGridView.get] Invalid variable name "jobStatus"
+jobs/views.py:207: [C0103(invalid-name), GetGridView.get] Invalid variable name "lastOffset"
+jobs/views.py:213: [C0103(invalid-name), GetGridView.get] Invalid variable name "lastOffset"
+jobs/views.py:224: [C0103(invalid-name), GetGridView.get] Invalid variable name "sortState"
+jobs/views.py:234: [C0103(invalid-name), GetGridView.get] Invalid variable name "searchValue"
+jobs/views.py:235: [C0103(invalid-name), GetGridView.get] Invalid variable name "searchCategory"
+jobs/views.py:251: [C0103(invalid-name), GetGridView.get] Invalid variable name "utcTime"
+jobs/views.py:252: [C0103(invalid-name), GetGridView.get] Invalid variable name "utcTime"
+jobs/views.py:254: [C0103(invalid-name), GetGridView.get] Invalid variable name "localTime"
+jobs/views.py:274: [C0103(invalid-name), GetGridView.get] Invalid variable name "eX"
+jobs/views.py:88: [W0612(unused-variable), GetGridView.get] Unused variable 'priorityTo'
+jobs/views.py:92: [W0612(unused-variable), GetGridView.get] Unused variable 'dateTimeRange'
+jobs/views.py:87: [W0612(unused-variable), GetGridView.get] Unused variable 'priorityFrom'
+jobs/views.py:77: [R0912(too-many-branches), GetGridView.get] Too many branches (38/12)
+jobs/views.py:77: [R0915(too-many-statements), GetGridView.get] Too many statements (128/50)
+jobs/views.py:312: [W0702(bare-except), GetWorkloadView.get] No exception type(s) specified
+jobs/views.py:310: [W0104(pointless-statement), GetWorkloadView.get] Statement seems to have no effect
+jobs/views.py:324: [C0103(invalid-name), GetWorkloadView.get] Invalid variable name "jobStatus"
+jobs/views.py:288: [W0613(unused-argument), GetWorkloadView.get] Unused argument 'args'
+jobs/views.py:288: [W0613(unused-argument), GetWorkloadView.get] Unused argument 'kwargs'
+jobs/views.py:354: [R0914(too-many-locals), JobDetailsView.get] Too many local variables (43/15)
+jobs/views.py:392: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "jobviewGet_obj"
+jobs/views.py:404: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "FMT"
+jobs/views.py:421: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "d"
+jobs/views.py:442: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "utcTime"
+jobs/views.py:448: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "utcTime"
+jobs/views.py:525: [W0105(pointless-string-statement), JobDetailsView.get] String statement has no effect
+jobs/views.py:536: [C0103(invalid-name), JobDetailsView.get] Invalid variable name "statusCode"
+jobs/views.py:354: [W0613(unused-argument), JobDetailsView.get] Unused argument 'kwargs'
+jobs/views.py:354: [W0613(unused-argument), JobDetailsView.get] Unused argument 'args'
+jobs/views.py:551: [W0612(unused-variable), JobDetailsView.get] Unused variable 'resourcelist_data_count'
+jobs/views.py:354: [R0912(too-many-branches), JobDetailsView.get] Too many branches (39/12)
+jobs/views.py:354: [R0915(too-many-statements), JobDetailsView.get] Too many statements (129/50)
+jobs/views.py:607: [R0914(too-many-locals), JobDetailsView.post] Too many local variables (41/15)
+jobs/views.py:643: [C0103(invalid-name), JobDetailsView.post] Invalid variable name "nodeList"
+jobs/views.py:647: [C0103(invalid-name), JobDetailsView.post] Invalid variable name "addResource"
+jobs/views.py:649: [C0103(invalid-name), JobDetailsView.post] Invalid variable name "isMultiReqJob"
+jobs/views.py:657: [C0103(invalid-name), JobDetailsView.post] Invalid variable name "resourcesPerTask"
+jobs/views.py:740: [W0105(pointless-string-statement), JobDetailsView.post] String statement has no effect
+jobs/views.py:743: [C0103(invalid-name), JobDetailsView.post] Invalid variable name "jobviewPost_obj"
+jobs/views.py:657: [W0612(unused-variable), JobDetailsView.post] Unused variable 'resourcesPerTask'
+jobs/views.py:658: [W0612(unused-variable), JobDetailsView.post] Unused variable 'dedicated_dict'
+jobs/views.py:607: [W0613(unused-argument), JobDetailsView.post] Unused argument 'kwargs'
+jobs/views.py:607: [W0613(unused-argument), JobDetailsView.post] Unused argument 'args'
+jobs/views.py:647: [W0612(unused-variable), JobDetailsView.post] Unused variable 'addResource'
+jobs/views.py:607: [R0912(too-many-branches), JobDetailsView.post] Too many branches (27/12)
+jobs/views.py:607: [R0915(too-many-statements), JobDetailsView.post] Too many statements (83/50)
+jobs/views.py:794: [W0621(redefined-outer-name), GenerateReportsView.get] Redefining name 'datetime' from outer scope (line 7)
+jobs/views.py:790: [W0622(redefined-builtin), GenerateReportsView.get] Redefining built-in 'format'
+jobs/views.py:767: [R0914(too-many-locals), GenerateReportsView.get] Too many local variables (32/15)
+jobs/views.py:826: [W0612(unused-variable), GenerateReportsView.get] Unused variable 'result'
+jobs/views.py:767: [W0613(unused-argument), GenerateReportsView.get] Unused argument 'kwargs'
+jobs/views.py:767: [W0613(unused-argument), GenerateReportsView.get] Unused argument 'args'
+jobs/views.py:767: [R0201(no-self-use), GenerateReportsView.get] Method could be a function
+jobs/views.py:767: [R0915(too-many-statements), GenerateReportsView.get] Too many statements (54/50)
+jobs/views.py:894: [W0702(bare-except), ModifyJobsView.get] No exception type(s) specified
+jobs/views.py:898: [C0103(invalid-name), ModifyJobsView.get] Invalid variable name "jobId"
+jobs/views.py:899: [C0103(invalid-name), ModifyJobsView.get] Invalid variable name "changeStatus"
+jobs/views.py:872: [W0613(unused-argument), ModifyJobsView.get] Unused argument 'args'
+jobs/views.py:872: [W0613(unused-argument), ModifyJobsView.get] Unused argument 'kwargs'
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==configuration.views:193
+==nodes.views:256
+    def get(self, request, *args, **kwargs):
+        """
+        Shows node detail in nodes page
+        It loads node data from NodeDetailsDataView with success_code.
+
+        Args:
+                request: represents a single HTTP request. Request objects also have
+                                 a few useful methods like GET,POST,DELETE etc.
+
+                *args: Variable length argument list.
+
+                **kwargs: Arbitrary keyword arguments.
+
+        Returns:
+                HttpResponse and render node detail page by using node name.
+                Redirect to login page if access token not found.
+
+        Raises:
+                None
+
+        """
+        try:
+            request.session['access_token']
+        except:
+            request.session['path_previous'] = request.path
+            return self.redirect('/login/')
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==configuration.views:395
+==jobs.views:871
+    def get(self, request, *args, **kwargs):
+        """
+        Modify job status of perticular job by using job id
+
+        Args:
+            request: represents a single HTTP request. Request objects also have
+                     a few useful methods like GET,POST,DELETE etc.
+
+            *args: Variable length argument list.
+
+            **kwargs: Arbitrary keyword arguments.
+
+        Returns:
+            HttpResponse response_message when job modify.
+            Redirect to login page if access token not found.
+
+        Raises:
+            None
+
+        """
+        try:
+            request.session['access_token']
+        except:
+            request.session['path_previous'] = request.path
+            return self.redirect('/login/')
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 3 files
+==configuration.views:395
+==jobs.views:871
+==nodes.views:29
+    def get(self, request, *args, **kwargs):
+        """
+        Modify job status of perticular job by using job id
+
+        Args:
+            request: represents a single HTTP request. Request objects also have
+                     a few useful methods like GET,POST,DELETE etc.
+
+            *args: Variable length argument list.
+
+            **kwargs: Arbitrary keyword arguments.
+
+        Returns:
+            HttpResponse response_message when job modify.
+            Redirect to login page if access token not found.
+
+        Raises:
+            None
+
+        """
+        try:
+            request.session['access_token']
+        except:
+            request.session['path_previous'] = request.path
+            return self.redirect('/login/')
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:702
+==api.nodes.views:263
+                return error_message, error_status
+
+            else:
+                # error status for no responses from api and exception
+                error_status = -1
+                error_message = 'Exception During data proccessing'
+                return error_message, error_status
+
+        except requests.exceptions.ConnectionError as e:
+            # Redirecting to error Page
+            return Response(APIError.error_log(e))
+
+        except KeyError as key:
+            # Redirecting to error Page
+            return Response(APIError.error_log(key))
+
+        except Exception as eX:
+            # Redirecting to error Page
+            return Response(APIError.error_log(eX))
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 3 files
+==api.jobs.views:288
+==api.jobs.views:364
+==api.nodes.views:69
+            else:
+                # error status for no responses from api and exception
+                error_message = {}
+                error_message['messages'] = 'Exception During data proccessing'
+                return Response(error_message)
+
+        except requests.exceptions.ConnectionError as e:
+            # Redirecting to error Page
+            return Response(APIError.error_log(e))
+
+        except KeyError as key:
+            # Redirecting to error Page
+            return Response(APIError.error_log(key))
+
+        except Exception as eX:
+            # Redirecting to error Page
+            return Response(APIError.error_log(eX))
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==jobs.views:192
+==nodes.views:184
+            if offset and max:
+                # Setting offset value eg: if offset from the server is 1 then actual offset should be 0
+                offset = int(offset) - 1
+
+                # Getting Controls for pagination
+                control = request.GET.get('control')
+                if control == "goToFirst":
+                    offset = 0
+                elif control == "prev":
+                    if int(offset) == 0:
+                        offset = 0
+                    else:
+                        offset = int(offset) - 1
+                elif control == "next":
+                    lastOffset = request.GET.get('lastOffset')
+                    if int(offset) == int(lastOffset)-1:
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 4 files
+==api.jobs.views:142
+==api.jobs.views:167
+==jobs.views:456
+==jobs.views:479
+                    sec = timedelta(seconds=int(tdelta.seconds))
+                    elapsed = datetime(1, 1, 1) + sec
+                    days = tdelta.days
+                    if int(days) < 10:
+                        days = "0" + str(days)
+                    hours = elapsed.hour
+                    if int(hours) < 10:
+                        hours = "0" + str(hours)
+                    minutes = elapsed.minute
+                    if int(minutes) < 10:
+                        minutes = "0" + str(minutes)
+                    seconds = elapsed.second
+                    if int(seconds) < 10:
+                        seconds = "0" + str(seconds)
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 8 files
+==api.configuration.views:502
+==api.configuration.views:563
+==api.configuration.views:620
+==api.jobs.views:294
+==api.jobs.views:370
+==api.jobs.views:543
+==api.jobs.views:710
+==api.jobs.views:785
+        except requests.exceptions.ConnectionError as e:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(e))
+
+        except KeyError as key:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(key))
+
+        except Exception as eX:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(eX))
+
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 15 files
+==api.configuration.views:377
+==api.configuration.views:418
+==api.configuration.views:466
+==api.configuration.views:502
+==api.configuration.views:563
+==api.configuration.views:620
+==api.jobs.views:294
+==api.jobs.views:370
+==api.jobs.views:543
+==api.jobs.views:710
+==api.jobs.views:785
+==api.login_api.views:125
+==api.nodes.views:192
+==api.nodes.views:271
+==api.nodes.views:75
+        except requests.exceptions.ConnectionError as e:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(e))
+
+        except KeyError as key:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(key))
+
+        except Exception as eX:
+            # HERE WE ARE ADDING ERROR LOGGING
+            return Response(APIError.error_log(eX))
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:841
+==api.nodes.views:314
+                                                headers=params)
+        except requests.exceptions.ConnectionError as e:
+            message = "Error connecting to MWS server: {0}".format(e)
+            APIError.error_log(message)
+            return message, status
+        except Exception as e:
+            message = "Error communicating with MWS server: {0}".format(e)
+            APIError.error_log(message)
+            return message, status
+        # job_modify_response.json()['messages'] is a list of unicode
+        # strings, each containing a message to display.
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:79
+==api.nodes.views:148
+                        query_set['offset']) + '&query={' + str('"$and":[') + str(query_set['jobStatus']) + ']}'
+
+                elif query_set['query'] and query_set['offset']:
+                    query_string = '&max=' + str(query_set['max']) + '&offset=' + str(
+                        query_set['offset']) + '&query={' + str('"$and":[') + str(query_set['query']) + ']}'
+
+                elif query_set['query']:
+                    query_string = '&max=' + str(query_set['max']) + '&query={' + str('"$and":[') + str(
+                        query_set['query']) + ']}'
+
+                else:
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 3 files
+==api.configuration.views:675
+==api.configuration.views:723
+==api.jobs.views:223
+        except requests.exceptions.ConnectionError as e:
+            # Redirecting to error Page
+            return Response(APIError.error_log(e))
+        except KeyError as key:
+            # Redirecting to error Page
+            return Response(APIError.error_log(key))
+        except Exception as eX:
+            # Redirecting to error Page
+            return Response(APIError.error_log(eX))
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:118
+==jobs.views:422
+                days = re.sub("\.\d+", "", str(days))
+                if int(days) < 10:
+                    days = "0" + str(days)
+                hours = d.hour
+                if int(hours) < 10:
+                    hours = "0" + str(hours)
+                minutes = d.minute
+                if int(minutes) < 10:
+                    minutes = "0" + str(minutes)
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 3 files
+==api.jobs.views:929
+==api.nodes.views:392
+==api.nodes.views:510
+        except requests.exceptions.ConnectionError as e:
+            return Response(APIError.error_log(e))
+
+        except KeyError as key:
+            return Response(APIError.error_log(key))
+
+        except Exception as eX:
+            return Response(APIError.error_log(eX))
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:855
+==api.nodes.views:327
+        except Exception as e:
+            message = "Server did not return valid JSON: {0}".format(e)
+            APIError.error_log(message)
+            return (message, status)
+        messages_json = response_json['messages']
+        # Messages from MWS could contain anything, including JavaScript
+        # Since the Mako template won't escape messages, we need to here.
+        messages = [cgi.escape(m, quote=True) for m in messages_json]
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.configuration.views:842
+==api.jobs.views:223
+        except requests.exceptions.ConnectionError as e:
+            # Redirecting to error Page
+            return Response(APIError.error_log(e))
+        except KeyError as key:
+            # Redirecting to error Page
+            return Response(APIError.error_log(key))
+        except Exception as eX:
+            # Redirecting to error Page
+            return Response(APIError.error_log(eX))
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.jobs.views:694
+==api.nodes.views:255
+                if serializer.is_valid():
+                    # success status for valid responces from api
+                    success_status = 2000
+                    return serializer.data, success_status
+            except:
+                # error status for invalid responses from api
+                error_status = -1
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==api.configuration.views:764
+==api.jobs.views:598
+        status = "fail"
+        try:
+            token_string = request.session['token_type'] + request.session['access_token']
+            params = {'Authorization': token_string}
+            params = dict(params.items() + self.headers.items())
+            # currently fixing this for IRIS-418,386 need to configure this for every return messges
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 8 files
+==configuration.views:465
+==configuration.views:514
+==configuration.views:656
+==configuration.views:755
+==configuration.views:80
+==jobs.views:891
+==nodes.views:277
+==nodes.views:372
+        try:
+            request.session['access_token']
+        except:
+            request.session['path_previous'] = request.path
+            return self.redirect('/login/')
+
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==jobs.views:209
+==nodes.views:201
+                    else:
+                        offset = int(offset) + 1
+                elif control == "goToLast":
+                    lastOffset = request.GET.get('lastOffset')
+                    offset = int(lastOffset) - 1
+jobs/views.py:1: [R0801(duplicate-code), ] Similar lines in 13 files
+==configuration.views:332
+==configuration.views:465
+==configuration.views:514
+==configuration.views:562
+==configuration.views:610
+==configuration.views:656
+==configuration.views:755
+==configuration.views:80
+==configuration.views:847
+==jobs.views:891
+==nodes.views:277
+==nodes.views:372
+==nodes.views:49
+        try:
+            request.session['access_token']
+        except:
+            request.session['path_previous'] = request.path
+            return self.redirect('/login/')
+
+
+Report
+======
+2441 statements analysed.
+
+External dependencies
+---------------------
+::
+
+    api 
+      \-build_info (configuration.views)
+      \-configuration 
+      | \-views (configuration.views)
+      \-installation (api.configuration.views)
+      \-jobs 
+      | \-views (api.urls,jobs.views)
+      \-login_api 
+      | \-views (login.views)
+      \-nodes 
+      | \-views (api.urls,jobs.views,nodes.views)
+      \-serializers (api.jobs.views,api.nodes.views,api.login_api.views)
+    configuration 
+      \-views (configuration.urls)
+    django 
+      \-conf (api.installation,login.utils,api.configuration.views,api.login_api.views,login.views,api.build_info)
+      | \-urls (api.urls,login.urls,nodes.urls,configuration.urls,jobs.urls)
+      \-contrib 
+      | \-admin (jobs.admin,configuration.admin,nodes.admin,login.admin)
+      | \-messages (jobs.views,nodes.views,configuration.views)
+      \-core 
+      | \-urlresolvers (jobs.views)
+      \-db 
+      | \-models (nodes.models,jobs.models,api.models,configuration.models,login.models)
+      \-http (jobs.views,nodes.views,configuration.views,login.utils)
+      \-middleware 
+      | \-csrf (login.views)
+      \-test (configuration.tests,nodes.tests,jobs.tests,api.tests,login.tests)
+      \-utils 
+        \-timezone (api.jobs.views,jobs.views)
+        \-translation (jobs.views,api.jobs.views,login.views,login.utils,api.configuration.views,api.nodes.views,nodes.views,configuration.views,api.build_info)
+    frontend_utils 
+      \-view_base (login.views,jobs.views,nodes.views,configuration.views,login.utils)
+    login 
+      \-utils (jobs.views,api.installation,api.jobs.views,login.views,api.configuration.views,api.login_api.views,login.urls,api.nodes.views,nodes.views,configuration.views)
+      \-views (login.urls)
+    mako 
+      \-lookup (login.views)
+    nodes 
+      \-views (nodes.urls)
+    requests (api.jobs.views,api.nodes.views,api.login_api.views,api.installation,api.configuration.views)
+    rest_framework 
+      \-response (api.jobs.views,api.nodes.views,api.login_api.views,api.configuration.views)
+      \-serializers (api.serializers)
+      \-views (api.jobs.views,api.nodes.views,api.login_api.views,api.configuration.views)
+    simplejson (api.configuration.views)
+    urllib3 (api.configuration.views)
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |1106   |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |101    |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |266    |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |23     |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------------------+------+--------+---------+-----------+
+|module                  |error |warning |refactor |convention |
++========================+======+========+=========+===========+
+|api.configuration.views |52.17 |15.04   |10.89    |14.29      |
++------------------------+------+--------+---------+-----------+
+|login.views             |26.09 |4.14    |2.97     |2.98       |
++------------------------+------+--------+---------+-----------+
+|api.nodes.views         |13.04 |11.28   |8.91     |8.59       |
++------------------------+------+--------+---------+-----------+
+|api.installation        |4.35  |1.88    |1.98     |3.25       |
++------------------------+------+--------+---------+-----------+
+|api.build_info          |4.35  |0.00    |0.99     |0.54       |
++------------------------+------+--------+---------+-----------+
+|api.jobs.views          |0.00  |19.55   |12.87    |14.38      |
++------------------------+------+--------+---------+-----------+
+|jobs.views              |0.00  |17.29   |32.67    |21.25      |
++------------------------+------+--------+---------+-----------+
+|configuration.views     |0.00  |15.04   |7.92     |14.38      |
++------------------------+------+--------+---------+-----------+
+|nodes.views             |0.00  |4.14    |3.96     |8.05       |
++------------------------+------+--------+---------+-----------+
+|login.utils             |0.00  |3.38    |0.99     |4.79       |
++------------------------+------+--------+---------+-----------+
+|api.login_api.views     |0.00  |3.01    |1.98     |1.36       |
++------------------------+------+--------+---------+-----------+
+|nodes.tests             |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|nodes.models            |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|nodes.admin             |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|login.tests             |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|login.models            |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|login.admin             |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|jobs.tests              |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|jobs.models             |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|jobs.admin              |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|configuration.tests     |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|configuration.models    |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|configuration.admin     |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|api.tests               |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+|api.models              |0.00  |0.38    |0.00     |0.00       |
++------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------------+------------+
+|message id                    |occurrences |
++==============================+============+
+|line-too-long                 |583         |
++------------------------------+------------+
+|invalid-name                  |291         |
++------------------------------+------------+
+|bad-continuation              |140         |
++------------------------------+------------+
+|unused-argument               |58          |
++------------------------------+------------+
+|bare-except                   |52          |
++------------------------------+------------+
+|broad-except                  |43          |
++------------------------------+------------+
+|too-many-public-methods       |35          |
++------------------------------+------------+
+|missing-docstring             |33          |
++------------------------------+------------+
+|bad-whitespace                |29          |
++------------------------------+------------+
+|anomalous-backslash-in-string |29          |
++------------------------------+------------+
+|redefined-builtin             |27          |
++------------------------------+------------+
+|trailing-whitespace           |26          |
++------------------------------+------------+
+|duplicate-code                |21          |
++------------------------------+------------+
+|too-many-locals               |20          |
++------------------------------+------------+
+|unused-variable               |18          |
++------------------------------+------------+
+|no-member                     |15          |
++------------------------------+------------+
+|unused-import                 |14          |
++------------------------------+------------+
+|too-many-branches             |9           |
++------------------------------+------------+
+|pointless-string-statement    |8           |
++------------------------------+------------+
+|too-many-statements           |7           |
++------------------------------+------------+
+|maybe-no-member               |6           |
++------------------------------+------------+
+|bad-indentation               |6           |
++------------------------------+------------+
+|unbalanced-tuple-unpacking    |3           |
++------------------------------+------------+
+|too-many-return-statements    |3           |
++------------------------------+------------+
+|no-self-use                   |3           |
++------------------------------+------------+
+|expression-not-assigned       |3           |
++------------------------------+------------+
+|pointless-statement           |2           |
++------------------------------+------------+
+|old-style-class               |2           |
++------------------------------+------------+
+|bad-classmethod-argument      |2           |
++------------------------------+------------+
+|unnecessary-pass              |1           |
++------------------------------+------------+
+|undefined-variable            |1           |
++------------------------------+------------+
+|too-many-instance-attributes  |1           |
++------------------------------+------------+
+|too-many-arguments            |1           |
++------------------------------+------------+
+|too-few-public-methods        |1           |
++------------------------------+------------+
+|return-in-init                |1           |
++------------------------------+------------+
+|redefined-outer-name          |1           |
++------------------------------+------------+
+|no-init                       |1           |
++------------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.49/10
+
+Duplication
+-----------
+
++-------------------------+-------+---------+-----------+
+|                         |now    |previous |difference |
++=========================+=======+=========+===========+
+|nb duplicated lines      |683    |NC       |NC         |
++-------------------------+-------+---------+-----------+
+|percent duplicated lines |12.097 |NC       |NC         |
++-------------------------+-------+---------+-----------+
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |40     |NC         |NC         |77.50       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |59     |NC         |NC         |74.58       |1.69     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |68     |NC         |NC         |89.71       |17.65    |
++---------+-------+-----------+-----------+------------+---------+
+|function |7      |NC         |NC         |71.43       |85.71    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |2909   |55.14 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |1765   |33.45 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |116    |2.20  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |486    |9.21  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
