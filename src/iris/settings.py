@@ -45,7 +45,7 @@ ROOT_PATH = (os.path.normpath(os.path.join(PROJECT_PATH, "..")))
 SITE_ID = 1
 
 #** Set log path for django logger
-LOGS_PATH = "/var/log/httpd"
+#LOGS_PATH = "/var/log/httpd"
 #LOGS_PATH  = (os.path.normpath(os.path.join(PROJECT_PATH, "..", "logs")))
 # Checking username & password at time of login as admin user
 USERNAME = "moab-admin"
