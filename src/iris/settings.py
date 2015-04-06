@@ -214,37 +214,37 @@ GRAPH_MODELS = {
 # the site admins on every HTTP 500 error when DEBUG=False.
 # See http://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': True,
-    'formatters': {
-        'verbose': {
-            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt': "%d/%b/%Y %H:%M:%S"
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': LOGS_PATH + '/error_file',
-            'formatter': 'verbose'
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'propagate': True,
-            'level': 'DEBUG',
-        },
-        'iris': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-        },
-    }
-}
+#LOGGING = {
+#    'version': 1,
+#    'disable_existing_loggers': True,
+#    'formatters': {
+#        'verbose': {
+#            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+#            'datefmt': "%d/%b/%Y %H:%M:%S"
+#        },
+#        'simple': {
+#            'format': '%(levelname)s %(message)s'
+#        },
+#    },
+#    'handlers': {
+#        'file': {
+#            'level': 'DEBUG',
+#            'class': 'logging.FileHandler',
+#            'filename': LOGS_PATH + '/error_file',
+#            'formatter': 'verbose'
+#        },
+#    },
+#    'loggers': {
+#        'django': {
+#            'handlers': ['file'],
+#            'propagate': True,
+#            'level': 'DEBUG',
+#        },
+#        'iris': {
+#            'handlers': ['file'],
+#            'level': 'DEBUG',
+#        },
+#    }
+#}
 
 TEST_RUNNER = 'frontend_utils.test_utils.DatabaselessTestRunner'
